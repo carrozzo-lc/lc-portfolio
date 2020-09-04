@@ -1,0 +1,67 @@
+// -----------------------------
+// Variables
+// -----------------------------
+
+// Colors
+$color-green-01: #12AF97;
+$color-green-02: #18EFCD;
+$color-gray-01:  #E6E6E6;
+$color-black-01: #000000;
+$color-black-02: #1A1A1A;
+$color-black-03: #333333;
+$color-white-01: #FFFFFF;
+
+$primary:       $color-green-01;
+$secondary:     $color-green-02;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs:  0,
+  sm:  576px,
+  md:  768px,
+  lg:  992px,
+  xl:  1200px,
+  xxl: 1440px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm:  540px,
+  md:  720px,
+  lg:  960px,
+  xl:  1140px,
+  xxl: 1280px
+);
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:                $color-black-02;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      Alegreya Sans, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$headings-font-weight:        700;

@@ -1,0 +1,57 @@
+// -----------------------------
+// ie
+// -----------------------------
+
+.ie {
+
+    img[src$=".svg"] {
+      width: 100%;
+    }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      img[src$=".svg"] {
+        width: 100%;
+      }
+    }
+
+    .navigation {
+        .brand {
+            img {
+                width: 132px;
+                height: 59px;
+                @include media-breakpoint-down(xs){
+                    width: 100px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+
+    .masthead {
+
+        .column {
+            &:first-child { // image
+                img {
+                    width:720px;
+                    height:490px;
+
+                    @include media-breakpoint-down(xl){
+                        width:600px;
+                        height:408px;
+                    }
+                    @include media-breakpoint-down(lg){
+                        width:507px;
+                        height:345px;
+                    }
+                    @include media-breakpoint-down(md){
+                        width:100%;
+                    }
+                    @include media-breakpoint-down(xs){
+                        width:100%;
+                    }
+                }
+            }
+        }//.column
+
+    }//.masthead
+
+}//.ie

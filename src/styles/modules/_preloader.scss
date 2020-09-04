@@ -1,0 +1,78 @@
+// -----------------------------
+// Skills
+// -----------------------------
+
+#preloader {
+    position: fixed; left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: $primary;
+    z-index: 9999;
+
+    .logo-loader {
+        position:relative;
+        //top:12px;
+
+        @include media-breakpoint-up(lg){
+            top:6px;
+        }
+        @include media-breakpoint-up(xl){
+            top:8px;
+        }
+        @include media-breakpoint-up(xs){
+            top:7px;
+        }
+        img {
+            display:block;
+            width:132px;
+            height:auto;
+            margin:0 auto;
+
+            @include media-breakpoint-down(xs){
+                width:100px;
+            }
+        }
+    }
+}
+
+.lds-container {
+    @include flexbox()
+    @include justify-content(center)
+    @include align-items(center)
+    height:68%;
+}
+.lds-ring {
+    width: 132px;
+    height: 132px;
+    //background-color: black;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
