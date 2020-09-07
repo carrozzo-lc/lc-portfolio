@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CSSTransition from 'react-transition-group/CSSTransition';
+
+const animationTiming1 = {
+    enter: 0,
+    exit: 300
+};
+const animationTiming2 = {
+    enter: 80,
+    exit: 300
+};
+const animationTiming3 = {
+    enter: 160,
+    exit: 300
+};
 
 const Header = (props) => {
+    const [socialBlock, setSocialBlock] = useState(false);
+
+    const socialToggleHandler = () => {
+        setSocialBlock(!socialBlock);
+    };   
 
     return (
         <header className="site-header fixed-top">
@@ -32,20 +51,50 @@ const Header = (props) => {
                     <div className="d-block d-sm-none">
                         <div id="socialShare">
                             <div className="socialBox pointer">
-                                <div className="btn btn--share">
+                                <div className="btn btn--share" onClick={socialToggleHandler}>
                                     <i className="icon icon-share"></i>
                                 </div>
                                 <div id="socialGallery">
                                     <div className="socialToolBox">
-                                        <a href="https://twitter.com/carrozzo_lc" className="btn btn--twitter" title="twitter Luca Carrozzo" target="_blank" rel="noopener noreferrer">
-                                            <i className="icon icon-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/lucacarrozzowebdesigner/?locale=en_US" className="btn btn--linkedin " title="linkedin Luca Carrozzo" target="_blank" rel="noopener noreferrer">
-                                            <i className="icon icon-linkedin"></i>
-                                        </a>
-                                        <a href="me@lucacarrozzo.com" className="btn btn--mail" title="Email Luca Carrozzo" target="_blank" rel="noopener noreferrer">
-                                            <i className="icon icon-mail-alt"></i>
-                                        </a>
+                                        <CSSTransition
+                                            mountOnEnter
+                                            unmountOnExit
+                                            in={socialBlock} 
+                                            timeout={animationTiming1}
+                                            classNames={{
+                                                enterDone: 'bounce-in-top',
+                                                exit: 'fade-out-top'
+                                            }} >
+                                            <a href="https://twitter.com/carrozzo_lc" className="btn btn--twitter bounce-in-top" title="twitter Luca Carrozzo" target="_blank" rel="noopener noreferrer">
+                                                <i className="icon icon-twitter"></i>
+                                            </a>  
+                                        </CSSTransition>
+                                        <CSSTransition
+                                            mountOnEnter
+                                            unmountOnExit
+                                            in={socialBlock} 
+                                            timeout={animationTiming2}
+                                            classNames={{
+                                                enterDone: 'bounce-in-top',
+                                                exit: 'fade-out-top'
+                                            }} >
+                                            <a href="https://www.linkedin.com/in/lucacarrozzowebdesigner/?locale=en_US" className="btn btn--linkedin" title="linkedin Luca Carrozzo" target="_blank" rel="noopener noreferrer">
+                                                <i className="icon icon-linkedin"></i>
+                                            </a>    
+                                        </CSSTransition>
+                                        <CSSTransition
+                                            mountOnEnter
+                                            unmountOnExit
+                                            in={socialBlock} 
+                                            timeout={animationTiming3}
+                                            classNames={{
+                                                enterDone: 'bounce-in-top',
+                                                exit: 'fade-out-top'
+                                            }} >
+                                            <a href="me@lucacarrozzo.com" className="btn btn--mail" title="Email Luca Carrozzo" target="_blank" rel="noopener noreferrer">
+                                                <i className="icon icon-mail-alt"></i>
+                                            </a> 
+                                        </CSSTransition>
                                     </div>
                                 </div>
                             </div>

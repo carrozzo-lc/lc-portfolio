@@ -48,15 +48,13 @@
     }
 
     .icon {
-        @include rem(font-size, 28px)
+        @include rem(font-size, 28px);
 
         @include media-breakpoint-down(xl){
-            @include rem(font-size, 24px)
+            @include rem(font-size, 24px);
         }
         @include media-breakpoint-down(sm){
-            @include rem(font-size, 21px)
-        }
-        &:before {
+            @include rem(font-size, 21px);
         }
     }
 
@@ -72,6 +70,10 @@
             vertical-align: inherit;
             margin-left:0;
         }
+        // &:hover {
+        //     color:white;
+        //     background-color: rgba(0, 0, 0, 0.4);
+        // }
     }
     a,
     > .socialBox {
@@ -125,14 +127,16 @@
 #socialGallery {
     margin: 0 auto 0;
     position: absolute;
-    top: 40px;
+    top: 25px;
     right:0;
     left:-1px;
-    visibility: hidden;
+    //visibility: hidden;
+    //opacity: 0;
+    //display:none;
     width: auto;
 
     a {
-        visibility: hidden;
+        //visibility: hidden;
         opacity: 0;
         margin: 3px 2px;
         background-color: rgba(0, 0, 0, 0.4);
@@ -162,16 +166,16 @@
 // -----------------------------
 .btn-read {
     cursor: pointer;
-    @include rem(font-size,24px)
+    @include rem(font-size,24px);
     color:$color-black-01;
     text-decoration: underline;
     font-weight: 700;
     text-align:center;
     @include media-breakpoint-down(xl){
-        @include rem(font-size, 21px)
+        @include rem(font-size, 21px);
     }
     @include media-breakpoint-down(lg){
-        @include rem(font-size, 18px)
+        @include rem(font-size, 18px);
     }
 }//.btn-read
 
@@ -304,7 +308,7 @@
     width:66px;
     height:66px;
     @include transition(background-color .3s);
-    @include rem(margin, 0 8px)
+    @include rem(margin, 0 8px);
     text-decoration: none !important;
 
     @include media-breakpoint-down(xl){

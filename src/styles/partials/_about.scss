@@ -11,10 +11,10 @@
     &__desc {
         max-width:680px;
         margin:0 auto;
-        @include rem(margin-bottom,80px)
+        @include rem(margin-bottom,80px);
 
         @include media-breakpoint-down(xl){
-            @include rem(margin-bottom,60px)
+            @include rem(margin-bottom,60px);
         }
         @include media-breakpoint-down(lg){
             max-width:640px;
@@ -28,7 +28,7 @@
         }
 
         p {
-            @include rem(font-size, 24px)
+            @include rem(font-size, 24px);
             text-align: center;
             @include media-breakpoint-down(xl){
                 @include rem(font-size, 21px)
@@ -41,14 +41,22 @@
                 margin-bottom:0;
             }
             &:nth-child(2) {
-                margin-top:1rem;
+                //margin-top:1rem;
             }
         }
     }//desc
 
 
-    &__rev-txt {
-        display:none;
-    }
+    &__rev-txt {        
+        max-height: 0;
+        transition: max-height .3s ease-out, margin-top .2s ease-out;
+        overflow: hidden;
+
+        &.open {
+            margin-top:1rem;
+            max-height: 500px;
+            transition: max-height .4s ease-in;
+        }  
+    }  
 
 }//.about

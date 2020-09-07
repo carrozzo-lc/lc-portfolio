@@ -1,0 +1,70 @@
+// -----------------------------
+// Animations
+// -----------------------------
+
+.bounce-in-top {
+	-webkit-animation: bounce-in-top .3s ease-out forwards;
+	        animation: bounce-in-top .3s ease-out forwards;
+}
+
+.fade-out-top {
+	-webkit-animation: fade-out-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade-out-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-down {
+    animation: slide-down 1s ease-out forwards;
+}
+
+
+@keyframes slide-down {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}		
+ 
+}
+
+
+@keyframes bounce-in-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);   
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@-webkit-keyframes fade-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+@keyframes fade-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+}

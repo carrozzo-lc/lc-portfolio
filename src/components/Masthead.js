@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useBreakpoint } from '../shared/breakpoint';
+import { scroller } from "react-scroll";
 
-const Masthead = () => {
+const Masthead = (props) => {
     const [mastheadHeight, setMastheadHeight] = useState(window.innerHeight - 50);
 
     const breakpoints = useBreakpoint();
@@ -33,8 +34,18 @@ const Masthead = () => {
         breakpoints.maxWth575
     ]);
 
+    const scrollTo = () => {
+        scroller.scrollTo('about', {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+            offset: -90
+        })
+    }    
+
     return (
         <section className="masthead" style={{ height: mastheadHeight + 'px' }}>
+            
             <div className="container">
                 <div className="grid">
                     <div className="column masthead__image">
@@ -56,11 +67,12 @@ const Masthead = () => {
                 </div>
             </div>
 
-            <div className="scroll-down">
+            <div className="scroll-down" onClick={scrollTo}>
                 <div>
                     <span className="icon icon-down-open"></span>
                 </div>
             </div>
+
         </section>  
     );
 }

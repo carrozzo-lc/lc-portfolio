@@ -7,7 +7,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
-import {BreakpointProvider} from './shared/breakpoint'
+import {BreakpointProvider} from './shared/breakpoint';
 
 const queries = {
     maxWth575: '(max-width: 575.98px)',
