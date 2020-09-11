@@ -3,18 +3,24 @@
 // -----------------------------
 
 .skills {
-    @include rem(margin-bottom, 50px)
-    @include flexbox()
-    @include justify-content(center)
-    @include flex-wrap(wrap)
+    @include rem(margin-bottom, 50px);
+    @include flexbox();
+    @include justify-content(center);
+    @include flex-wrap(wrap);
     @include media-breakpoint-down(xl){
-        @include rem(margin-bottom,38px)
+        @include rem(margin-bottom,38px);
     }
     @include media-breakpoint-down(lg){
-        @include rem(margin-bottom,32px)
+        @include rem(margin-bottom,32px);
     }
     @include media-breakpoint-down(sm){
-        @include rem(margin-bottom,10px)
+        @include rem(margin-bottom,10px);
+    }
+    opacity:0;
+    transition: all ease-in-out .2s;
+
+    &.show-el {
+        opacity:1;
     }
 }//.skills
 
@@ -28,7 +34,7 @@
         width: 160px;
         height: 160px;
         position: relative;
-        @include rem(margin, 0 24px)
+        @include rem(margin, 0 24px);
 
         @include media-breakpoint-down(xl){
             width:138px;
@@ -37,45 +43,58 @@
         @include media-breakpoint-down(lg){
             width:124px;
             height:124px;
-            @include rem(margin, 0 15px)
+            @include rem(margin, 0 15px);
         }
         @include media-breakpoint-down(md){
             width:110px;
             height:110px;
-            @include rem(margin, 0 12px)
+            @include rem(margin, 0 12px);
         }
         @include media-breakpoint-down(sm){
             width:90px;
             height:90px;
-            @include rem(margin, 0 10px)
+            @include rem(margin, 0 10px);
         }
     }
 
     &__label {
-        @include rem(font-size, 38px)
+        @include rem(font-size, 38px);
         line-height:1;
         color:$color-black-03;
         top: 47% !important;
         @include media-breakpoint-down(xl){
-            @include rem(font-size, 36px)
+            @include rem(font-size, 36px);
         }
         @include media-breakpoint-down(lg){
-            @include rem(font-size, 28px)
+            @include rem(font-size, 28px);
         }
     }
 
     &__text {
-        @include rem(font-size,21px)
+        @include rem(font-size,21px);
         font-weight:500;
         text-align: center;
         @include media-breakpoint-down(xl){
-            @include rem(font-size, 18px)
+            @include rem(font-size, 18px);
         }
         @include media-breakpoint-down(lg){
-            @include rem(font-size, 16px)
+            @include rem(font-size, 16px);
         }
         @include media-breakpoint-down(sm){
-            @include rem(font-size, 14px)
+            @include rem(font-size, 14px);
         }
     }
 }//.skill
+
+.CircularProgressbar-text {
+    //fill: #000000 !important;
+    dominant-baseline: middle;
+    text-anchor: middle;
+    //@include rem(font-size, 26px !important);
+    @include media-breakpoint-down(xl){
+        @include rem(font-size, 26px !important);
+    }
+    @include media-breakpoint-down(lg){
+        @include rem(font-size, 25px !important);
+    }
+}
