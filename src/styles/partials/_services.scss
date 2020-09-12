@@ -43,14 +43,16 @@
             }
         }
         &-button-prev {
-            //background-image: url('../images/arrow-left.svg');
+            //background-image: url('/assets/images/arrow-left.svg');
             left:0;
             outline: inherit;
+            color:black;
         }
         &-button-next {
-            //background-image: url('../images/arrow-right.svg');
+            //background-image: url('/assets/images/arrow-right.svg');
             right:0;
             outline: inherit;
+            color:black;
         }
     }
 }//.services

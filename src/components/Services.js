@@ -1,6 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// import Swiper core and required components
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+
+// install Swiper components
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Services = () => {
+    const [servicesList] = useState([
+        {
+            title: 'Development',
+            description: 'I build any web applications following up-to-date coding practice. I can work for small and specific projects and also manage and structure large projects.'
+        }, 
+        {
+            title: 'Web Design',
+            description: 'Every projects that I worked on are developed with passion to look and perform beautifully on every device. I can design web elements and layouts following the latest techniques and trends.'
+        }, 
+        {
+            title: 'WordPress Development',
+            description: 'I develop WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.'        
+        }
+    ]);
 
     return (
 
@@ -8,85 +36,44 @@ const Services = () => {
             <div className="container">
                 <div className="section-title">
                     <h2>Services</h2>
-                </div>
+                </div>             
 
                 <div className="row">
-                    <div className="column col-sm-12 col-md-4">
-                        <div className="service">
-                            <div className="service__icon icon-code"></div>                    
-                            <h3 className="service__title">
-                                Development
-                            </h3>
-                            <div className="service__desc">
-                                I build any web applications following up-to-date coding practice. I can work for small and specific projects and also manage and structure large projects.
+                    {servicesList.map((service, index) => (
+                        <div className="column col-sm-12 col-md-4" key={index}>
+                            <div className="service">
+                                <div className="service__icon icon-code"></div>                    
+                                <h3 className="service__title">
+                                    {service.title}
+                                </h3>
+                                <div className="service__desc">
+                                    {service.description}                            
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="column col-sm-12 col-md-4">
-                        <div className="service">
-                            <div className="service__icon icon-desktop"></div>
-                            <h3 className="service__title">
-                                Web Design
-                            </h3>
-                            <div className="service__desc">
-                                Every projects that I worked on are developed with passion to look and perform beautifully on every device. I can design web elements and layouts following the latest techniques and trends.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="column col-sm-12 col-md-4">
-                        <div className="service">
-                            <div className="service__icon icon-wordpress"></div>
-                            <h3 className="service__title">
-                                WordPress Development
-                            </h3>
-                            <div className="service__desc">
-                                I develop WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
 
-                <div className="service-slider swiper-container">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide">
+                <Swiper
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    className="service-slider"
+                >
+                    {servicesList.map((service, index) => (
+                        <SwiperSlide key={index}>
                             <div className="service">
                                 <div className="service__icon icon-code"></div>
                                 <h3 className="service__title">
-                                    Development
+                                    {service.title}
                                 </h3>
                                 <div className="service__desc">
-                                    I build any web applications following up-to-date coding practice. I can work for small and specific projects and also manage and structure large projects.
+                                    {service.description} 
                                 </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="service">
-                                <div className="service__icon icon-desktop"></div>
-                                <h3 className="service__title">
-                                    Web Design
-                                </h3>
-                                <div className="service__desc">
-                                    Every projects that I worked on are developed with passion to look and perform beautifully on every device. I can design web elements and layouts following the latest techniques and trends.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="service">
-                                <div className="service__icon icon-wordpress"></div>
-                                <h3 className="service__title">
-                                    WordPress Development
-                                </h3>
-                                <div className="service__desc">
-                                    I develop WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="swiper-pagination"></div>
-
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
-                </div>
+                            </div>      
+                        </SwiperSlide>
+                    ))}
+                </Swiper>   
 
             </div>
         </section>
