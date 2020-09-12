@@ -59,11 +59,11 @@ const About = () => {
                 },
                 skill03: {
                     ...skills.skill03,
-                    percentage: 90
+                    percentage: 88
                 },
                 skill04: {
                     ...skills.skill04,
-                    percentage: 80
+                    percentage: 90
                 },
                 skill05: {
                     ...skills.skill05,
