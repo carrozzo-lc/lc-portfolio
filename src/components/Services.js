@@ -25,8 +25,8 @@ const Services = () => {
             description: 'Every projects that I worked on are developed with passion to look and perform beautifully on every device. I can design web elements and layouts following the latest techniques and trends.'
         }, 
         {
-            title: 'WordPress Development',
-            description: 'I develop WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.'        
+            title: 'Shopify and WordPress Devs',
+            description: 'I develop Shopify and WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.'        
         }
     ]);
 
