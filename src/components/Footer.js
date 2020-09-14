@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Footer = () => {
+    let copyright= new Date();
+
     return (
         <footer className="site-footer">
 
@@ -26,10 +28,10 @@ const Footer = () => {
             </div>
 
             <div className="sub-footer">
-                Copyright &copy; 2019 | Luca Carrozzo
+                Copyright &copy; {copyright.getFullYear()} | Luca Carrozzo
             </div>
 
-        </footer>     
+        </footer>  
     );
 };
 
