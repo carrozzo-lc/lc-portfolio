@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CSSTransition from 'react-transition-group/CSSTransition';
 
 const animationTiming1 = {
@@ -16,13 +16,22 @@ const animationTiming3 = {
 
 const Header = (props) => {
     const [socialBlock, setSocialBlock] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        document.addEventListener("scroll", () => {
+            window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
+        });
+    }, [])    
 
     const socialToggleHandler = () => {
         setSocialBlock(!socialBlock);
-    };   
+    };
+
+    let headerClasses = isVisible ? ['site-header', 'fixed-top', 'header-down'] : ['site-header', 'fixed-top', 'header-up'];
 
     return (
-        <header className="site-header fixed-top">
+        <header className={headerClasses.join(' ')}>
             <nav className="navigation">
 
                 <div className="button-left">
