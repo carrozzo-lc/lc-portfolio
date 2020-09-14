@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import ScrollToTopBtn from "./components/ScrollToTop";
 
 import {BreakpointProvider} from './shared/breakpoint';
 
@@ -20,8 +21,7 @@ const queries = {
 }
 
 class App extends Component {
-
-    render () {
+    render () {   
         return (
             <BreakpointProvider queries={queries}>
                 <main className="App">
@@ -31,8 +31,9 @@ class App extends Component {
                     <Services />
                     <Portfolio />
                     <Footer />
+                    <ScrollToTopBtn />                 
                 </main>
-            </BreakpointProvider>    
+            </BreakpointProvider>  
         );
     }
 }
