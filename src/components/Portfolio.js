@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 const Portfolio = () => {
     const [portfolioList] = useState([
         {
-            portfolio_color: "#1785B3",
+            portfolio_color: "#0099A6",
             portfolio_title: "True Protein",
             portfolio_desc: "I collaborated with the dev team to build a design system for the refactoring of the company e-commerce site, separating the main elements of the site in reusable and maintainable patterns and I improved the development workflow with a new solid and clean code structure, connecting all processes through a repository.",
             portfolio_link: "https://www.trueprotein.com.au/",
