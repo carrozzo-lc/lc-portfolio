@@ -8,6 +8,8 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import ScrollToTopBtn from "./components/ScrollToTop";
 
+import siteData from './siteData';
+
 import {BreakpointProvider} from './shared/breakpoint';
 
 const queries = {
@@ -21,16 +23,21 @@ const queries = {
 }
 
 class App extends Component {
-    render () {   
+
+    state = {
+        siteData: siteData
+    }
+
+    render () {  
         return (
             <BreakpointProvider queries={queries}>
                 <main className="App">
-                    <Header />
-                    <Masthead />
-                    <About />
-                    <Services />
-                    <Portfolio />
-                    <Footer />
+                    <Header contentData={this.state.siteData}/>
+                    <Masthead contentData={this.state.siteData} />
+                    <About contentData={this.state.siteData} />
+                    <Services contentData={this.state.siteData} />
+                    <Portfolio contentData={this.state.siteData} />
+                    <Footer contentData={this.state.siteData} />
                     <ScrollToTopBtn />                 
                 </main>
             </BreakpointProvider>  
