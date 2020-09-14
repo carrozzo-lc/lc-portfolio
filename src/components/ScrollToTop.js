@@ -21,7 +21,10 @@ const ScrollToTop = () => {
     }
 
     return (
-        <div id="return-to-top" onClick={scrollToTop} style={isVisible ? {opacity: '1'} : {opacity: '0'}}>
+        <div 
+            id="return-to-top" 
+            onClick={scrollToTop} 
+            style={isVisible ? {opacity: '1'} : {opacity: '0'}}>
             <div>
                 <i className="icon-up-open-1"></i>
             </div>
