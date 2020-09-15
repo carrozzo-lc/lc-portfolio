@@ -37,9 +37,9 @@
 }
 
 .lds-container {
-    @include flexbox()
-    @include justify-content(center)
-    @include align-items(center)
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
     height:68%;
 }
 .lds-ring {

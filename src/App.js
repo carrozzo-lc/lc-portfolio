@@ -23,12 +23,23 @@ const queries = {
 }
 
 class App extends Component {
-
     state = {
-        siteData: siteData
+        siteData: siteData,
+        loading: true
     }
 
-    render () {  
+    componentDidMount() {
+        const el = document.querySelector("#preloader");
+        if (el) {
+            el.remove();  // removing the spinner element
+            this.setState({ loading: false }); // showing the app
+        }
+    }    
+
+    render () {
+        if (this.state.loading) {
+            return null; //app is not ready
+        }    
         return (
             <BreakpointProvider queries={queries}>
                 <main className="App">
