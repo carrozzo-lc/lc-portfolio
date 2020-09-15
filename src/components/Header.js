@@ -4,6 +4,7 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 const Header = props => {
     const [socialBlock, setSocialBlock] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
+    const propsData = props.contentData;
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -16,30 +17,28 @@ const Header = props => {
     };
 
     let btnClasses = socialBlock ? ["btn", "btn--share", "hover"] : ["btn", "btn--share"];
-    let headerClasses = isVisible ? ['site-header', 'fixed-top', 'header-down'] : ['site-header', 'fixed-top', 'header-up'];
-    
-    const header = props.contentData;
-    const phoneNumber = header.phoneNumber.split(' ').join('');
+    let headerClasses = isVisible ? ['site-header', 'fixed-top', 'header-down'] : ['site-header', 'fixed-top', 'header-up'];   
+    const phoneNumber = propsData.phoneNumber.split(' ').join('');
 
     return (
         <header className={headerClasses.join(' ')}>
             <nav className="navigation">
 
                 <div className="button-left">
-                    <a className="btn btn--tel" href={"tel:" + phoneNumber} title={header.phoneNumberTitle}>
+                    <a className="btn btn--tel" href={"tel:" + phoneNumber} title={propsData.phoneNumberTitle}>
                         <i className="icon icon-phone"></i> 
-                        <span>{header.phoneNumber}</span>
+                        <span>{propsData.phoneNumber}</span>
                     </a>
                 </div>
 
                 <div className="brand">
-                    <a href={header.siteUrl} title={header.brandTitle}>
-                        <img className="logo" src={header.logo} alt="" />
+                    <a href={propsData.siteUrl} title={propsData.brandTitle}>
+                        <img className="logo" src={propsData.logo} alt="" />
                     </a>
                 </div>
 
                 <div className="button-right">
-                    {header.socialLinks.map((item, index) => (
+                    {propsData.socialLinks.map((item, index) => (
                         <a 
                             href={item.url} 
                             className={"btn btn--" + item.name + " d-none d-sm-block"} 
@@ -58,7 +57,7 @@ const Header = props => {
                                 </div>
                                 <div id="socialGallery">
                                     <div className="socialToolBox">
-                                        {header.socialLinks.map((item, index) => (
+                                        {propsData.socialLinks.map((item, index) => (
                                             <CSSTransition
                                                 key={index}
                                                 mountOnEnter

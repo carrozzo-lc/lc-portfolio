@@ -5,7 +5,7 @@
 .about {
 
     .section-title {
-        @include rem(margin-bottom, 35px)
+        @include rem(margin-bottom, 35px);
     }
 
     &__desc {
@@ -18,23 +18,23 @@
         }
         @include media-breakpoint-down(lg){
             max-width:640px;
-            @include rem(margin-bottom,50px)
+            @include rem(margin-bottom,50px);
         }
         @include media-breakpoint-down(md){
-            @include rem(margin-bottom,40px)
+            @include rem(margin-bottom,40px);
         }
         @include media-breakpoint-down(sm){
-            @include rem(margin-bottom,35px)
+            @include rem(margin-bottom,35px);
         }
 
         p {
             @include rem(font-size, 24px);
             text-align: center;
             @include media-breakpoint-down(xl){
-                @include rem(font-size, 21px)
+                @include rem(font-size, 21px);
             }
             @include media-breakpoint-down(lg){
-                @include rem(font-size, 18px)
+                @include rem(font-size, 18px);
             }
 
             &:first-child {
@@ -46,11 +46,15 @@
         }
     }//desc
 
-
     &__rev-txt {        
         max-height: 0;
         transition: max-height .3s ease-out, margin-top .2s ease-out;
         overflow: hidden;
+
+        span {
+            display: block;
+            margin-bottom: 20px;
+        }
 
         &.open {
             margin-top:1rem;

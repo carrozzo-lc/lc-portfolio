@@ -1,41 +1,17 @@
 import React, { useState } from 'react';
 
 import VisibilitySensor from "react-visibility-sensor";
+import parse from 'html-react-parser';
 
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const About = () => {
+const About = props => {
     const [readMore, setReadMore] = useState(false);
     const [skillActive, setSkillActive] = useState(true);
     const [skillsClasses, setSkillsClasses] = useState('skills');
-    const [skills, setSkills] = useState({
-        skill01: {
-            id: 10,
-            percentage: 0, 
-            skillTitle: 'Html5'
-        }, 
-        skill02: {
-            id: 11,
-            percentage: 0, 
-            skillTitle: 'Css3, Sass/Less'
-        }, 
-        skill03: {
-            id: 12,
-            percentage: 0,
-            skillTitle: 'Javascript'
-        }, 
-        skill04: {
-            id: 13,
-            percentage: 0,
-            skillTitle:'Responsive Design'
-        }, 
-        skill05: {
-            id: 14,
-            percentage: 0,  
-            skillTitle:'Web Design'
-        }
-    })
+    const [skills, setSkills] = useState(props.contentData.about.skills);
+    const propsData = props.contentData;
 
     const readMoreToggleHandler = () => {
         setReadMore(!readMore);
@@ -96,24 +72,22 @@ const About = () => {
                 </div>
             </div>
         );
-    });    
+    });
     
     return (
         <section className="about" id="about">
             <div className="container">
 
                 <div className="section-title">
-                    <h2>About</h2>
+                    <h2>{propsData.about.title}</h2>
                 </div>
 
                 <div className="about__desc">   
                     <p>
-                        I am Luca Carrozzo, a Front-End Developer based in Italy. I am primarily focused on website and interface development for web applications but I love taking on any good front end dev challenge.
+                        {propsData.about.shortDesc}
                     </p>
                     <p className={attachedClasses.join(' ')}>
-                        I have 6 years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, and JavaScript. Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements.
-                        <span style={{ display: 'block', marginBottom: '20px' }}></span>
-                        Continued education allows me to stay ahead of the curve and deliver exceptional work to each employer I’ve worked for - both full-time and contract.
+                        {parse(propsData.about.fullDesc)}
                     </p>
                     <div className="btn-read" onClick={readMoreToggleHandler}>Read more</div>
                 </div>

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useBreakpoint } from '../shared/breakpoint';
 import { scroller } from "react-scroll";
 
-const Masthead = (props) => {
+const Masthead = props => {
     const [mastheadHeight, setMastheadHeight] = useState(window.innerHeight - 50);
+    const propsData = props.contentData;
 
     const breakpoints = useBreakpoint();
 
@@ -41,7 +42,7 @@ const Masthead = (props) => {
             smooth: 'easeInOutQuart',
             offset: -90
         })
-    }    
+    }
 
     return (
         <section className="masthead" style={{ height: mastheadHeight + 'px' }}>
@@ -54,13 +55,13 @@ const Masthead = (props) => {
                     <div className="column masthead__intro">
                         <div className="intro">
                             <h1 className="intro__title">
-                                Luca Carrozzo
+                                {propsData.name}
                             </h1>
                             <h2 className="intro__subtitle">
-                                Front End Developer
+                                {propsData.role}
                             </h2>
                             <p className="intro__desc">
-                                Web Designer / Front-End Developer, constantly updating on new industry specifications and trends.
+                                {propsData.roleDescription}
                             </p>
                         </div>
                     </div>
