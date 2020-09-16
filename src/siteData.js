@@ -94,7 +94,7 @@ let siteData = {
             {
                 "portfolio_color": "#0099A6",
                 "portfolio_title": "True Protein",
-                "portfolio_desc": "I collaborated with the dev team to build a design system for the refactoring of the company e-commerce site, separating the main elements of the site in reusable and maintainable patterns and I improved the development workflow with a new solid and clean code structure, connecting all processes through a repository.",
+                "portfolio_desc": "I collaborated with the dev team to refactor and move the company e-commerce website from a cms platform to Shopify. I worked on developing a custom Shopify theme form scratch, moving all Html code into liquid, rewrote all styles using sass and all Javascript code to be in line with the new platform.",
                 "portfolio_link": "https://www.trueprotein.com.au/",
                 "portfolio_img": "/assets/images/portfolio-trueprotein.jpg"
             },    
