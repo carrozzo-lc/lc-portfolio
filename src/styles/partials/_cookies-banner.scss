@@ -1,0 +1,68 @@
+// -----------------------------
+// Cookies banner
+// -----------------------------
+
+#iubenda-cs-banner {
+    bottom: 0px !important;
+    left: 0px !important;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 99999998 !important;
+    background-color: black;
+}
+.iubenda-cs-content {
+    display: block;
+    margin: 0 auto;
+    @include rem(padding-top,10px)
+    @include rem(padding-bottom,14px)
+    @include media-breakpoint-down(md) {
+        @include rem(padding,20px !important)
+    }
+    width: auto;
+    @include rem(font-size, 14px)
+    background: #000;
+    color: #fff;
+
+    a {
+        &:hover {
+            color:$color-green-01;
+        }
+    }
+
+    p {
+        margin-bottom:0;
+        &:first-child {
+            @include rem(margin-bottom,5px)
+        }
+        &:last-child {
+            //padding-right:12px;
+        }
+    }
+}
+.iubenda-cs-rationale {
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+}
+.iubenda-banner-content > p {
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+.iubenda-cs-close-btn {
+    margin:0;
+    color: #fff;
+    text-decoration: none !important;
+    @include rem(font-size, 24px)
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    font-weight: 900;
+}
+.iubenda-cs-cookie-policy-lnk {
+    text-decoration: underline;
+    color: #fff;
+    @include rem(font-size, 14px)
+    font-weight: 900;
+}

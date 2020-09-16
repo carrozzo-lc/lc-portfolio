@@ -1,0 +1,52 @@
+// -----------------------------
+// Section title
+// -----------------------------
+
+.section-title {
+    width:320px;
+    height:14px;
+    background-color: $secondary;
+    z-index: 1;
+    position:relative;
+    margin:0 auto;
+    @include rem(margin-bottom, 70px)
+
+    @include media-breakpoint-down(xl){
+        width:276px;
+        height:13px;
+    }
+    @include media-breakpoint-down(lg){
+        width:230px;
+        height:10px;
+    }
+    @include media-breakpoint-down(md){
+        @include rem(margin-bottom, 50px)
+    }
+    @include media-breakpoint-down(xs){
+        width:260px;
+        height:13px;
+        @include rem(margin-bottom, 36px)
+    }
+
+    h2 {
+        z-index: 10;
+        @include rem(font-size, 38px)
+        text-align: center;
+        line-height: 1;
+
+        position:absolute;
+        margin:auto;
+        top:auto; bottom:0; right:0; left:0;
+
+        @include media-breakpoint-down(xl){
+            @include rem(font-size, 32px)
+        }
+        @include media-breakpoint-down(lg){
+            @include rem(font-size, 26px)
+        }
+        @include media-breakpoint-down(xs){
+            @include rem(font-size, 36px)
+            bottom:-3px;
+        }
+    }
+}//.section-title
