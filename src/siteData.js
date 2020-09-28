@@ -75,14 +75,17 @@ let siteData = {
         "title": "Services",
         "list": [
             {
+                "icon": 'icon-code',
                 "title": 'Development',
                 "description": 'I build any web applications following up-to-date coding practice. I can work for small and specific projects and also manage and structure large projects.'
             }, 
             {
+                "icon": 'icon-desktop',
                 "title": 'Web Design',
                 "description": 'Every projects that I worked on are developed with passion to look and perform beautifully on every device. I can design web elements and layouts following the latest techniques and trends.'
             }, 
             {
+                "icon": 'icon-wordpress',
                 "title": 'Shopify and WordPress Devs',
                 "description": 'I develop Shopify and WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.'        
             }
