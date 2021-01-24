@@ -30,14 +30,23 @@ let siteData = {
             }          
         },
         {
-            "name":"mail-alt",
-            "url":"mailto:me@lucacarrozzo.com",
+            "name":"github-circled",
+            "url":"https://github.com/carrozzo-lc",
             "className":"icon icon-mail",
             "animationTiming": {
                 "enter": 160,
                 "exit": 300
             }          
-        }
+        },
+        // {
+        //     "name":"mail-alt",
+        //     "url":"mailto:me@lucacarrozzo.com",
+        //     "className":"icon icon-mail",
+        //     "animationTiming": {
+        //         "enter": 160,
+        //         "exit": 300
+        //     }          
+        // }        
     ],
     "about": {
         "title": "About",
@@ -158,7 +167,12 @@ let siteData = {
                 "name":"linkedin",
                 "url":"https://www.linkedin.com/in/lucacarrozzowebdesigner/?locale=en_US",
                 "iconClass":"icon icon-linkedin"         
-            }
+            },
+            {
+                "name":"github",
+                "url":"https://github.com/carrozzo-lc",
+                "iconClass":"icon icon-github-circled"         
+            }            
         ]
     }
 }
