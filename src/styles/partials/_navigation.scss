@@ -93,6 +93,11 @@
                     width:16px;
                     height:18px;
                 }
+                &-github-circled:before {
+                    @include rem(font-size, 18px);
+                    width:18px;
+                    height:19px;
+                }                
                 &-mail-alt:before {
                     @include rem(font-size, 15px);
                     width:15px;

@@ -342,6 +342,18 @@
         @include media-breakpoint-down(sm) {
             @include rem(font-size, 32px);
         }
+        &-github-circled {
+            @include rem(font-size, 36px);
+            @include media-breakpoint-down(xl){
+                @include rem(font-size, 34px);
+            }
+            @include media-breakpoint-down(lg){
+                @include rem(font-size, 30px);
+            }
+            @include media-breakpoint-down(sm) {
+                @include rem(font-size, 34px);
+            }
+        }           
 
         &:before {
             margin:0;
@@ -361,6 +373,16 @@
             width:28px;
             height:34px;
         }
+        &-github-circled:before {
+            width:36px;
+            height:38px;
+            @include media-breakpoint-down(lg){
+                height:34px;
+            }
+            @include media-breakpoint-down(sm) {
+                height:38px;
+            }                      
+        }        
     }
 }//.btn-social
 
