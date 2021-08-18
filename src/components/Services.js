@@ -29,7 +29,14 @@ const Services = props => {
                     {servicesList.map((service, index) => (
                         <div className="column col-sm-12 col-md-4" key={index}>
                             <div className="service">
-                                <div className={"service__icon " + service.icon}></div>                    
+                              { service.icon2 ?
+                                <div className="service__icon-box">
+                                    <div className={"service__icon " + service.icon2}></div>
+                                    <div className={"service__icon " + service.icon}></div>  
+                                </div>
+                                :
+                                <div className={"service__icon " + service.icon}></div>
+                              }              
                                 <h3 className="service__title">
                                     {service.title}
                                 </h3>
@@ -50,7 +57,14 @@ const Services = props => {
                     {servicesList.map((service, index) => (
                         <SwiperSlide key={index}>
                             <div className="service">
+                              { service.icon2 ?
+                                <div className="service__icon-box">
+                                    <div className={"service__icon " + service.icon2}></div>
+                                    <div className={"service__icon " + service.icon}></div>  
+                                </div>
+                                :
                                 <div className={"service__icon " + service.icon}></div>
+                              }   
                                 <h3 className="service__title">
                                     {service.title}
                                 </h3>
