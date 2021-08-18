@@ -59,20 +59,38 @@
 
 .service {
     text-align: center;
+    &__icon-box {
+        display: flex;
+        justify-content: center;
+        & .service__icon:before {
+          margin-left:1px;
+          margin-right:1px;
+        }
+    }
     &__icon {
-        @include rem(font-size, 48px)
-        @include rem(margin-bottom, 12px)
+        @include rem(font-size, 48px);
+        @include rem(margin-bottom, 12px);
         line-height:1;
-
         @include media-breakpoint-down(xl){
-            @include rem(font-size, 42px)
+            @include rem(font-size, 42px);
         }
         @include media-breakpoint-down(sm){
-            @include rem(font-size, 48px)
+            @include rem(font-size, 48px);
+        }
+        &.icon-wordpress {
+          @include rem(font-size, 42px);
+          margin-top:5px;
+          @include media-breakpoint-down(xl){
+              @include rem(font-size, 38px);
+              margin-top:5px;
+          }
+          @include media-breakpoint-down(sm){
+              @include rem(font-size, 42px);
+          }          
         }
     }
     &__title {
-        @include rem(font-size, 21px)
+        @include rem(font-size, 21px);
         position:relative;
         &:after {
             content:"";
@@ -92,15 +110,15 @@
         }
     }
     &__desc {
-        @include rem(font-size, 18px)
+        @include rem(font-size, 18px);
         @include media-breakpoint-down(xl){
-            @include rem(font-size, 16px)
+            @include rem(font-size, 16px);
         }
         @include media-breakpoint-down(lg){
             @include rem(font-size, 16px)
         }
         @include media-breakpoint-down(sm){
-            @include rem(font-size, 18px)
+            @include rem(font-size, 18px);
             width: 75%;
             margin:0 auto;
         }

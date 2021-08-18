@@ -8,8 +8,8 @@ let siteData = {
     "email": "me@lucacarrozzo.com",
     "phoneNumber": "+39 320 74 55 658",
     "phoneNumberTitle": "Phone Luca Carrozzo",
-    "brandTitle": "Luca Carrozzo - Front End Developer | Portfolio website",
-    "roleDescription": "Web Designer / Front-End Developer, constantly updating on new industry specifications and trends.",
+    "brandTitle": "Luca Carrozzo - UI/UX Designer & Front-End Developer | Portfolio",
+    "roleDescription": "UI/UX Designer & Front-End Developer, constantly updating on new industry specifications and trends.",
     "socialLinks":[
         {
             "name":"twitter",
@@ -76,7 +76,7 @@ let siteData = {
             "skill05": {
                 "id": 14,
                 "percentage": 0,  
-                "skillTitle":'Web Design'
+                "skillTitle":'UI/UX Design'
             }
         }
     },
@@ -90,12 +90,13 @@ let siteData = {
             }, 
             {
                 "icon": 'icon-desktop',
-                "title": 'Web Design',
+                "title": 'UI/UX Design',
                 "description": 'Every projects that I worked on are developed with passion to look and perform beautifully on every device. I can design web elements and layouts following the latest techniques and trends.'
             }, 
             {
                 "icon": 'icon-wordpress',
-                "title": 'Shopify and WordPress Devs',
+                "icon2": 'icon-shopify_glyph_black',
+                "title": 'Shopify & WordPress',
                 "description": 'I develop Shopify and WordPress sites from scratch with best practices and clean code, assuring that your website is fast, safe and secure.'        
             }
         ]
