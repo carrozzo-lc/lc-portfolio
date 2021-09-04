@@ -114,14 +114,14 @@ let siteData = {
             {
                 "portfolio_color": "#0099A6",
                 "portfolio_title": "True Protein",
-                "portfolio_desc": "I collaborated with the dev team to refactor and move the company e-commerce website from a cms platform to Shopify. I worked on developing a custom Shopify theme, coding Html, Css styles using sass and Javascript to be in line with the new platform.",
+                "portfolio_desc": "I collaborated with the dev team to refactor and migrate the company e-commerce website.",
                 "portfolio_link": "https://www.trueprotein.com.au/",
                 "portfolio_img": "/assets/images/portfolio-trueprotein.jpg"
             },    
             {
                 "portfolio_color": "#1A9958",
                 "portfolio_title": "Hoselink",
-                "portfolio_desc": "I collaborated with the dev team to build a design system for the refactoring of the company e-commerce site, separating the main elements of the site in reusable and maintainable patterns and I worked on developing a custom Shopify theme, coding Html, Css styles using sass and Javascript to be in line with the new platform.",
+                "portfolio_desc": "I collaborated with the dev team to build a design system, refactor and migrate the company e-commerce website.",
                 "portfolio_link": "https://www.hoselink.com.au/",
                 "portfolio_img": "/assets/images/portfolio-hoselink.jpg"
             }, 
@@ -136,7 +136,7 @@ let siteData = {
                 "portfolio_color": "#E75200",
                 "portfolio_title": "Iaki",
                 //"portfolio_desc": "I collaborated in the development team on various projects, including:<br>- Website development <a style=\"color:black;\" href=\"https://www.tupassi.it\" target=\"_blank\">Tupassi</a>;<br>- Bug-fixing front-end <a style=\"color:black;\" href=\"https://www.bormiolirocco.com/it/tableware/\" target=\"_blank\">Bormiolirocco</a>;<br>- Development team on front-end mobile app <a style=\"color:black;\" href=\"https://play.google.com/store/apps/details?id=it.illibraio.illibraioipad\" target=\"_blank\">Il Libraio</a>;<br>- Front-end development restyling <a style=\"color:black;\" href=\"http://www.iaki.it\" target=\"_blank\">agency site</a>.",
-                "portfolio_desc": "I collaborated in the development team on various projects, including:<br>- Website development <a style=\"color:black;\" href=\"https://www.tupassi.it\" target=\"_blank\">Tupassi</a>;<br>- Front-end development restyling <a style=\"color:black;\" href=\"http://www.iaki.it\" target=\"_blank\">agency site</a>.",
+                "portfolio_desc": "I collaborated in the agency development team on various projects, including:<br>- Website development <a style=\"color:black;\" href=\"https://www.tupassi.it\" target=\"_blank\">Tupassi</a>;<br>- Front-end development restyling <a style=\"color:black;\" href=\"http://www.iaki.it\" target=\"_blank\">agency site</a>.",
                 "portfolio_link": "https://www.iaki.it/",
                 "portfolio_img": "/assets/images/portfolio-iaki.jpg"        
             },
