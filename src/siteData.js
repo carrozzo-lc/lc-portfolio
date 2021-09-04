@@ -8,7 +8,7 @@ let siteData = {
     "email": "me@lucacarrozzo.com",
     "phoneNumber": "+39 320 74 55 658",
     "phoneNumberTitle": "Phone Luca Carrozzo",
-    "brandTitle": "Luca Carrozzo - UI/UX Designer & Front-End Developer | Portfolio",
+    "brandTitle": "Luca Carrozzo - UI/UX Designer & Front-End Developer | Website",
     "roleDescription": "UI/UX Designer & Front-End Developer, constantly updating on new industry specifications and trends.",
     "socialLinks":[
         {
@@ -51,7 +51,7 @@ let siteData = {
     "about": {
         "title": "About",
         "shortDesc": "I am Luca Carrozzo, a Front-End Developer based in Italy. I am primarily focused on website and interface development for web applications but I love taking on any good front end dev challenge.",
-        "fullDesc": "I have 6 years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, and JavaScript. Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements.<span></span>Continued education allows me to stay ahead of the curve and deliver exceptional work to each employer I’ve worked for - both full-time and contract.",
+        "fullDesc": "I have 8 years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, and JavaScript. Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements.<span></span>Continued education allows me to stay ahead of the curve and deliver exceptional work to each employer I’ve worked for - both full-time and contract.",
         "skills": {
             "skill01": {
                 "id": 10,
@@ -102,19 +102,26 @@ let siteData = {
         ]
     },
     "portfolio": {
-        "title": "Portfolio",
+        "title": "Experience",
         "list": [
+            {
+                "portfolio_color": "#03506B",
+                "portfolio_title": "GAMS",
+                "portfolio_desc": "I'm collaborating with the team to improve the UI/UX and front-end interface of the web application.",
+                "portfolio_link": "https://gamsplatform.com/",
+                "portfolio_img": "/assets/images/portfolio-gams.jpg"
+            },        
             {
                 "portfolio_color": "#0099A6",
                 "portfolio_title": "True Protein",
-                "portfolio_desc": "I collaborated with the dev team to refactor and move the company e-commerce website from a cms platform to Shopify. I worked on developing a custom Shopify theme from scratch, moving all Html code into liquid, rewrote all styles using sass and all Javascript code to be in line with the new platform.",
+                "portfolio_desc": "I collaborated with the dev team to refactor and move the company e-commerce website from a cms platform to Shopify. I worked on developing a custom Shopify theme, coding Html, Css styles using sass and Javascript to be in line with the new platform.",
                 "portfolio_link": "https://www.trueprotein.com.au/",
                 "portfolio_img": "/assets/images/portfolio-trueprotein.jpg"
             },    
             {
                 "portfolio_color": "#1A9958",
                 "portfolio_title": "Hoselink",
-                "portfolio_desc": "I collaborated with the dev team to build a design system for the refactoring of the company e-commerce site, separating the main elements of the site in reusable and maintainable patterns and I improved the development workflow with a new solid and clean code structure, connecting all processes through a repository.",
+                "portfolio_desc": "I collaborated with the dev team to build a design system for the refactoring of the company e-commerce site, separating the main elements of the site in reusable and maintainable patterns and I worked on developing a custom Shopify theme, coding Html, Css styles using sass and Javascript to be in line with the new platform.",
                 "portfolio_link": "https://www.hoselink.com.au/",
                 "portfolio_img": "/assets/images/portfolio-hoselink.jpg"
             }, 
