@@ -2,14 +2,14 @@ let siteData = {
     "siteUrl": "https://www.lucacarrozzo.com",
     "logo": "/assets/images/lucacarrozzo-logo.svg",
     "name": "Luca Carrozzo",
-    "role": "Front End Developer",
-    "linkedin":"https://www.linkedin.com/in/lucacarrozzowebdesigner/?locale=en_US",
+    "role": "UI/UX & Front End Developer",
+    "linkedin":"https://www.linkedin.com/in/lucacarrozzo/?locale=en_US",
     "twitter": "https://twitter.com/carrozzo_lc",
     "email": "me@lucacarrozzo.com",
     "phoneNumber": "+39 320 74 55 658",
     "phoneNumberTitle": "Phone Luca Carrozzo",
     "brandTitle": "Luca Carrozzo - UI/UX Designer & Front-End Developer | Website",
-    "roleDescription": "UI/UX Designer & Front-End Developer, constantly updating on new industry specifications and trends.",
+    "roleDescription": "I’m a Front-End Designer and Developer with a focus on UI, UX.",
     "socialLinks":[
         {
             "name":"twitter",
@@ -22,7 +22,7 @@ let siteData = {
         },
         {
             "name":"linkedin",
-            "url":"https://www.linkedin.com/in/lucacarrozzowebdesigner/?locale=en_US",
+            "url":"https://www.linkedin.com/in/lucacarrozzo/?locale=en_US",
             "className":"icon icon-linkedin",
             "animationTiming": {
                 "enter": 80,
@@ -50,7 +50,7 @@ let siteData = {
     ],
     "about": {
         "title": "About",
-        "shortDesc": "I am Luca Carrozzo, a Front-End Developer based in Italy. I am primarily focused on website and interface development for web applications but I love taking on any good front end dev challenge.",
+        "shortDesc": "I am Luca Carrozzo, a UI/UX & Front-End Developer based in Italy. I am primarily focused on website and interface development for web applications but I love taking on any good front end dev challenge.",
         "fullDesc": "I have 8 years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, and JavaScript. Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine. I actively seek out new technologies and stay up-to-date on industry trends and advancements.<span></span>Continued education allows me to stay ahead of the curve and deliver exceptional work to each employer I’ve worked for - both full-time and contract.",
         "skills": {
             "skill01": {
@@ -107,7 +107,7 @@ let siteData = {
             {
                 "portfolio_color": "#03506B",
                 "portfolio_title": "GAMS",
-                "portfolio_desc": "I'm collaborating with the team to improve the UI/UX and front-end interface of the web application.",
+                "portfolio_desc": "As a UI/UX & Front-end Developer, I built various prototypes and reusable app components for this new EdTech platform.<ul> <li>Created graphic wireframes and mockups for new features;</li><li>Developed new user-facing features using React.js and GraphQl;</li><li>Built reusable components for future use.</li></ul>",
                 "portfolio_link": "https://gamsplatform.com/",
                 "portfolio_img": "/assets/images/portfolio-gams.jpg"
             },        
@@ -173,7 +173,7 @@ let siteData = {
             },
             {
                 "name":"linkedin",
-                "url":"https://www.linkedin.com/in/lucacarrozzowebdesigner/?locale=en_US",
+                "url":"https://www.linkedin.com/in/lucacarrozzo/?locale=en_US",
                 "iconClass":"icon icon-linkedin"         
             },
             {
