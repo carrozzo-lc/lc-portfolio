@@ -35,7 +35,7 @@ const About = props => {
                 },
                 skill03: {
                     ...skills.skill03,
-                    percentage: 88
+                    percentage: 90
                 },
                 skill04: {
                     ...skills.skill04,
