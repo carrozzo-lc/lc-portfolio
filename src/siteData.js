@@ -105,6 +105,13 @@ let siteData = {
         "title": "Experience",
         "list": [
             {
+                "portfolio_color": "#3961B3",
+                "portfolio_title": "Pemcards",
+                "portfolio_desc": "As a UI/UX and Front-end Developer, I developed prototypes and reusable components for various digital products.<ul> <li>I designed wireframes UX and mockups UI for new features;</li><li>I refactored the front-end of a widget with Vanilla JS and REST APIs;</li><li>I worked on the front-end of a dashboard platform using React;</li></ul>",
+                "portfolio_link": "https://pemcardsbusiness.com/",
+                "portfolio_img": "/assets/images/portfolio-pem.jpg"
+            },        
+            {
                 "portfolio_color": "#03506B",
                 "portfolio_title": "GAMS",
                 "portfolio_desc": "As a UI/UX & Front-end Developer, I built various prototypes and reusable app components for this new EdTech platform.<ul> <li>Created graphic wireframes and mockups for new features;</li><li>Developed new user-facing features using React.js and GraphQl;</li><li>Built reusable components for future use.</li></ul>",
