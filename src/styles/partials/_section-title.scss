@@ -9,7 +9,7 @@
     z-index: 1;
     position:relative;
     margin:0 auto;
-    @include rem(margin-bottom, 70px)
+    @include rem(margin-bottom, 70px);
 
     @include media-breakpoint-down(xl){
         width:276px;
@@ -30,7 +30,7 @@
 
     h2 {
         z-index: 10;
-        @include rem(font-size, 38px)
+        @include rem(font-size, 38px);
         text-align: center;
         line-height: 1;
 
@@ -45,7 +45,7 @@
             @include rem(font-size, 26px)
         }
         @include media-breakpoint-down(xs){
-            @include rem(font-size, 36px)
+            @include rem(font-size, 36px);
             bottom:-3px;
         }
     }
