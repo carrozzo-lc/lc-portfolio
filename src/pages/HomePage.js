@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 // data
 import siteData from '../siteData';
+// styles
+import '../styles/main.scss';
 // hooks
 import { BreakpointProvider } from '../shared/breakpoint';
 // components

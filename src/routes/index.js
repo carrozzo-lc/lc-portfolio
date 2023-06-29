@@ -25,7 +25,7 @@ export default function Router() {
       children: [
         { element: <Navigate to={'/mentorship'} replace /> },      
         { element: <GeneralPage />, index: true },
-        { path: 'carrers', element: '<CarrerPage />' },
+        { path: 'career', element: '<CarrerPage />' },
         { path: 'entrepeneur', element: '<EntrepeneurPage />' },
       ],
     },    
