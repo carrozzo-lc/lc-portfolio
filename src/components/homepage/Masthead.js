@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useBreakpoint } from '../shared/breakpoint';
+import { useBreakpoint } from '../../shared/breakpoint';
 import { scroller } from "react-scroll";
 
 const Masthead = props => {
