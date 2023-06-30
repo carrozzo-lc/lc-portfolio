@@ -6,6 +6,7 @@ import '../../themes/styles.css';
 import { Box } from '@chakra-ui/react';
 // components
 import Header from './Header';
+import Footer from './Footer';
 
 // ----------------------------------------------------------------------
 
@@ -14,7 +15,8 @@ export default function MentorshipLayout() {
     <ChakraProvider theme={theme} resetCss={false}>
       <Box bg='brand.50' color='white'>
         <Header />
-        <Outlet />    
+        <Outlet />
+        <Footer />   
       </Box>
     </ChakraProvider>
   );
