@@ -1,6 +1,13 @@
 import { extendTheme, theme as base } from "@chakra-ui/react";
 
 const theme = extendTheme({
+	styles: {
+		global: () => ({
+			body: {
+				bg: '#F5FAFF',
+			}
+		})
+	},
   fonts: {
     headings: `Inter, ${base.fonts?.heading}`,
     body: `Inter, ${base.fonts?.body}`

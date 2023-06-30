@@ -1,18 +1,21 @@
 import { Outlet } from 'react-router-dom';
+// chakra
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../../themes';
 import '../../themes/styles.css';
-//components
+import { Box } from '@chakra-ui/react';
+// components
 import Header from './Header';
 
 // ----------------------------------------------------------------------
 
 export default function MentorshipLayout() {
-
   return (
-    <ChakraProvider theme={theme}>
-      <Header />
-      <Outlet />
+    <ChakraProvider theme={theme} resetCss={false}>
+      <Box bg='brand.50' color='white'>
+        <Header />
+        <Outlet />    
+      </Box>
     </ChakraProvider>
   );
 }
