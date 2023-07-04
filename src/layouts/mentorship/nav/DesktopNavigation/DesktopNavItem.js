@@ -1,4 +1,5 @@
 import { Link as RouteLink } from "react-router-dom";
+import PropTypes from 'prop-types';
 // chakra
 import { Box, Link } from '@chakra-ui/react';
 // hooks
@@ -8,7 +9,7 @@ import useActiveLink from '../../../../hooks/useActiveLink';
 
 const DesktopNavItem = ({ navItem }) => {
   const linkColor = 'white';
-  const linkHoverColor = 'brand.50';  
+  const linkHoverColor = 'brand.100';  
 
   const { active } = useActiveLink(navItem.href);
   
@@ -26,8 +27,12 @@ const DesktopNavItem = ({ navItem }) => {
         }}>
         {navItem.label}
       </Link>
-    </Box>  
+    </Box>
   );
 }
+
+DesktopNavItem.propTypes = {
+  navItem: PropTypes.object,
+};
 
 export default DesktopNavItem;

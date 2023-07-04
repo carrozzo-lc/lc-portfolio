@@ -1,8 +1,9 @@
 import { Helmet } from 'react-helmet-async';
+import PropTypes from 'prop-types';
 
 // ----------------------------------------------------------------------
 
-export default function SEO({ title, description, name, type, siteName, url, image }) {
+const Seo = ({ title, description, name, type, siteName, url, image }) => {
   return (
     <Helmet>
       { /* Standard metadata tags */}
@@ -28,3 +29,15 @@ export default function SEO({ title, description, name, type, siteName, url, ima
     </Helmet>
   )
 }
+
+Seo.propTypes = {
+  title: PropTypes.string, 
+  description: PropTypes.string, 
+  name: PropTypes.string, 
+  type: PropTypes.string, 
+  siteName: PropTypes.string, 
+  url: PropTypes.string, 
+  image: PropTypes.string,
+};
+
+export default Seo;

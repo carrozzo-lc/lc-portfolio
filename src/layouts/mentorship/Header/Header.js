@@ -1,3 +1,4 @@
+import { Link as RouteLink } from "react-router-dom";
 // chakra
 import {
   Flex,
@@ -35,7 +36,8 @@ const Header = () => {
 
         <Flex flex={{ base: 1 }} justify={{ base: 'start', md: 'start' }}>
           <Heading
-            as="h1"
+            as={RouteLink}
+            to="/mentorship"
             size={{ base: 'md', lg: 'lg' }}
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
