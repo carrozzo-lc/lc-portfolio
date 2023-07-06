@@ -1,13 +1,6 @@
+import { useLocation } from 'react-router-dom';
 // chakra
-import {
-  Box,
-  Heading,
-  HStack,
-  Button,
-  Circle,
-  Icon,
-  Link
-} from '@chakra-ui/react';
+import { Box, Heading, HStack, Button, Circle, Icon, Link } from '@chakra-ui/react';
 // icons
 import { EmailIcon } from '@chakra-ui/icons';
 import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa6";
@@ -17,15 +10,18 @@ import MentorBlock from '../../../components/common/MentorBlock/MentorBlock';
 // ----------------------------------------------------------------------
 
 const Footer = () => {
+  const { pathname } = useLocation();
+
   return(
     <Box 
       bg="brand.900" 
       pb={12} 
-      px="24px" 
+      px="24px"
+      pt={pathname !== '/mentorship' ? 46 : 0}
     >
-      <Box position="relative" top="-50px" >
+      <Box position="relative" top={pathname === '/mentorship' ? '-50px' : null} >
 
-        <MentorBlock />
+        {pathname === '/mentorship' && <MentorBlock />}
 
         <Box color="white" textAlign="center">
           <Heading 
@@ -33,7 +29,7 @@ const Footer = () => {
             size="lg" 
             maxWidth={600} 
             margin="auto"
-            pt={46} 
+            pt={pathname === '/mentorship' ? 46 : 0} 
           >
             Need freelance help for your product idea? Let's connect and make it happen!
           </Heading>
@@ -45,13 +41,13 @@ const Footer = () => {
             align='center'
             justifyContent={'center'}
           >
-            <Circle w='50px' h='50px' border='2px' borderColor='white' as={Link} href="#" target="_blank" isExternal>
+            <Circle w='50px' h='50px' border='2px' borderColor='white' as={Link} href="https://www.linkedin.com/in/lucacarrozzo/?locale=en_US" target="_blank" isExternal>
               <Icon as={FaLinkedinIn} />
             </Circle>
-            <Circle w='50px' h='50px' border='2px' borderColor='white' as={Link} href="#" target="_blank" isExternal>
+            <Circle w='50px' h='50px' border='2px' borderColor='white' as={Link} href="https://twitter.com/carrozzo_lc" target="_blank" isExternal>
               <Icon as={FaTwitter} />
             </Circle>
-            <Circle w='50px' h='50px' border='2px' borderColor='white' as={Link} href="#" target="_blank" isExternal>
+            <Circle w='50px' h='50px' border='2px' borderColor='white' as={Link} href="https://github.com/carrozzo-lc" target="_blank" isExternal>
               <Icon as={FaGithub} />
             </Circle>
           </HStack>

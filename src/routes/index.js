@@ -4,9 +4,11 @@ import DefaultLayout from '../layouts/default';
 import MentorshipLayout from '../layouts/mentorship';
 //
 import {
-  // Page404,
+  Page404,
   HomePage,
-  GeneralPage
+  GeneralPage,
+  CareerPage,
+  EntrepeneurPage
 } from './elements';
 
 // ----------------------------------------------------------------------
@@ -25,14 +27,14 @@ export default function Router() {
       children: [
         { element: <Navigate to={'/mentorship'} replace /> },      
         { element: <GeneralPage />, index: true },
-        { path: 'career', element: '<CarrerPage />' },
-        { path: 'entrepeneur', element: '<EntrepeneurPage />' },
+        { path: 'career', element: <CareerPage /> },
+        { path: 'entrepeneur', element: <EntrepeneurPage /> },
       ],
     },    
     {
       element: <DefaultLayout />,
       children: [
-        { path: '404', element: '<Page404 />' },
+        { path: '404', element: <Page404 /> },
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },

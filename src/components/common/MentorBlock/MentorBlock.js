@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import { Link as RouteLink } from "react-router-dom";
 // chakra
 import { Image, Container, Heading, Button, Stack, Text, Box, VStack, Flex, Icon, Link } from '@chakra-ui/react';

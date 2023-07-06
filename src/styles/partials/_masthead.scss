@@ -130,7 +130,7 @@
         }
         @include media-breakpoint-down(xs) {
             @include rem(font-size, 44px);
-            @include rem(margin-bottom, 1px)
+            //@include rem(margin-bottom, 3px)
         }
 
     }
@@ -149,7 +149,7 @@
         }
         @include media-breakpoint-down(xs) {
             @include rem(font-size, 23px);
-            @include rem(margin-bottom, 8px)
+            @include rem(margin-bottom, 12px)
         }
     }
 
