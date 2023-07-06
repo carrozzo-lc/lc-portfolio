@@ -16,7 +16,7 @@ const Footer = () => {
     <Box 
       bg="brand.900" 
       pb={12} 
-      px="24px"
+      px={{ base: '12px', md: '24px' }}
       pt={pathname !== '/mentorship' ? 46 : 0}
     >
       <Box position="relative" top={pathname === '/mentorship' ? '-50px' : null} >

@@ -99,7 +99,7 @@ const MentorBlock = () => {
   return (
     <Container 
       maxW={'990px'} 
-      px={{ base: '24px' }}
+      px={{ base: '12px', md: '24px' }}
       py={{ base: '36px', sm: '48px' }}
       bg="white"
       color="gray.700"
