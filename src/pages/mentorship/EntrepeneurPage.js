@@ -51,7 +51,6 @@ const EntrepeneurPage = () => {
           size="lg"
           href="https://calendly.com/me-lc/mentorship-first-free-session"
           width="100%"
-          target="_blank"
           mt={6}
           mb={8}
           isExternal
