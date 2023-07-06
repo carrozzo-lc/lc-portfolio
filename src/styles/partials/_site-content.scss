@@ -3,10 +3,10 @@
 // -----------------------------
 
 section {
-    @include rem(margin-bottom, 140px)
+    @include rem(margin-bottom, 140px);
 
     @include media-breakpoint-down(xl){
-        @include rem(margin-bottom, 120px)
+        @include rem(margin-bottom, 120px);
     }
     @include media-breakpoint-down(lg){
         @include rem(margin-bottom, 80px)

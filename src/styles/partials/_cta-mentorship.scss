@@ -1,0 +1,44 @@
+// -----------------------------
+// CTA Mentorship
+// -----------------------------
+
+.cta-mentorship {
+  display: block;
+  background-color: #fff;
+  border: solid 2px $body-color;
+  color: $body-color;
+  border-radius: 6px;
+  @include rem(padding, 14px 21px 18px 21px);
+  @include rem(margin-top, 21px);
+
+  @include media-breakpoint-down(xs) {
+    @include rem(margin-top, 15px);
+  }  
+
+  &:hover {
+    background-color: $body-color;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__title {
+    @include rem(font-size, 22px);
+
+    @include media-breakpoint-down(xs) {
+      @include rem(font-size, 19px);
+    }     
+  }
+  &__description {
+    @include rem(font-size, 18px);
+    margin: 0;
+    line-height: 1.4;
+
+    @include media-breakpoint-down(xs) {
+      @include rem(font-size, 16px);
+    }     
+
+    strong {
+      text-decoration: underline;
+    }
+  }  
+}//.cta-mentorship
