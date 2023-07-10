@@ -12,7 +12,7 @@ const dataObj = {
     title: "Luca Carrozzo",
     subtitle: "UI/UX & Front End Developer",
     textBtn: "Let’s chat",
-    linkBtn: "#"
+    linkBtn: "https://calendly.com/me-lc/mentorship-first-free-session"
   },
   about: {
     title: "About me",
@@ -138,9 +138,8 @@ const MentorBlock = () => {
             as={Link} 
             colorScheme="orange" 
             size="sm"
-            href="https://calendly.com/me-lc/mentorship-first-free-session"
+            href={dataObj.intro.linkBtn}
             width="100%"
-            target="_blank"
             isExternal
           >
             {dataObj.intro.textBtn}
