@@ -63,7 +63,7 @@ const Masthead = props => {
               <p className="intro__desc">
                 {propsData.roleDescription}
               </p>
-              <a className="cta-mentorship" href="/mentorship">
+              <a className="cta-mentorship" href="https://mentorshipbyluca.com" rel="noopener noreferrer">
                 <h3 className="cta-mentorship__title">Mentorship Program</h3>
                 <p className="cta-mentorship__description">I also offer personalized mentorship to take your skills to the next level. Experience expert guidance and support tailored to your goals. <strong>Learn more</strong></p>
               </a>
