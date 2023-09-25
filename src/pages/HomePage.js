@@ -13,7 +13,6 @@ import Services from '../components/homepage/Services';
 import Portfolio from '../components/homepage/Portfolio';
 import Footer from '../components/homepage/Footer';
 import ScrollToTopBtn from "../components/homepage/ScrollToTop";
-import Seo from '../components/common/Seo';
 
 // ----------------------------------------------------------------------
 
@@ -32,15 +31,6 @@ const Home = () => {
 
   return (
     <BreakpointProvider queries={queries}>
-      <Seo 
-        title="Luca Carrozzo - UI/UX & Front-End Developer | Website"
-        description="I’m a Front-End Designer and Developer with a focus on UI, UX."
-        type="website"
-        name="@carrozzo_lc"
-        url="https://www.lucacarrozzo.com"
-        siteName="Luca Carrozzo Portfolio Website"
-        image="/assets/images/social-img.jpg"
-      />
       <main className="App">
         <Header contentData={siteDataState} />
         <Masthead contentData={siteDataState} />
