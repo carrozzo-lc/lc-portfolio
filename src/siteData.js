@@ -153,7 +153,7 @@ let siteData = {
                 "portfolio_desc": "It's my blog :-) It's all about new tricks, plugins and features of WordPress. I designed all graphic elements and developed a design system to organise all components of the site. Then I built the blog using WordPress developing a custom theme from scratch.",
                 "portfolio_link": "http://www.wpfriendly.it/",
                 "portfolio_img": "/assets/images/portfolio-blog.jpg"         
-            },
+            }
             // {
             //     "portfolio_color": "#4EB8DB",
             //     "portfolio_title": "TouranGo",
@@ -161,13 +161,13 @@ let siteData = {
             //     "portfolio_link": "http://www.tourango.it/",
             //     "portfolio_img": "/assets/images/portfolio-tourango.jpg"         
             // },
-            {
-                "portfolio_color": "#D45819",
-                "portfolio_title": "Antonio Amato Ensemble",
-                "portfolio_desc": "I designed the layout choosing colors, typography and site structure. Then I built a Wordpress site developing from scratch following the specifics request of my client.",
-                "portfolio_link": "http://www.antonioamatoensemble.it/",
-                "portfolio_img": "/assets/images/portfolio-antonio-amato-ensemble.jpg"
-            }               
+            // {
+            //     "portfolio_color": "#D45819",
+            //     "portfolio_title": "Antonio Amato Ensemble",
+            //     "portfolio_desc": "I designed the layout choosing colors, typography and site structure. Then I built a Wordpress site developing from scratch following the specifics request of my client.",
+            //     "portfolio_link": "http://www.antonioamatoensemble.it/",
+            //     "portfolio_img": "/assets/images/portfolio-antonio-amato-ensemble.jpg"
+            // }               
         ]
     },
     "footer": {
