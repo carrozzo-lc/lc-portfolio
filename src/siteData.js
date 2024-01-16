@@ -151,7 +151,7 @@ let siteData = {
                 "portfolio_color": "#305E95",
                 "portfolio_title": "Wpfriendly",
                 "portfolio_desc": "It's my blog :-) It's all about new tricks, plugins and features of WordPress. I designed all graphic elements and developed a design system to organise all components of the site. Then I built the blog using WordPress developing a custom theme from scratch.",
-                "portfolio_link": "http://www.wpfriendly.it/",
+                "portfolio_link": "http://weeeb.altervista.org/",
                 "portfolio_img": "/assets/images/portfolio-blog.jpg"         
             }
             // {
