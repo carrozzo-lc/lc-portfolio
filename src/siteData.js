@@ -105,6 +105,13 @@ let siteData = {
         "title": "Experience",
         "list": [
             {
+                "portfolio_color": "#170bfa",
+                "portfolio_title": "BeSafe Group",
+                "portfolio_desc": "As a Front-end Developer with a solid grasp in UI/UX, I've been involved in creating prototypes and developing versatile components for diverse digital products.",
+                "portfolio_link": "https://besafesuite.com",
+                "portfolio_img": "/assets/images/portfolio-besafegroup.jpg"
+            },        
+            {
                 "portfolio_color": "#3961B3",
                 "portfolio_title": "Pemcards",
                 "portfolio_desc": "As a UI/UX and Front-end Developer, I developed prototypes and reusable components for various digital products.<ul> <li>I designed wireframes UX and mockups UI for new features;</li><li>I refactored the front-end of a widget with Vanilla JS and REST APIs;</li><li>I worked on the front-end of a dashboard platform using React;</li></ul>",
