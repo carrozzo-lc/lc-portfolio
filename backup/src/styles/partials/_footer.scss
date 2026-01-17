@@ -1,0 +1,92 @@
+// -----------------------------
+// Footer
+// -----------------------------
+
+.site-footer {
+    @include rem(padding,0 60px);
+
+    @include media-breakpoint-down(xl){
+        @include rem(padding,0 40px)
+    }
+    @include media-breakpoint-down(lg){
+        @include rem(padding,0 30px)
+    }
+    @include media-breakpoint-down(sm){
+        @include rem(padding,0 15px)
+    }
+}//.site-header
+
+.footer-block {
+    background-color: $color-green-01;
+    color:$color-white-01;
+    text-align:center;
+    @include rem(padding-top,70px);
+    @include rem(padding-bottom,90px);
+    @include rem(padding-left,15px);
+    @include rem(padding-right,15px);
+
+    @include media-breakpoint-down(lg){
+        @include rem(padding-top,60px);
+        @include rem(padding-bottom,80px);
+    }
+    @include media-breakpoint-down(lg){
+        @include rem(padding-top,60px);
+        @include rem(padding-bottom,70px);
+    }
+    @include media-breakpoint-down(sm){
+        @include rem(padding-top,40px);
+        @include rem(padding-bottom,50px);
+    }
+
+    &__intro {
+        @include rem(font-size,42px);
+        font-weight: 500;
+        line-height: 1.2;
+        @include rem(margin-bottom,60px);
+
+        @include media-breakpoint-down(xl){
+            @include rem(font-size,39px);
+            @include rem(margin-bottom,55px)
+        }
+        @include media-breakpoint-down(lg){
+            @include rem(font-size,36px);
+            @include rem(margin-bottom,45px)
+        }
+        @include media-breakpoint-down(sm){
+            @include rem(font-size,32px);
+            @include rem(margin-bottom,35px)
+        }
+    }
+    &__contact {
+        @include rem(margin-bottom,60px);
+
+        @include media-breakpoint-down(xl){
+            @include rem(margin-bottom,55px);
+        }
+        @include media-breakpoint-down(lg){
+            @include rem(margin-bottom,45px)
+        }
+        @include media-breakpoint-down(sm){
+            @include rem(margin-bottom,35px)
+        }
+        .btn-fancy--footer{
+            @include rem(margin,0 20px);
+
+            @include media-breakpoint-down(sm){
+                @include rem(margin-bottom,20px);
+                &:last-child {
+                    margin-bottom:0;
+                }
+            }
+        }
+    }
+    &__social {}
+}
+
+.sub-footer {
+    @include rem(font-size,16px);
+    text-align: center;
+    font-weight:500;
+    @include rem(margin-bottom,50px);
+    @include rem(margin-top,2px)
+}
