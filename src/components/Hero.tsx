@@ -12,8 +12,8 @@ import lucaImage from '@/images/luca-image.png';
 
 const styles = {
   root: css({
-    height: { base: 'auto', md: '90vh' },
-    maxHeight: { base: 'none', sm: '570px', md: '630px', lg: 'none' },
+    height: { base: 'auto', sm: '100%', md: '76vh' },
+    maxHeight: { base: 'none', sm: 'none', md: '630px', lg: 'none' },
     borderBottom: `10px solid ${token('colors.gray.900')}`,
     backgroundColor: 'primary.500',
     backgroundImage: `
@@ -31,8 +31,6 @@ const styles = {
     root: css({
       height: '100%',
       px: { base: 4, sm: 6, lg: 8 },
-      pt: { base: 8, sm: 0 },
-      pb: { base: 10, sm: 0 },
       sm: {
         display: 'flex',
         flexDirection: 'column',
@@ -42,13 +40,17 @@ const styles = {
 
     inner: css({
       maxWidth: '7xl',
+      width: '100%',
       margin: 'auto',
       color: 'white',
-
+      py: { base: 10, sm: 12 },
       sm: {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
+        gap: 8,
+      },
+      md: {
         gap: 16,
       },
       '& > div': {
@@ -58,14 +60,15 @@ const styles = {
 
     eyebrow: css({
       fontSize: { base: 'xl', sm: '2xl' },
-      mb: { base: 2, lg: 7 },
+      lineHeight: 'tight',
+      mb: { base: 4, lg: 7 },
     }),
 
     title: css({
       fontSize: { base: '2.063rem', sm: '4xl', md: '2.625rem', lg: '3.125rem' },
       lineHeight: 'tight',
       fontWeight: 'medium',
-      mb: { base: 2, lg: 5 },
+      mb: { base: 4, lg: 5 },
       '& > br': {
         display: { base: 'none', sm: 'inline' },
       },

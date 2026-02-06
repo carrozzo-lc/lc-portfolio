@@ -30,6 +30,7 @@ export const styles = {
     transitionProperty: 'background-color',
     transitionDuration: '200ms',
     height: '100%',
+    color: 'white',
   }),
 
   overlay: css({

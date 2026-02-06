@@ -10,7 +10,7 @@ const styles = {
     display: { base: 'none', md: 'block' },
     '& ul': {
       display: 'flex',
-      gap: '9',
+      gap: { base: 9, lg: 16 },
       listStyle: 'none',
       margin: 0,
       padding: 0,
@@ -20,7 +20,7 @@ const styles = {
     textDecoration: 'none',
     color: 'white',
     fontWeight: '500',
-    fontSize: 'lg',
+    fontSize: { base: 'lg', lg: 'xl' },
     transitionProperty: 'color',
     transitionDuration: '200ms',
     _hover: {
