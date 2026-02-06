@@ -6,24 +6,22 @@ export const buttonStyles = cva({
   base: {
     position: 'relative',
     overflow: 'hidden',
-
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '2',
-
     fontWeight: '500',
     cursor: 'pointer',
-    borderRadius: 'full',
     lineHeight: 'none',
-
-    // testo sopra il background
-    zIndex: 0,
+    transition: 'border-color 200ms',
+    zIndex: 0, // testo sopra il background
+    transitionProperty: 'color, box-shadow, border, border-color',
+    transitionDuration: '100ms',
 
     '& span': {
       height: '4',
       verticalAlign: 'middle',
-      lineHeight: '1.1',
+      //lineHeight: 1,
     },
 
     // layer animato
@@ -32,22 +30,18 @@ export const buttonStyles = cva({
       position: 'absolute',
       inset: 0,
       backgroundColor: 'white',
-
       transform: 'translateX(-100%)',
       transitionProperty: 'transform',
       transitionDuration: '200ms',
       transitionTimingFunction: 'ease-out',
-
       zIndex: -1,
     },
-
-    transitionProperty: 'color, box-shadow',
-    transitionDuration: '100ms',
 
     _hover: {
       color: 'gray.950',
       boxShadow: 'lg',
-
+      borderColor: 'white',
+      transition: 'border-color 200ms',
       _before: {
         transform: 'translateX(0)',
       },
@@ -86,6 +80,8 @@ export const buttonStyles = cva({
       solid: {
         bg: 'gray.950',
         color: 'white',
+        borderWidth: '1px',
+        borderColor: 'gray.950',
       },
       outline: {
         bg: 'transparent',
@@ -112,6 +108,9 @@ export const buttonStyles = cva({
         pt: '2',
         pb: '2',
         fontSize: 'md',
+        '& span': {
+          lineHeight: '1.1',
+        },
       },
       lg: {
         px: '5',
@@ -132,11 +131,17 @@ export const buttonStyles = cva({
         },
       },
     },
+
+    radius: {
+      rounded: { borderRadius: 'xl' },
+      full: { borderRadius: 'full' },
+    },
   },
 
   defaultVariants: {
     visual: 'solid',
     size: 'lg',
     hover: 'on',
+    radius: 'rounded',
   },
 });

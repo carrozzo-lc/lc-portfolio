@@ -21,10 +21,11 @@ const Button = ({
   hover,
   visual,
   size,
+  radius,
   children,
   ...props
 }: ButtonProps) => {
-  const className = buttonStyles({ hover, visual, size });
+  const className = buttonStyles({ hover, visual, size, radius });
 
   if (as === 'a') {
     return (

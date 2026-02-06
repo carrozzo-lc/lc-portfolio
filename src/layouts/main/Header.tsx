@@ -1,6 +1,6 @@
 // components
-import NavPrimary from '@/layouts/main/nav/primary/NavPrimary';
-import NavSecondary from '@/layouts/main/nav/secondary/NavSecondary';
+import NavPrimary from '@/layouts/main/nav/NavPrimary';
+import NavSecondary from '@/layouts/main/nav/NavSecondary';
 
 // ----------------------------------------------------------------------
 

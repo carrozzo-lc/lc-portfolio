@@ -5,8 +5,8 @@ import Logo from '@/components/Logo';
 import NavList from '@/layouts/main/nav/NavList';
 import Button from '@/components/ui/Button';
 // config
-import navConfig from '../config-navigation';
-import NavMobile from '../NavMobile';
+import navConfig from './config-navigation';
+import NavMobile from './NavMobile';
 
 // ----------------------------------------------------------------------
 
@@ -58,6 +58,7 @@ const NavPrimary = () => {
         <Button
           visual="solid"
           size="sm"
+          radius="full"
           as="a"
           href="mailto:me@lucacarrozzo.com"
         >
