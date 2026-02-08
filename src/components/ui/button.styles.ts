@@ -125,6 +125,8 @@ export const buttonStyles = cva({
         _hover: {
           color: 'white',
           boxShadow: 'none',
+          borderWidth: '1px',
+          borderColor: 'black',
           _before: {
             transform: 'translateX(-100%)',
           },

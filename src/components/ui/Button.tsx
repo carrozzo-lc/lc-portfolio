@@ -1,4 +1,5 @@
 import { buttonStyles, ButtonVariants } from './button.styles';
+import { cx } from '@/styled-system/css';
 
 type CommonProps = ButtonVariants & {
   children: React.ReactNode;
@@ -23,14 +24,16 @@ const Button = ({
   size,
   radius,
   children,
+  className,
   ...props
 }: ButtonProps) => {
-  const className = buttonStyles({ hover, visual, size, radius });
+  const base = buttonStyles({ hover, visual, size, radius });
+  const merged = cx(base, className);
 
   if (as === 'a') {
     return (
       <a
-        className={className}
+        className={merged}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         <span>{children}</span>
@@ -41,7 +44,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={className}
+      className={merged}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       <span>{children}</span>

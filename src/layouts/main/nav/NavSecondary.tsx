@@ -5,6 +5,12 @@ import { css, cx } from '@/styled-system/css';
 import Logo from '@/components/Logo';
 // hooks
 import { useScrollRange } from '@/hooks/useScrollRange';
+// assets
+import logoImage from '@/images/logo2.svg';
+import Button from '@/components/ui/Button';
+import navConfig from './config-navigation';
+import Link from 'next/link';
+import NavMobile from './NavMobile';
 
 // ----------------------------------------------------------------------
 
@@ -12,17 +18,13 @@ const styles = {
   secondary: css({
     position: 'fixed',
     top: 0,
-    zIndex: 9,
+    zIndex: 10,
     width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingX: '16px',
-
+    px: '16px',
+    py: 2,
     transform: 'translateY(-100%)',
     opacity: 0,
     pointerEvents: 'none',
-
     transition: 'transform 200ms ease, opacity 200ms ease',
     willChange: 'transform',
   }),
@@ -33,19 +35,56 @@ const styles = {
     pointerEvents: 'auto',
   }),
 
+  root: css({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    maxW: '490px',
+    minHeight: '40px',
+    margin: 'auto',
+    backgroundColor: 'white',
+    borderRadius: 'full',
+    borderColor: 'black',
+    borderWidth: 1,
+    py: { base: '4px', sm: '1px' },
+    px: '2px',
+  }),
+
+  logo: css({
+    flexGrow: 0,
+    w: 5.5,
+    ml: 2,
+    '& img': { width: '34px' },
+  }),
+
   nav: css({
+    display: { base: 'none', sm: 'block' },
+    flexGrow: 1,
     '& ul': {
       display: 'flex',
-      gap: '24px',
+      justifyContent: 'flex-end',
+      gap: '19px',
       listStyle: 'none',
       margin: 0,
       padding: 0,
+      mr: 4,
+      pt: 0.5,
     },
-    '& a': {
+    '& li': {
+      lineHeight: 'none',
       textDecoration: 'none',
       color: 'inherit',
       fontWeight: '500',
+      transitionProperty: 'color',
+      transitionDuration: '200ms',
+      _hover: {
+        color: 'primary.500',
+      },
     },
+  }),
+
+  action: css({
+    flexGrow: 0,
   }),
 };
 
@@ -60,23 +99,55 @@ const NavSecondary = () => {
       className={cx(styles.secondary, showSecondary && styles.secondaryVisible)}
       aria-hidden={!showSecondary}
     >
-      <Logo />
+      <div className={styles.root}>
+        <Logo imageSrc={logoImage} css={styles.logo} />
 
-      <nav className={styles.nav} aria-label="Navigazione rapida sticky">
-        <ul>
-          <li>
-            <a href="#">Come lavoro</a>
-          </li>
-          <li>
-            <a href="#">Aree di impatto</a>
-          </li>
-          <li>
-            <a href="#">Esperienze</a>
-          </li>
-        </ul>
-      </nav>
+        <nav className={styles.nav} aria-label="Navigazione rapida sticky">
+          <ul>
+            {navConfig?.map((item, index) => (
+              <li key={index}>
+                <Link
+                  href={`#${item.title.toLowerCase().replace(/\s+/g, '-')}`}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <div>button</div>
+        <div
+          className={css({
+            smDown: {
+              display: 'flex',
+              justifyContent: 'flex-end',
+              alignItems: 'center',
+              pr: 3,
+            },
+          })}
+        >
+          <Button
+            visual="solid"
+            size="sm"
+            radius="full"
+            as="a"
+            href="mailto:me@lucacarrozzo.com"
+            hover="off"
+            className={styles.action}
+          >
+            Contattami
+          </Button>
+
+          <NavMobile
+            navData={navConfig}
+            triggerClassName={css({
+              color: 'black',
+              pl: 2.5,
+              display: { base: 'inline-flex', sm: 'none' },
+            })}
+          />
+        </div>
+      </div>
     </div>
   );
 };

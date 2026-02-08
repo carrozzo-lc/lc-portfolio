@@ -2,7 +2,7 @@
 import { useState } from 'react';
 // panda css
 import { Drawer } from 'vaul';
-import { css } from '@/styled-system/css';
+import { css, cx } from '@/styled-system/css';
 // icons
 import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
 // assets
@@ -16,14 +16,12 @@ import Button from '@/components/ui/Button';
 // ----------------------------------------------------------------------
 
 export const styles = {
-  trigger: css({
+  trigger: {
     position: 'relative',
-    display: { base: 'inline-flex', md: 'none' },
     alignItems: 'center',
     justifyContent: 'flex-end',
     gap: '2',
-    pl: '3.5',
-    borderRadius: 'full',
+    pl: '3',
     fontSize: 'sm',
     fontWeight: '500',
     cursor: 'pointer',
@@ -31,12 +29,31 @@ export const styles = {
     transitionDuration: '200ms',
     height: '100%',
     color: 'white',
+    display: { base: 'inline-flex', md: 'none' },
+  },
+
+  closeBtn: css({
+    padding: '0 !important',
+    margin: 0,
+    marginLeft: 2,
+    marginTop: 1.5,
+    cursor: 'pointer',
+    width: '24px',
+    height: 'auto',
+    borderRadius: 0,
+    '& span': {
+      padding: 0,
+      margin: 0,
+      display: 'block',
+      width: '24px',
+      height: 'auto',
+    },
   }),
 
   overlay: css({
     position: 'fixed',
     inset: 0,
-    bg: 'blackAlpha.400',
+    bg: 'black/70',
   }),
 
   content: css({
@@ -44,21 +61,21 @@ export const styles = {
     top: '0',
     left: '0',
     right: '0',
-    zIndex: 10,
+    zIndex: 12,
     display: 'flex',
     outline: 'none',
   }),
 
   panel: css({
     width: 'full',
-    bg: 'zinc.50',
+    bg: 'white',
     p: '5',
     display: 'flex',
     flexDirection: 'column',
   }),
 
   body: css({
-    pb: 2,
+    pb: 5,
   }),
 
   title: css({
@@ -68,11 +85,11 @@ export const styles = {
   }),
 
   nav: css({
-    mt: 12,
+    mt: 14,
   }),
 
   link: css({
-    my: 5,
+    my: 7,
     '& a': {
       display: 'inline-block',
       fontSize: '3xl',
@@ -90,14 +107,14 @@ interface NavMobileProps {
   navData: Array<{
     title: string;
   }>;
+  triggerClassName?: string;
 }
 
-const NavMobile = ({ navData }: NavMobileProps) => {
+const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <Drawer.Root direction="top" open={isOpen} onOpenChange={setIsOpen}>
-      <Drawer.Trigger className={styles.trigger}>
+      <Drawer.Trigger className={cx(css(styles.trigger), triggerClassName)}>
         <HamburgerMenuIcon style={{ width: 24, height: 24 }} />
       </Drawer.Trigger>
 
@@ -117,22 +134,23 @@ const NavMobile = ({ navData }: NavMobileProps) => {
               <Drawer.Title className={styles.title}>
                 <Logo
                   imageSrc={logoImage}
-                  css={css({ w: '10', '& img': { width: '34px' } })}
+                  css={css({ w: '10', '& img': { width: '28px' } })}
                 />
 
                 <div
                   className={css({
                     display: 'flex',
                     justifyContent: 'flex-end',
-                    alignItems: 'center',
+                    alignItems: 'flex-start',
                   })}
                 >
                   <Button
                     visual="solid"
                     size="sm"
-                    hover="off"
+                    radius="full"
                     as="a"
                     href="mailto:me@lucacarrozzo.com"
+                    hover="off"
                   >
                     Contattami
                   </Button>
@@ -140,7 +158,7 @@ const NavMobile = ({ navData }: NavMobileProps) => {
                   <Button
                     visual="transparent"
                     onClick={() => setIsOpen(false)}
-                    className={css({ p: 0, pl: '2.5', cursor: 'pointer' })}
+                    className={styles.closeBtn}
                   >
                     <Cross1Icon style={{ width: 24, height: 24 }} />
                   </Button>

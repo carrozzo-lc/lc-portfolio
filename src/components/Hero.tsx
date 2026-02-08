@@ -14,6 +14,7 @@ const styles = {
   root: css({
     height: { base: 'auto', sm: '100%', md: '76vh' },
     maxHeight: { base: 'none', sm: 'none', md: '630px', lg: 'none' },
+    minHeight: { base: 'none', md: '640px', lg: '730px' },
     borderBottom: `10px solid ${token('colors.gray.900')}`,
     backgroundColor: 'primary.500',
     backgroundImage: `
