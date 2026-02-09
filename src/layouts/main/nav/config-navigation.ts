@@ -2,16 +2,16 @@
 
 const navConfig = [
   {
-    title: 'Come lavoro',
-    path: '/',
+    titleKey: 'Nav.WorkPrinciples',
+    path: '#work-principles',
   },
   {
-    title: 'Aree di impatto',
-    path: '/',
+    titleKey: 'Nav.impactAreas',
+    path: '#impact-areas',
   },
   {
-    title: 'Esperienze',
-    path: '/',
+    titleKey: 'Nav.experience',
+    path: '#experience',
   },
 ];
 

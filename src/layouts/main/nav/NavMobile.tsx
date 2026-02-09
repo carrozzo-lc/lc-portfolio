@@ -11,7 +11,8 @@ import logoImage from '@/images/logo2.svg';
 import Link from 'next/link';
 // components
 import Logo from '@/components/Logo';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/Button/Button';
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -105,12 +106,14 @@ export const styles = {
 
 interface NavMobileProps {
   navData: Array<{
-    title: string;
+    titleKey: string;
+    path: string;
   }>;
   triggerClassName?: string;
 }
 
 const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
+  const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Drawer.Root direction="top" open={isOpen} onOpenChange={setIsOpen}>
@@ -152,7 +155,7 @@ const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
                     href="mailto:me@lucacarrozzo.com"
                     hover="off"
                   >
-                    Contattami
+                    {t('Nav.contact')}
                   </Button>
 
                   <Button
@@ -169,11 +172,8 @@ const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
                 <ul>
                   {navData?.map((item, index) => (
                     <li className={styles.link} key={index}>
-                      <Link
-                        href={`#${item.title.toLowerCase().replace(/\s+/g, '-')}`}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.title}
+                      <Link href={item.path} onClick={() => setIsOpen(false)}>
+                        {t(item.titleKey)}
                       </Link>
                     </li>
                   ))}

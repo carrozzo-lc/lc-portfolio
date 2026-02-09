@@ -3,10 +3,11 @@ import { css } from '@/styled-system/css';
 // components
 import Logo from '@/components/Logo';
 import NavList from '@/layouts/main/nav/NavList';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/Button/Button';
 // config
 import navConfig from './config-navigation';
 import NavMobile from './NavMobile';
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -42,6 +43,7 @@ const styles = {
 };
 
 const NavPrimary = () => {
+  const t = useTranslations();
   return (
     <header className={styles.primary}>
       <Logo />
@@ -62,7 +64,7 @@ const NavPrimary = () => {
           as="a"
           href="mailto:me@lucacarrozzo.com"
         >
-          Contattami
+          {t('Nav.contact')}
         </Button>
 
         <NavMobile navData={navConfig} />

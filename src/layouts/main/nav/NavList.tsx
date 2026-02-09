@@ -2,6 +2,7 @@
 import { css } from '@/styled-system/css';
 // Next
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -31,21 +32,20 @@ const styles = {
 
 interface NavListProps {
   navData?: Array<{
-    title: string;
+    titleKey: string;
+    path: string;
   }>;
 }
 
 const NavList = ({ navData }: NavListProps) => {
+  const t = useTranslations();
   return (
     <nav className={styles.nav} aria-label="Navigazione principale">
       <ul>
         {navData?.map((item, index) => (
           <li key={index}>
-            <Link
-              className={styles.link}
-              href={`#${item.title.toLowerCase().replace(/\s+/g, '-')}`}
-            >
-              {item.title}
+            <Link className={styles.link} href={item.path}>
+              {t(item.titleKey)}
             </Link>
           </li>
         ))}

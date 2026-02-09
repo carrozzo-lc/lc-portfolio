@@ -7,10 +7,11 @@ import Logo from '@/components/Logo';
 import { useScrollRange } from '@/hooks/useScrollRange';
 // assets
 import logoImage from '@/images/logo2.svg';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/Button/Button';
 import navConfig from './config-navigation';
 import Link from 'next/link';
 import NavMobile from './NavMobile';
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -89,6 +90,7 @@ const styles = {
 };
 
 const NavSecondary = () => {
+  const t = useTranslations();
   const showSecondary = useScrollRange({
     showAfter: 80,
     hideBefore: 64,
@@ -106,11 +108,7 @@ const NavSecondary = () => {
           <ul>
             {navConfig?.map((item, index) => (
               <li key={index}>
-                <Link
-                  href={`#${item.title.toLowerCase().replace(/\s+/g, '-')}`}
-                >
-                  {item.title}
-                </Link>
+                <Link href={item.path}>{t(item.titleKey)}</Link>
               </li>
             ))}
           </ul>
@@ -135,7 +133,7 @@ const NavSecondary = () => {
             hover="off"
             className={styles.action}
           >
-            Contattami
+            {t('Nav.contact')}
           </Button>
 
           <NavMobile

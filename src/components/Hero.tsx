@@ -2,11 +2,13 @@
 import { css, cx } from '@/styled-system/css';
 import { token } from '@/styled-system/tokens';
 // components
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/Button/Button';
 // next
 import Image from 'next/image';
 // assets
 import lucaImage from '@/images/luca-image.png';
+// intl
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -83,7 +85,7 @@ const styles = {
 
     actions: css({
       mt: 6,
-      '& button': {
+      '& a': {
         minW: { base: '100%', sm: '10.15rem' },
         mb: { base: 3, sm: 0 },
       },
@@ -110,26 +112,28 @@ interface HeroProps {
 }
 
 const Hero = ({ className }: HeroProps) => {
+  const t = useTranslations('Hero');
   const rootClassName = cx('group', styles.root, className);
+
   return (
     <section className={rootClassName}>
       <header className={styles.hero.root}>
         <div className={styles.hero.inner}>
           <div className={css({ mt: -1 })}>
-            <p className={styles.hero.eyebrow}>
-              Frontend Developer orientato al prodotto
-            </p>
+            <p className={styles.hero.eyebrow}>{t('eyebrow')}</p>
             <h1 className={styles.hero.title}>
-              Dai requisiti al frontend, con
-              <br /> metodo, UX e attenzione al prodotto.
+              {t.rich('title', {
+                br: () => <br />,
+              })}
             </h1>
-            <p className={styles.hero.description}>
-              Aiuto startup e PMI a trasformare idee e requisiti in feature
-              concrete, lavorando su struttura, UX e qualità tecnica.
-            </p>
+            <p className={styles.hero.description}>{t('subtitle')}</p>
             <div className={styles.hero.actions}>
-              <Button>Come lavoro</Button>
-              <Button visual="outline">Scarica CV</Button>
+              <Button as="a" href="#">
+                Come lavoro
+              </Button>
+              <Button as="a" href="#" visual="outline">
+                Scarica CV
+              </Button>
             </div>
           </div>
 

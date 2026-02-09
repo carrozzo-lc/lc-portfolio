@@ -13,6 +13,7 @@
     "@pandacss/studio": "^1.8.1",
     "@radix-ui/react-icons": "^1.3.2",
     "next": "16.1.3",
+    "next-intl": "^4.8.2",
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -27,5 +28,11 @@
     "eslint-config-next": "16.1.3",
     "prettier": "3.8.0",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core"
+    ]
   }
 }

@@ -1,0 +1,153 @@
+{
+  "Meta": {
+    "homeTitle": "Luca's Portfolio",
+    "homeDescription": "Frontend developer and designer. Projects, experience and contact."
+  },
+  "Nav": {
+    "WorkPrinciples": "How I work",
+    "impactAreas": "Impact areas",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "eyebrow": "Product-oriented Frontend Developer",
+    "title": "From requirements to frontend, with method, UX and product focus.",
+    "subtitle": "I help startups and SMEs turn ideas and requirements into concrete features, working on structure, UX and technical quality.",
+    "primaryCta": "How I work",
+    "secondaryCta": "Download CV"
+  },
+  "WorkPrinciples": {
+    "title": "How I work",
+    "intro": "Every project has different constraints, goals and complexity. I start by understanding the context and the real problems, turning requirements and ideas into clear, usable and sustainable solutions.",
+    "items": [
+      {
+        "title": "I understand the problem before designing",
+        "description": "Before designing or building, I clarify goals, constraints and priorities in context. This helps me make informed decisions and avoid solutions that look right but fail in real use."
+      },
+      {
+        "title": "I turn requirements into structure",
+        "description": "I translate requirements into a clear structure: content priority, visual hierarchy and user flows. This makes the interface easier to understand and reduces ambiguity throughout the process."
+      },
+      {
+        "title": "I implement reusable elements, not screens",
+        "description": "I build accessible, coherent interfaces by clarifying content, priorities and interaction feedback. I design reusable elements and patterns to keep consistency over time."
+      }
+    ]
+  },
+  "ImpactAreas": {
+    "title": "Areas of impact",
+    "intro": "When I work on a product, my contribution goes beyond implementation. I work on structure, UX and technical quality to improve clarity and long‑term sustainability.",
+    "items": [
+      {
+        "title": "Frontend structure",
+        "description": "I build clear, sustainable frontends designed to grow without accumulating unnecessary complexity.",
+        "points": [
+          "Code organization and separation of concerns",
+          "Scalability and maintainability over time",
+          "Reduced technical debt and clarity for the team"
+        ],
+        "role": "React · Next.js · Component architecture"
+      },
+      {
+        "title": "UX & interface",
+        "description": "I make interface decisions to keep flows understandable, usable and consistent, even when the design isn’t fully defined.",
+        "points": [
+          "Visual hierarchy and readability",
+          "Typography, spacing and functional layouts",
+          "Turning flows into clear interactions"
+        ],
+        "role": "UX engineering · Design system · Accessibility"
+      },
+      {
+        "title": "Technical quality & performance",
+        "description": "I treat quality and performance as part of the experience, not as late optimizations.",
+        "points": [
+          "Frontend performance and load times",
+          "Prevention of regressions and structural bugs",
+          "Reliable, easy‑to‑maintain code"
+        ],
+        "role": "Performance · Code quality · Best practices"
+      },
+      {
+        "title": "Delivery & collaboration",
+        "description": "I work closely with PMs, designers and stakeholders to turn requirements and goals into implementable solutions.",
+        "points": [
+          "Requirement analysis and technical trade‑offs",
+          "Continuous collaboration and iteration",
+          "Ownership of frontend delivery"
+        ],
+        "role": "Product thinking · Team collaboration"
+      }
+    ]
+  },
+  "Experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "Be Safe Rate",
+        "role": "Frontend & UX-oriented development",
+        "period": "10/2023 – 09/2025",
+        "summary": "User flows → wireframe → mockup, then frontend implementation and API integration.",
+        "highlights": [
+          "In this project I worked on defining user flows, designing user flows, wireframes and mockups based on requirements provided by marketing and product teams.",
+          "Once the specifications were validated, I handled the full transition to frontend development, implementing interfaces with attention to code structure, scalability and performance.",
+          "I collaborated closely with the tech lead and backend team for API integration, adapting the work to requirement changes and new features introduced during development.",
+          "Focus: UX→frontend continuity to avoid mismatches and regressions as features evolved."
+        ],
+        "tags": {
+          "tech": ["Next.js", "API Integration", "React.js", "Tailwind"],
+          "ux": ["UX Design", "Architecture", "Accessibility"]
+        }
+      },
+      {
+        "company": "Pemcards",
+        "role": "Frontend & UX-oriented development",
+        "period": "10/2022 – 06/2023",
+        "summary": "UX refactoring of the widget → reusable components → CRM dashboard for configuration and management.",
+        "highlights": [
+          "In this project I worked on an embeddable widget built in Vanilla JavaScript, refactoring the interface and flows to improve the user experience on both desktop and mobile. The goal was to make interactions clearer and more consistent, reducing friction and complexity.",
+          "In parallel I contributed to the development of a CRM dashboard in React/Next.js, designing and implementing new features for configuring and managing widgets. I worked on view structure and reusable components, keeping UI and application logic consistent.",
+          "Among the main features, I built the create, edit and listing views for widgets, including a feature that automated widget generation from the dashboard. I collaborated with the technical team for REST API integration and for evolving features based on requirements.",
+          "Focus: UX continuity between dashboard configuration and widget usage, reducing friction and inconsistencies."
+        ],
+        "tags": {
+          "tech": ["Vanilla JS", "React.js", "Next.js", "Rest API"],
+          "ux": ["UX Design", "Reusable components"]
+        }
+      },
+      {
+        "company": "GAMS Platform",
+        "role": "Frontend & UX-oriented development",
+        "period": "02/2021 – 07/2022",
+        "summary": "Wireframe → mockup → React feature development → GraphQL integration → data‑driven UI.",
+        "highlights": [
+          "In this project I worked on UX design for several platform features, creating wireframes and mockups to define flows, visual hierarchy and interactions before development.",
+          "Once solutions were validated, I developed the features in React, handling API integration via GraphQL (Apollo Client). I worked on data‑driven interfaces with a focus on state management, flow clarity and scalable solutions.",
+          "I contributed to multiple areas of the platform, including course listings, single‑course views and internal tools like a CRM and an email marketing editor. I built reusable components and optimized the interface to ensure performance and cross‑device and cross‑browser compatibility.",
+          "Focus: designing and developing complex interfaces for educational platforms, maintaining UX consistency and frontend scalability."
+        ],
+        "tags": {
+          "tech": ["React.js", "GraphQL", "Apollo Client", "Tailwind"],
+          "ux": ["UX Design", "Design System", "Frontend architecture"]
+        }
+      }
+    ]
+  },
+  "CallToAction": {
+    "title": "",
+    "subtitle": "",
+    "button": ""
+  },
+  "Footer": {
+    "copyright": "",
+    "location": "",
+    "social": {
+      "linkedin": "",
+      "github": "",
+      "email": ""
+    }
+  },
+  "LanguageSwitcher": {
+    "switchLabel": "Would you prefer to read this page in Italian?"
+  }
+}
