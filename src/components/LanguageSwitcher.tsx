@@ -18,6 +18,11 @@ export default function LanguageSwitcher() {
         display: 'inline-block',
         color: 'black',
         textDecoration: 'underline',
+        transitionProperty: 'colors',
+        transitionDuration: '200ms',
+        _hover: {
+          color: 'gray.500',
+        },
       })}
     >
       {t('switchLabel')}

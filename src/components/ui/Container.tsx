@@ -1,4 +1,4 @@
-import { ReactNode, HTMLAttributes } from 'react';
+import { ReactNode, ElementType, ComponentPropsWithoutRef } from 'react';
 // styles
 import { css, cx } from '@/styled-system/css';
 
@@ -15,24 +15,23 @@ const styles = {
   }),
 };
 
-type ContainerElement = 'div' | 'section';
-
-interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
+type ContainerProps<T extends ElementType = 'div'> = {
+  as?: T;
   children: ReactNode;
   className?: string;
   innerClassName?: string;
   maxW?: string;
-  as?: ContainerElement;
-}
+} & ComponentPropsWithoutRef<T>;
 
-const Container = ({
+const Container = <T extends ElementType = 'div'>({
   children,
   className,
   innerClassName,
   maxW = '7xl',
-  as: Root = 'div',
+  as,
   ...rest
-}: ContainerProps) => {
+}: ContainerProps<T>) => {
+  const Root = (as || 'div') as ElementType;
   const merged = cx(styles.root, className);
   const innerMerged = cx(styles.inner, css({ maxW }), innerClassName);
 

@@ -142,12 +142,11 @@
     "button": ""
   },
   "Footer": {
-    "copyright": "",
-    "location": "",
+    "copyright": "Copyright \u00A9 {currentYear} | Luca Carrozzo",
     "social": {
-      "linkedin": "",
-      "github": "",
-      "email": ""
+      "xTwitter": "https://x.com/carrozzo_lc",
+      "linkedin": "https://www.linkedin.com/in/lucacarrozzo/",
+      "github": "https://github.com/carrozzo-lc"
     }
   },
   "LanguageSwitcher": {

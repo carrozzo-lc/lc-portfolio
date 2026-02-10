@@ -98,17 +98,8 @@
           "Focus: continuità UX→frontend per evitare mismatch e regressioni durante l’evoluzione delle feature."
         ],
         "tags": {
-          "tech": [
-            "Next.js",
-            "API Integration",
-            "React.js",
-            "Tailwind"
-          ],
-          "ux": [
-            "UX Design",
-            "Architettura",
-            "Accessibilità"
-          ]
+          "tech": ["Next.js", "API Integration", "React.js", "Tailwind"],
+          "ux": ["UX Design", "Architettura", "Accessibilità"]
         }
       },
       {
@@ -123,16 +114,8 @@
           "Focus: continuità UX tra configurazione in dashboard e utilizzo del widget, riducendo frizioni e incoerenze."
         ],
         "tags": {
-          "tech": [
-            "Vanilla JS",
-            "React.js",
-            "Next.js",
-            "Rest API"
-          ],
-          "ux": [
-            "UX Design",
-            "Componenti riutilizzabili"
-          ]
+          "tech": ["Vanilla JS", "React.js", "Next.js", "Rest API"],
+          "ux": ["UX Design", "Componenti riutilizzabili"]
         }
       },
       {
@@ -147,17 +130,8 @@
           "Focus: progettazione e sviluppo di interfacce complesse per piattaforme educative, mantenendo coerenza UX e scalabilità del frontend."
         ],
         "tags": {
-          "tech": [
-            "React.js",
-            "GraphQL",
-            "Apollo Client",
-            "Tailwind"
-          ],
-          "ux": [
-            "UX Design",
-            "Design System",
-            "Architettura frontend"
-          ]
+          "tech": ["React.js", "GraphQL", "Apollo Client", "Tailwind"],
+          "ux": ["UX Design", "Design System", "Architettura frontend"]
         }
       }
     ]
@@ -168,12 +142,11 @@
     "button": ""
   },
   "Footer": {
-    "copyright": "",
-    "location": "",
+    "copyright": "Copyright \u00A9 {currentYear} | Luca Carrozzo",
     "social": {
-      "linkedin": "",
-      "github": "",
-      "email": ""
+      "xTwitter": "https://x.com/carrozzo_lc",
+      "linkedin": "https://www.linkedin.com/in/lucacarrozzo/",
+      "github": "https://github.com/carrozzo-lc"
     }
   },
   "LanguageSwitcher": {
