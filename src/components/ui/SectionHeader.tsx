@@ -6,13 +6,13 @@ import { css, cx } from '@/styled-system/css';
 const styles = {
   root: css({
     '& h2': {
-      fontSizeRem: 40,
+      fontSizeRem: { base: 36, sm: 40 },
       fontWeight: 'medium',
       lineHeight: 1.2,
       mb: 4,
     },
     '& p': {
-      fontSize: 'xl',
+      fontSize: { base: 'lg', sm: 'xl' },
     },
   }),
 };
