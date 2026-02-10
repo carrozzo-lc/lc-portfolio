@@ -1,4 +1,11 @@
-import { defineConfig } from '@pandacss/dev';
+import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
+
+const rem = (px: number, base = 16) => `${px / base}rem`;
+
+const globalCss = defineGlobalStyles({
+  body: { color: 'gray.800' },
+  'h1, h2, h3, h4, h5, h6': { color: 'gray.900' },
+});
 
 export default defineConfig({
   // Whether to use css reset
@@ -62,6 +69,19 @@ export default defineConfig({
           '100%': {
             backgroundPosition: '0% 50%',
           },
+        },
+      },
+    },
+  },
+
+  globalCss,
+
+  utilities: {
+    extend: {
+      fontSizeRem: {
+        values: { type: 'number' },
+        transform(value) {
+          return { fontSize: rem(value as number) };
         },
       },
     },

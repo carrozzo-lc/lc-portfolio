@@ -22,15 +22,18 @@
     "items": [
       {
         "title": "I understand the problem before designing",
-        "description": "Before designing or building, I clarify goals, constraints and priorities in context. This helps me make informed decisions and avoid solutions that look right but fail in real use."
+        "description": "Before designing or building, I clarify goals, constraints and priorities in context. This helps me make informed decisions and avoid solutions that look right but fail in real use.",
+        "icon": "search"
       },
       {
         "title": "I turn requirements into structure",
-        "description": "I translate requirements into a clear structure: content priority, visual hierarchy and user flows. This makes the interface easier to understand and reduces ambiguity throughout the process."
+        "description": "I translate requirements into a clear structure: content priority, visual hierarchy and user flows. This makes the interface easier to understand and reduces ambiguity throughout the process.",
+        "icon": "structure"
       },
       {
         "title": "I implement reusable elements, not screens",
-        "description": "I build accessible, coherent interfaces by clarifying content, priorities and interaction feedback. I design reusable elements and patterns to keep consistency over time."
+        "description": "I build accessible, coherent interfaces by clarifying content, priorities and interaction feedback. I design reusable elements and patterns to keep consistency over time.",
+        "icon": "components"
       }
     ]
   },

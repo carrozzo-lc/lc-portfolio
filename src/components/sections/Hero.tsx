@@ -46,7 +46,8 @@ const styles = {
       width: '100%',
       margin: 'auto',
       color: 'white',
-      py: { base: 10, sm: 12 },
+      pt: { base: 12, sm: 12 },
+      pb: { base: 14, sm: 14 },
       sm: {
         display: 'flex',
         justifyContent: 'space-between',
@@ -64,14 +65,15 @@ const styles = {
     eyebrow: css({
       fontSize: { base: 'xl', sm: '2xl' },
       lineHeight: 'tight',
-      mb: { base: 4, lg: 7 },
+      mb: { base: 5, lg: 7 },
     }),
 
     title: css({
       fontSize: { base: '2.063rem', sm: '4xl', md: '2.625rem', lg: '3.125rem' },
+      color: 'white',
       lineHeight: 'tight',
       fontWeight: 'medium',
-      mb: { base: 4, lg: 5 },
+      mb: { base: 6, lg: 5 },
       '& > br': {
         display: { base: 'none', sm: 'inline' },
       },

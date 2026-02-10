@@ -1,25 +1,35 @@
 // styles
-import { css } from '@/styled-system/css';
+import { css, cx } from '@/styled-system/css';
 
 // ----------------------------------------------------------------------
 
 const styles = {
   root: css({
-    '& h2': {},
-    '& p': {},
+    '& h2': {
+      fontSizeRem: 40,
+      fontWeight: 'medium',
+      lineHeight: 1.2,
+      mb: 4,
+    },
+    '& p': {
+      fontSize: 'xl',
+    },
   }),
 };
 
 interface SectionHeaderProps {
   title?: string | null;
   subtitle?: string | null;
+  className?: string;
 }
 
-const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
+const SectionHeader = ({ title, subtitle, className }: SectionHeaderProps) => {
+  const merged = cx(styles.root, className);
+
   if (!title && !subtitle) return null;
 
   return (
-    <div className={styles.root}>
+    <div className={merged}>
       {title && <h2>{title}</h2>}
       {subtitle && <p>{subtitle}</p>}
     </div>

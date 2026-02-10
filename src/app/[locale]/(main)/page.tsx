@@ -1,7 +1,7 @@
 // styles
 import { css } from '@/styled-system/css';
 // components
-import Hero from '@/components/Hero';
+import Hero from '@/components/sections/Hero';
 import WorkPrinciples from '@/components/sections/WorkPrinciples';
 import FakeContent from '@/components/FakeContent';
 

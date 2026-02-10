@@ -22,15 +22,18 @@
     "items": [
       {
         "title": "Capisco il problema prima di progettare",
-        "description": "Prima di progettare o sviluppare, chiarisco obiettivi, vincoli e priorità del contesto. Questo mi permette di prendere decisioni consapevoli ed evitare soluzioni visivamente corrette ma inefficaci nell’uso reale."
+        "description": "Prima di progettare o sviluppare, chiarisco obiettivi, vincoli e priorità del contesto. Questo mi permette di prendere decisioni consapevoli ed evitare soluzioni visivamente corrette ma inefficaci nell’uso reale.",
+        "icon": "search"
       },
       {
         "title": "Trasformo requisiti in struttura",
-        "description": "Traduco requisiti in una struttura chiara: priorità dei contenuti, gerarchie visive e percorsi. Questo rende l’interfaccia più comprensibile e riduce ambiguità lungo tutto il processo."
+        "description": "Traduco requisiti in una struttura chiara: priorità dei contenuti, gerarchie visive e percorsi. Questo rende l’interfaccia più comprensibile e riduce ambiguità lungo tutto il processo.",
+        "icon": "structure"
       },
       {
         "title": "Implemento elementi riutilizzabili, non schermate",
-        "description": "Sviluppo interfacce accessibili e coerenti, chiarendo contenuti, priorità e feedback dell’interazione. Costruisco elementi e pattern riutilizzabili per mantenere coerenza nel tempo."
+        "description": "Sviluppo interfacce accessibili e coerenti, chiarendo contenuti, priorità e feedback dell’interazione. Costruisco elementi e pattern riutilizzabili per mantenere coerenza nel tempo.",
+        "icon": "components"
       }
     ]
   },
@@ -95,8 +98,17 @@
           "Focus: continuità UX→frontend per evitare mismatch e regressioni durante l’evoluzione delle feature."
         ],
         "tags": {
-          "tech": ["Next.js", "API Integration", "React.js", "Tailwind"],
-          "ux": ["UX Design", "Architettura", "Accessibilità"]
+          "tech": [
+            "Next.js",
+            "API Integration",
+            "React.js",
+            "Tailwind"
+          ],
+          "ux": [
+            "UX Design",
+            "Architettura",
+            "Accessibilità"
+          ]
         }
       },
       {
@@ -111,8 +123,16 @@
           "Focus: continuità UX tra configurazione in dashboard e utilizzo del widget, riducendo frizioni e incoerenze."
         ],
         "tags": {
-          "tech": ["Vanilla JS", "React.js", "Next.js", "Rest API"],
-          "ux": ["UX Design", "Componenti riutilizzabili"]
+          "tech": [
+            "Vanilla JS",
+            "React.js",
+            "Next.js",
+            "Rest API"
+          ],
+          "ux": [
+            "UX Design",
+            "Componenti riutilizzabili"
+          ]
         }
       },
       {
@@ -127,8 +147,17 @@
           "Focus: progettazione e sviluppo di interfacce complesse per piattaforme educative, mantenendo coerenza UX e scalabilità del frontend."
         ],
         "tags": {
-          "tech": ["React.js", "GraphQL", "Apollo Client", "Tailwind"],
-          "ux": ["UX Design", "Design System", "Architettura frontend"]
+          "tech": [
+            "React.js",
+            "GraphQL",
+            "Apollo Client",
+            "Tailwind"
+          ],
+          "ux": [
+            "UX Design",
+            "Design System",
+            "Architettura frontend"
+          ]
         }
       }
     ]
