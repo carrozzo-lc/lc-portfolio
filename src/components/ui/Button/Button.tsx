@@ -3,6 +3,8 @@ import { cx } from '@/styled-system/css';
 
 type CommonProps = ButtonVariants & {
   children: React.ReactNode;
+  startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
 };
 
 type ButtonAsButton = CommonProps &
@@ -24,6 +26,8 @@ const Button = ({
   size,
   radius,
   children,
+  startIcon,
+  endIcon,
   className,
   ...props
 }: ButtonProps) => {
@@ -36,7 +40,9 @@ const Button = ({
         className={merged}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
+        {startIcon}
         <span>{children}</span>
+        {endIcon}
       </a>
     );
   }
@@ -47,7 +53,9 @@ const Button = ({
       className={merged}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
+      {startIcon}
       <span>{children}</span>
+      {endIcon}
     </button>
   );
 };

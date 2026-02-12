@@ -44,9 +44,6 @@ const styles = {
     minHeight: '40px',
     margin: 'auto',
     borderRadius: 'full',
-    //backgroundColor: 'white',
-    // borderColor: 'black',
-    // borderWidth: 1,
     py: { base: '4px', sm: '1px' },
     px: '2px',
     background: 'rgba(255, 255, 255, 0.85)',
@@ -136,6 +133,7 @@ const NavSecondary = () => {
 
         <div
           className={css({
+            pr: 0.5,
             smDown: {
               display: 'flex',
               justifyContent: 'flex-end',

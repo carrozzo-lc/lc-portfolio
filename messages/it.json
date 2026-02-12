@@ -154,10 +154,18 @@
       }
     ]
   },
-  "CallToAction": {
-    "title": "",
-    "subtitle": "",
-    "button": ""
+  "CareerCTA": {
+    "title": "Vuoi approfondire il mio percorso professionale?",
+    "textLink": "Profilo LinkdIn",
+    "link": "https://www.linkedin.com/in/lucacarrozzo/"
+  },
+  "ContactCTA": {
+    "title": "Hai un prodotto su cui lavorare?",
+    "subtitle": "Se stai sviluppando o migliorando un prodotto digitale e cerchi qualcuno che possa aiutarti a trasformare requisiti e idee in frontend solidi e usabili, possiamo parlarne. Anche senza un brief perfetto.",
+    "button": {
+      "text": "Contattami!",
+      "link": "mailto:me@lucacarrozzo.com"
+    }
   },
   "Footer": {
     "copyright": "Copyright \u00A9 {currentYear} | Luca Carrozzo",

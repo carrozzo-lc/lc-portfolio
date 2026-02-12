@@ -6,13 +6,18 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 // intl
 import { useTranslations } from 'next-intl';
 // components
-import {
-  LinkedInLogoIcon,
-  GitHubLogoIcon,
-  EnvelopeClosedIcon,
-} from '@radix-ui/react-icons';
+import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 
 // ----------------------------------------------------------------------
+
+const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" {...props}>
+    <path
+      fill="currentColor"
+      d="M18.244 2H21l-6.553 7.49L22.5 22h-6.828l-5.35-6.702L4.5 22H2l7.07-8.086L1.5 2h6.99l4.836 6.085L18.244 2z"
+    />
+  </svg>
+);
 
 const styles = {
   root: css({
@@ -88,7 +93,7 @@ const Footer = () => {
       key: 'xTwitter',
       label: 'xTwitter',
       href: social.xTwitter,
-      Icon: EnvelopeClosedIcon,
+      Icon: XIcon,
     },
     {
       key: 'linkedin',

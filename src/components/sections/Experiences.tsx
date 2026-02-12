@@ -14,7 +14,6 @@ import CollapsibleText from '../ui/CollapsibleText';
 const styles = {
   root: css({
     pt: { base: 16, lg: 20 },
-    pb: { base: 16, lg: 28 },
   }),
 
   sectionHeader: css({

@@ -15,7 +15,8 @@ export const buttonStyles = cva({
     lineHeight: 'none',
     transition: 'border-color 200ms',
     zIndex: 0, // testo sopra il background
-    transitionProperty: 'color, box-shadow, border, border-color',
+    transitionProperty:
+      'color, box-shadow, border, border-color, background-color',
     transitionDuration: '100ms',
 
     '& span': {
@@ -100,7 +101,11 @@ export const buttonStyles = cva({
         _hover: {
           color: 'black',
           borderColor: 'black',
-          boxShadow: 'lg',
+          boxShadow: 'none',
+          _before: {
+            backgroundColor: 'gray.50',
+            transform: 'translateX(0)',
+          },
         },
       },
       transparent: {
@@ -119,8 +124,8 @@ export const buttonStyles = cva({
     size: {
       sm: {
         px: '4',
-        pt: '2',
-        pb: '2',
+        pt: '7px',
+        pb: '7px',
         fontSize: 'md',
         '& span': {
           lineHeight: '1.1',
@@ -140,7 +145,9 @@ export const buttonStyles = cva({
           color: 'white',
           boxShadow: 'none',
           borderWidth: '1px',
-          borderColor: 'black',
+          borderColor: 'gray.800',
+          backgroundColor: 'gray.800',
+          transition: 'all 200ms',
           _before: {
             transform: 'translateX(-100%)',
           },
