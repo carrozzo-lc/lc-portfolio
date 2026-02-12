@@ -2,7 +2,7 @@
 import { css } from '@/styled-system/css';
 // components
 import Hero from '@/components/sections/Hero';
-import WorkPrinciples from '@/components/sections/WorkPrinciples';
+import HowIWork from '@/components/sections/HowIWork';
 import ImpactAreas from '@/components/sections/ImpactAreas';
 import Experiences from '@/components/sections/Experiences';
 
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero className={css({ paddingTop: '64px' })} />
-      <WorkPrinciples />
+      <HowIWork />
       <ImpactAreas />
       <Experiences />
     </>

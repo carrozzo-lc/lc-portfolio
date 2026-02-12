@@ -74,18 +74,18 @@ const ICONS = {
   components: Component2Icon,
 } as const;
 
-type WorkPrincipleItem = {
+type HowIWorkItem = {
   icon: keyof typeof ICONS;
   title: string;
   description: string;
 };
 
-const WorkPrinciples = () => {
-  const t = useTranslations('WorkPrinciples');
-  const items = t.raw('items') as WorkPrincipleItem[];
+const HowIWorks = () => {
+  const t = useTranslations('HowIWork');
+  const items = t.raw('items') as HowIWorkItem[];
 
   return (
-    <Container as="section" id="work-principles" innerClassName={styles.root}>
+    <Container as="section" id="how-i-work" innerClassName={styles.root}>
       <SectionHeader
         className={css({
           width: '100%',
@@ -114,4 +114,4 @@ const WorkPrinciples = () => {
   );
 };
 
-export default WorkPrinciples;
+export default HowIWorks;

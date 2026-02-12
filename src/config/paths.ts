@@ -1,5 +1,5 @@
 export const PATHS = {
-  workPrinciples: '#work-principles',
+  workPrinciples: '#how-i-work',
   impactAreas: '#impact-areas',
   experiences: '#experiences',
 };

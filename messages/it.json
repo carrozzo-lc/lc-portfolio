@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "homeTitle": "Portfolio di Luca",
-    "homeDescription": "Sviluppatore frontend e designer. Progetti, esperienza e contatti."
+    "homeTitle": "Luca Carrozzo | Frontend Developer & UX Designer",
+    "homeDescription": "Portfolio di Luca Carrozzo: frontend developer orientato al prodotto. UX, architettura e qualità tecnica in React/Next.js. Progetti ed esperienze."
   },
   "Nav": {
     "WorkPrinciples": "Come lavoro",
@@ -16,7 +16,7 @@
     "primaryCta": "Come Lavoro",
     "secondaryCta": "Scarica CV"
   },
-  "WorkPrinciples": {
+  "HowIWork": {
     "title": "Come lavoro",
     "intro": "Ogni progetto ha vincoli, obiettivi e complessità diverse. Il mio lavoro parte dal capire il contesto e i problemi reali, per trasformare requisiti e idee in soluzioni chiare, usabili e sostenibili nel tempo.",
     "items": [

@@ -1,13 +1,13 @@
 {
   "Meta": {
-    "homeTitle": "Luca's Portfolio",
-    "homeDescription": "Frontend developer and designer. Projects, experience and contact."
+    "homeTitle": "Luca Carrozzo | Frontend Developer & UX Engineer",
+    "homeDescription": "Luca Carrozzo’s portfolio: product-oriented frontend developer focused on UX, architecture and technical quality in React/Next.js. Projects and experience."
   },
   "Nav": {
     "WorkPrinciples": "How I work",
     "impactAreas": "Impact areas",
     "experience": "Experience",
-    "contact": "Contact"
+    "contact": "Let’s Talk"
   },
   "Hero": {
     "eyebrow": "Product-oriented Frontend Developer",
@@ -16,7 +16,7 @@
     "primaryCta": "How I work",
     "secondaryCta": "Download CV"
   },
-  "WorkPrinciples": {
+  "HowIWork": {
     "title": "How I work",
     "intro": "Every project has different constraints, goals and complexity. I start by understanding the context and the real problems, turning requirements and ideas into clear, usable and sustainable solutions.",
     "items": [
