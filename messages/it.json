@@ -1,0 +1,181 @@
+{
+  "Meta": {
+    "homeTitle": "Luca Carrozzo | Frontend Developer & UX Designer",
+    "homeDescription": "Portfolio di Luca Carrozzo: frontend developer orientato al prodotto. UX, architettura e qualità tecnica in React/Next.js. Progetti ed esperienze."
+  },
+  "Nav": {
+    "WorkPrinciples": "Come lavoro",
+    "impactAreas": "Aree di impatto",
+    "experience": "Esperienze",
+    "contact": "Contattami"
+  },
+  "Hero": {
+    "eyebrow": "Frontend Developer orientato al prodotto",
+    "title": "Dai requisiti al frontend, con <br></br> metodo, UX e attenzione al prodotto.",
+    "subtitle": "Aiuto startup e PMI a trasformare idee e requisiti in feature concrete, lavorando su struttura, UX e qualità tecnica.",
+    "primaryCta": "Come Lavoro",
+    "secondaryCta": "Scarica CV"
+  },
+  "HowIWork": {
+    "title": "Come lavoro",
+    "intro": "Ogni progetto ha vincoli, obiettivi e complessità diverse. Il mio lavoro parte dal capire il contesto e i problemi reali, per trasformare requisiti e idee in soluzioni chiare, usabili e sostenibili nel tempo.",
+    "items": [
+      {
+        "title": "Capisco il problema prima di progettare",
+        "description": "Prima di progettare o sviluppare, chiarisco obiettivi, vincoli e priorità del contesto. Questo mi permette di prendere decisioni consapevoli ed evitare soluzioni visivamente corrette ma inefficaci nell’uso reale.",
+        "icon": "search"
+      },
+      {
+        "title": "Trasformo requisiti in struttura",
+        "description": "Traduco requisiti in una struttura chiara: priorità dei contenuti, gerarchie visive e percorsi. Questo rende l’interfaccia più comprensibile e riduce ambiguità lungo tutto il processo.",
+        "icon": "structure"
+      },
+      {
+        "title": "Implemento elementi riutilizzabili, non schermate",
+        "description": "Sviluppo interfacce accessibili e coerenti, chiarendo contenuti, priorità e feedback dell’interazione. Costruisco elementi e pattern riutilizzabili per mantenere coerenza nel tempo.",
+        "icon": "components"
+      }
+    ]
+  },
+  "ImpactAreas": {
+    "title": "Aree di impatto",
+    "intro": "Quando lavoro su un prodotto, il mio contributo va oltre l’implementazione. Intervengo su struttura, UX e qualità tecnica per migliorare chiarezza e sostenibilità nel tempo.",
+    "items": [
+      {
+        "title": "Struttura Frontend",
+        "description": "Costruisco frontend chiari e sostenibili, pensati per crescere senza accumulare complessità inutile.",
+        "points": [
+          "Organizzazione del codice e separazione delle responsabilità",
+          "Scalabilità e manutenibilità nel tempo",
+          "Riduzione del debito tecnico e chiarezza per il team"
+        ],
+        "role": "React · Next.js · Component architecture"
+      },
+      {
+        "title": "UX & Interfaccia",
+        "description": "Prendo decisioni sull’interfaccia per rendere i flussi comprensibili, usabili e coerenti, anche quando il design non è completamente definito.",
+        "points": [
+          "Gerarchia visiva e leggibilità",
+          "Tipografia, spacing e layout funzionali",
+          "Traduzione dei flussi in interazioni chiare"
+        ],
+        "role": "UX engineering · Design system · Accessibilità"
+      },
+      {
+        "title": "Qualità Tecnica & Performance",
+        "description": "Tratto qualità e performance come parte integrante dell’esperienza, non come ottimizzazioni tardive.",
+        "points": [
+          "Performance frontend e tempi di caricamento",
+          "Prevenzione di regressioni e bug strutturali",
+          "Codice affidabile e facilmente mantenibile"
+        ],
+        "role": "Performance · Code quality · Best practices"
+      },
+      {
+        "title": "Delivery & Collaborazione",
+        "description": "Lavoro a stretto contatto con PM, designer e stakeholder per trasformare requisiti e obiettivi in soluzioni implementabili.",
+        "points": [
+          "Analisi dei requisiti e trade-off tecnici",
+          "Collaborazione continua e iterazione",
+          "Responsabilità sulla delivery del frontend"
+        ],
+        "role": "Product thinking · Team collaboration"
+      }
+    ]
+  },
+  "Experiences": {
+    "title": "Esperienze",
+    "items": [
+      {
+        "company": "Be Safe Rate",
+        "image": {
+          "src": "https://4cdre7ulzk.ucarecd.net/a86afcb6-fe82-477e-b966-86d9ce009e00/besaferate.jpg",
+          "alt": "Anteprima Be Safe Rate"
+        },
+        "period": "10/2023 - 09/2025",
+        "sector": "Prodotto digitale: Settore travel / insurtech",
+        "companySummary": "Soluzione per Hotel, Tour Operator e Agenzie di Viaggio.",
+        "tags": {
+          "tech": ["Next.js", "API Integration", "React.js", "Tailwind"],
+          "ux": ["UX Design", "Architettura", "Accessibilità"]
+        },
+        "role": "Frontend & UX-oriented development",
+        "summary": "User flows → wireframe → mockup, poi implementazione frontend e integrazione API.",
+        "highlights": [
+          "In questo progetto ho lavorato sulla definizione dei flussi utente, progettando user flows, wireframe e mockup a partire dai requisiti forniti dai team marketing e product.",
+          "Una volta validate le specifiche, ho seguito l’intero passaggio alla fase di sviluppo frontend, occupandomi dell’implementazione delle interfacce con attenzione a struttura del codice, scalabilità e performance.",
+          "Ho collaborato a stretto contatto con il tech lead e il team backend per l’integrazione delle API, adattando il lavoro a cambi di requisiti e all’introduzione di nuove feature durante lo sviluppo.",
+          "Focus: continuità UX→frontend per evitare mismatch e regressioni durante l’evoluzione delle feature."
+        ]
+      },
+      {
+        "company": "Pemcards",
+        "image": {
+          "src": "https://4cdre7ulzk.ucarecd.net/a549fbcd-f6c9-4595-91cb-7d13d523cf30/pemcards.jpg",
+          "alt": "Anteprima Pemcards"
+        },
+        "period": "10/2022 - 06/2023",
+        "sector": "Prodotto digitale: Settore HR / digital rewards",
+        "companySummary": "Piattaforma B2B per la creazione e gestione di card digitali personalizzate, utilizzate in contesti di comunicazione, engagement e reward aziendale.",
+        "tags": {
+          "tech": ["Vanilla JS", "React.js", "Next.js", "Rest API"],
+          "ux": ["UX Design", "Componenti riutilizzabili"]
+        },
+        "role": "Frontend & UX-oriented development",
+        "summary": "UX refactoring del widget → componenti riutilizzabili → dashboard CRM per configurazione e gestione.",
+        "highlights": [
+          "In questo progetto ho lavorato su un widget embeddabile sviluppato in Vanilla JavaScript, occupandomi del refactoring dell’interfaccia e dei flussi per migliorare l’esperienza utente sia su desktop che su mobile. L’obiettivo era rendere l’interazione più chiara e coerente, riducendo attriti e complessità nell’utilizzo.",
+          "In parallelo ho contribuito allo sviluppo di una dashboard CRM in React/Next.js, progettando e implementando nuove feature orientate alla configurazione e gestione dei widget. Ho lavorato sulla struttura delle view e sulla costruzione di componenti riutilizzabili, mantenendo coerenza tra UI e logica applicativa.",
+          "Tra le funzionalità principali, ho realizzato le view di creazione, editing e listing dei widget, inclusa una feature che automatizzava la generazione del widget a partire dalla dashboard. Ho collaborato con il team tecnico per l’integrazione tramite REST API e per l’evoluzione delle feature in base ai requisiti.",
+          "Focus: continuità UX tra configurazione in dashboard e utilizzo del widget, riducendo frizioni e incoerenze."
+        ]
+      },
+      {
+        "company": "GAMS Platform",
+        "image": {
+          "src": "https://4cdre7ulzk.ucarecd.net/2f48965f-0ff4-4152-a232-0de1e263c42c/gams.jpg",
+          "alt": "Anteprima GAMS Platform"
+        },
+        "period": "02/2021 - 07/2022",
+        "sector": "Prodotto digitale: Settore EdTech / e-learning platform",
+        "companySummary": "Piattaforma per gestione e fruizione dei corsi, con strumenti interni per comunicazione e gestione utenti.",
+        "tags": {
+          "tech": ["React.js", "GraphQL", "Apollo Client", "Tailwind"],
+          "ux": ["UX Design", "Design System", "Architettura frontend"]
+        },
+        "role": "Frontend & UX-oriented development",
+        "summary": "Wireframe → mockup → sviluppo feature React → integrazione GraphQL → UI data-driven.",
+        "highlights": [
+          "In questo progetto ho lavorato alla progettazione UX di diverse feature della piattaforma, realizzando wireframe e mockup per definire flussi, gerarchie visive e interazioni prima dello sviluppo.",
+          "Una volta validate le soluzioni, ho sviluppato le feature in React, occupandomi dell’integrazione delle API tramite GraphQL (Apollo Client). Ho lavorato su interfacce data-driven, con particolare attenzione alla gestione degli stati, alla chiarezza dei flussi e alla scalabilità delle soluzioni.",
+          "Ho contribuito allo sviluppo di diverse aree della piattaforma, tra cui il listing dei corsi, le view dedicate ai singoli corsi e strumenti interni come un CRM e un editor per email marketing. Durante il lavoro ho costruito componenti riutilizzabili e ottimizzato l’interfaccia per garantire performance e compatibilità cross-device e cross-browser.",
+          "Focus: progettazione e sviluppo di interfacce complesse per piattaforme educative, mantenendo coerenza UX e scalabilità del frontend."
+        ]
+      }
+    ]
+  },
+  "CareerCTA": {
+    "title": "Vuoi approfondire il mio percorso professionale?",
+    "textLink": "Profilo LinkdIn",
+    "link": "https://www.linkedin.com/in/lucacarrozzo/"
+  },
+  "ContactCTA": {
+    "title": "Hai un prodotto su cui lavorare?",
+    "subtitle": "Se stai sviluppando o migliorando un prodotto digitale e cerchi qualcuno che possa aiutarti a trasformare requisiti e idee in frontend solidi e usabili, possiamo parlarne. Anche senza un brief perfetto.",
+    "button": {
+      "text": "Contattami!",
+      "link": "mailto:me@lucacarrozzo.com"
+    }
+  },
+  "Footer": {
+    "copyright": "Copyright \u00A9 {currentYear} | Luca Carrozzo",
+    "social": {
+      "xTwitter": "https://x.com/carrozzo_lc",
+      "linkedin": "https://www.linkedin.com/in/lucacarrozzo/",
+      "github": "https://github.com/carrozzo-lc"
+    }
+  },
+  "LanguageSwitcher": {
+    "switchLabel": "Preferisci leggere questa pagina in inglese?"
+  }
+}
