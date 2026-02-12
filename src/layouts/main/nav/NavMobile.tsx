@@ -115,6 +115,19 @@ interface NavMobileProps {
 const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleAnchorClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (!href.startsWith('#')) return;
+    const target = document.getElementById(href.slice(1));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', href);
+  };
+
   return (
     <Drawer.Root direction="top" open={isOpen} onOpenChange={setIsOpen}>
       <Drawer.Trigger className={cx(css(styles.trigger), triggerClassName)}>
@@ -172,7 +185,13 @@ const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
                 <ul>
                   {navData?.map((item, index) => (
                     <li className={styles.link} key={index}>
-                      <Link href={item.path} onClick={() => setIsOpen(false)}>
+                      <Link
+                        href={item.path}
+                        onClick={(event) => {
+                          handleAnchorClick(event, item.path);
+                          setIsOpen(false);
+                        }}
+                      >
                         {t(item.titleKey)}
                       </Link>
                     </li>

@@ -1,8 +1,10 @@
+'use client';
 // panda css
 import { css } from '@/styled-system/css';
 // Next
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { handleAnchorClick } from '@/utils/anchor';
 
 // ----------------------------------------------------------------------
 
@@ -39,12 +41,17 @@ interface NavListProps {
 
 const NavList = ({ navData }: NavListProps) => {
   const t = useTranslations();
+
   return (
     <nav className={styles.nav} aria-label="Navigazione principale">
       <ul>
         {navData?.map((item, index) => (
           <li key={index}>
-            <Link className={styles.link} href={item.path}>
+            <Link
+              className={styles.link}
+              href={item.path}
+              onClick={(event) => handleAnchorClick(event, item.path)}
+            >
               {t(item.titleKey)}
             </Link>
           </li>

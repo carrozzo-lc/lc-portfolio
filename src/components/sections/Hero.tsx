@@ -9,6 +9,8 @@ import Image from 'next/image';
 import lucaImage from '@/images/luca-image.png';
 // intl
 import { useTranslations } from 'next-intl';
+// config
+import { OTHER_PATHS, PATHS } from '@/config/paths';
 
 // ----------------------------------------------------------------------
 
@@ -130,11 +132,16 @@ const Hero = ({ className }: HeroProps) => {
             </h1>
             <p className={styles.hero.description}>{t('subtitle')}</p>
             <div className={styles.hero.actions}>
-              <Button as="a" href="#">
-                Come lavoro
+              <Button as="a" href={PATHS.workPrinciples}>
+                {t('primaryCta')}
               </Button>
-              <Button as="a" href="#" visual="outline">
-                Scarica CV
+              <Button
+                as="a"
+                href={OTHER_PATHS.cv}
+                target="_blank"
+                visual="outline"
+              >
+                {t('secondaryCta')}
               </Button>
             </div>
           </div>

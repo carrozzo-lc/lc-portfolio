@@ -1,17 +1,19 @@
+import { PATHS } from '@/config/paths';
+
 // ----------------------------------------------------------------------
 
 const navConfig = [
   {
     titleKey: 'Nav.WorkPrinciples',
-    path: '#work-principles',
+    path: PATHS.workPrinciples,
   },
   {
     titleKey: 'Nav.impactAreas',
-    path: '#impact-areas',
+    path: PATHS.impactAreas,
   },
   {
     titleKey: 'Nav.experience',
-    path: '#experience',
+    path: PATHS.experiences,
   },
 ];
 

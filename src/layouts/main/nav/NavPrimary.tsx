@@ -5,7 +5,7 @@ import Logo from '@/components/Logo';
 import NavList from '@/layouts/main/nav/NavList';
 import Button from '@/components/ui/Button/Button';
 // config
-import navConfig from './config-navigation';
+import navConfig from '@/config/config-navigation';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
 

@@ -89,6 +89,20 @@ export const buttonStyles = cva({
         borderWidth: '1px',
         borderColor: 'white',
       },
+      outlineBlack: {
+        bg: 'transparent',
+        color: 'black',
+        borderWidth: '1px',
+        borderColor: 'black',
+        _before: {
+          backgroundColor: 'transparent',
+        },
+        _hover: {
+          color: 'black',
+          borderColor: 'black',
+          boxShadow: 'lg',
+        },
+      },
       transparent: {
         bg: 'transparent',
         color: 'gray.950',

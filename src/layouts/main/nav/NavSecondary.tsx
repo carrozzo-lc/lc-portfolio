@@ -8,7 +8,7 @@ import { useScrollRange } from '@/hooks/useScrollRange';
 // assets
 import logoImage from '@/images/logo2.svg';
 import Button from '@/components/ui/Button/Button';
-import navConfig from './config-navigation';
+import navConfig from '@/config/config-navigation';
 import Link from 'next/link';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
@@ -43,12 +43,15 @@ const styles = {
     maxW: '490px',
     minHeight: '40px',
     margin: 'auto',
-    backgroundColor: 'white',
     borderRadius: 'full',
-    borderColor: 'black',
-    borderWidth: 1,
+    //backgroundColor: 'white',
+    // borderColor: 'black',
+    // borderWidth: 1,
     py: { base: '4px', sm: '1px' },
     px: '2px',
+    background: 'rgba(255, 255, 255, 0.85)',
+    boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.4)',
+    backdropFilter: 'blur(20px)',
   }),
 
   logo: css({
@@ -96,6 +99,18 @@ const NavSecondary = () => {
     hideBefore: 64,
   });
 
+  const handleAnchorClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (!href.startsWith('#')) return;
+    const target = document.getElementById(href.slice(1));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', href);
+  };
+
   return (
     <div
       className={cx(styles.secondary, showSecondary && styles.secondaryVisible)}
@@ -108,7 +123,12 @@ const NavSecondary = () => {
           <ul>
             {navConfig?.map((item, index) => (
               <li key={index}>
-                <Link href={item.path}>{t(item.titleKey)}</Link>
+                <Link
+                  href={item.path}
+                  onClick={(event) => handleAnchorClick(event, item.path)}
+                >
+                  {t(item.titleKey)}
+                </Link>
               </li>
             ))}
           </ul>
@@ -139,7 +159,7 @@ const NavSecondary = () => {
           <NavMobile
             navData={navConfig}
             triggerClassName={css({
-              color: 'black',
+              color: 'gray.950',
               pl: 2.5,
               display: { base: 'inline-flex', sm: 'none' },
             })}

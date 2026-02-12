@@ -3,6 +3,7 @@ import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
 const rem = (px: number, base = 16) => `${px / base}rem`;
 
 const globalCss = defineGlobalStyles({
+  html: { scrollBehavior: 'smooth' },
   body: { color: 'gray.800' },
   'h1, h2, h3, h4, h5, h6': { color: 'gray.900' },
 });
@@ -20,6 +21,9 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
+      breakpoints: {
+        xs: '390px',
+      },
       tokens: {
         fonts: {
           sans: { value: 'Alegreya Sans, Alegreya Sans Fallback' },
@@ -56,6 +60,12 @@ export default defineConfig({
           heroFloat: {
             value: 'heroFloat 20s ease-in-out infinite',
           },
+          collapsibleDown: {
+            value: 'collapsibleDown 300ms ease-out',
+          },
+          collapsibleUp: {
+            value: 'collapsibleUp 300ms ease-out',
+          },
         },
       },
       keyframes: {
@@ -69,6 +79,14 @@ export default defineConfig({
           '100%': {
             backgroundPosition: '0% 50%',
           },
+        },
+        collapsibleDown: {
+          from: { height: 0 },
+          to: { height: 'var(--radix-collapsible-content-height)' },
+        },
+        collapsibleUp: {
+          from: { height: 'var(--radix-collapsible-content-height)' },
+          to: { height: 0 },
         },
       },
     },

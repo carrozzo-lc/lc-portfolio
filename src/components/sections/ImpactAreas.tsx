@@ -40,9 +40,8 @@ const styles = {
     borderRadius: '2xl',
     overflow: 'hidden',
     backgroundColor: 'gray.950',
-
+    // area item
     '& > li': {
-      // area item
       display: { base: 'flex' },
       flexDirection: { base: 'column' },
       py: { base: 6 },
@@ -87,9 +86,8 @@ const styles = {
       letterSpacing: 'wide',
       fontSize: 'lg',
     },
-
+    // points
     '& > li > ul': {
-      // points
       listStyle: 'none',
       margin: 0,
       paddingLeft: 3,
@@ -103,6 +101,7 @@ const styles = {
         position: 'relative',
         _before: {
           content: '""',
+          flexShrink: 0,
           color: 'primary.500',
           width: 1,
           height: 1,
@@ -111,7 +110,7 @@ const styles = {
         },
       },
     },
-
+    // role
     '& > li > div': {
       letterSpacing: 'wide',
       marginTop: 'auto',
@@ -145,7 +144,7 @@ const ImpactAreas = () => {
       <ul className={styles.areas}>
         {items?.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={`area-${index}`}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <ul>

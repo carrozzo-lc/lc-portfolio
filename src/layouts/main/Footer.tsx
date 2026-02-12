@@ -2,9 +2,10 @@
 import { css } from '@/styled-system/css';
 // ui
 import Container from '@/components/ui/Container';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 // intl
 import { useTranslations } from 'next-intl';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
+// components
 import {
   LinkedInLogoIcon,
   GitHubLogoIcon,

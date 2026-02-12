@@ -83,13 +83,19 @@
       }
     ]
   },
-  "Experience": {
+  "Experiences": {
     "title": "Experience",
     "items": [
       {
         "company": "Be Safe Rate",
+        "image": {
+          "src": "https://4cdre7ulzk.ucarecd.net/a86afcb6-fe82-477e-b966-86d9ce009e00/besaferate.jpg",
+          "alt": "Be Safe Rate preview"
+        },
         "role": "Frontend & UX-oriented development",
-        "period": "10/2023 – 09/2025",
+        "period": "10/2023 - 09/2025",
+        "sector": "Digital product: Travel / insurtech sector",
+        "companySummary": "Solution for hotels, tour operators and travel agencies.",
         "summary": "User flows → wireframe → mockup, then frontend implementation and API integration.",
         "highlights": [
           "In this project I worked on defining user flows, designing user flows, wireframes and mockups based on requirements provided by marketing and product teams.",
@@ -104,8 +110,14 @@
       },
       {
         "company": "Pemcards",
+        "image": {
+          "src": "https://4cdre7ulzk.ucarecd.net/a549fbcd-f6c9-4595-91cb-7d13d523cf30/pemcards.jpg",
+          "alt": "Pemcards preview"
+        },
         "role": "Frontend & UX-oriented development",
-        "period": "10/2022 – 06/2023",
+        "period": "10/2022 - 06/2023",
+        "sector": "Digital product: HR / digital rewards sector",
+        "companySummary": "B2B platform for creating and managing personalized digital cards, used for communication, engagement and corporate rewards.",
         "summary": "UX refactoring of the widget → reusable components → CRM dashboard for configuration and management.",
         "highlights": [
           "In this project I worked on an embeddable widget built in Vanilla JavaScript, refactoring the interface and flows to improve the user experience on both desktop and mobile. The goal was to make interactions clearer and more consistent, reducing friction and complexity.",
@@ -120,8 +132,14 @@
       },
       {
         "company": "GAMS Platform",
+        "image": {
+          "src": "https://4cdre7ulzk.ucarecd.net/2f48965f-0ff4-4152-a232-0de1e263c42c/gams.jpg",
+          "alt": "GAMS Platform preview"
+        },
         "role": "Frontend & UX-oriented development",
-        "period": "02/2021 – 07/2022",
+        "period": "02/2021 - 07/2022",
+        "sector": "Digital product: EdTech / e-learning platform sector",
+        "companySummary": "Platform for course management and delivery, with internal tools for communication and user management.",
         "summary": "Wireframe → mockup → React feature development → GraphQL integration → data‑driven UI.",
         "highlights": [
           "In this project I worked on UX design for several platform features, creating wireframes and mockups to define flows, visual hierarchy and interactions before development.",

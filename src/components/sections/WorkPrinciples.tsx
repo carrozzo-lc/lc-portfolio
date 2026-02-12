@@ -100,7 +100,7 @@ const WorkPrinciples = () => {
         {items?.map((item, index) => {
           const Icon = ICONS[item.icon];
           return (
-            <li key={index}>
+            <li key={`principle-${index}`}>
               <div>
                 {Icon ? <Icon style={{ width: 28, height: 28 }} /> : null}
               </div>
