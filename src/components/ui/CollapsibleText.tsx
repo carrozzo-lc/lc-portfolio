@@ -1,5 +1,5 @@
 'use client';
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, useSyncExternalStore } from 'react';
 // panda css
 import { css, cx } from '@/styled-system/css';
 // radix ui
@@ -37,24 +37,35 @@ type CollapsibleTextProps = {
   classNameContent?: string;
 };
 
-const CollapsibleText = ({ children, classNameRoot }: CollapsibleTextProps) => {
+const CollapsibleText = ({
+  children,
+  classNameRoot,
+  classNameContent,
+}: CollapsibleTextProps) => {
   const [open, setOpen] = useState(false);
+  const isMounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
   const isDesktop = useMediaQuery('(min-width: 1024px)');
   const merged = cx(styles.root, classNameRoot);
+  const mergedContent = cx(styles.content, classNameContent);
 
-  const resolvedOpen = isDesktop ? true : open;
+  const effectiveIsDesktop = isMounted ? isDesktop : true;
+  const resolvedOpen = effectiveIsDesktop ? true : open;
 
   return (
     <Collapsible.Root
       className={merged}
       open={resolvedOpen}
-      onOpenChange={isDesktop ? undefined : setOpen}
+      onOpenChange={effectiveIsDesktop ? undefined : setOpen}
     >
-      <Collapsible.Content className={styles.content}>
+      <Collapsible.Content className={mergedContent}>
         {children}
       </Collapsible.Content>
 
-      {!isDesktop && (
+      {!effectiveIsDesktop && (
         <div className={css({ display: 'flex', justifyContent: 'center' })}>
           <Collapsible.Trigger asChild className={styles.trigger}>
             <Button
