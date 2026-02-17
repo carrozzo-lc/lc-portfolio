@@ -5,5 +5,5 @@ export const PATHS = {
 };
 
 export const OTHER_PATHS = {
-  cv: 'https://4cdre7ulzk.ucarecd.net/928fb5a5-8e87-4693-8abd-c182e2de389b/cv_luca_carrozzo.pdf',
+  cv: 'https://4cdre7ulzk.ucarecd.net/c1ef471d-4bad-4e25-b761-70a0528ccbba/cv_luca_carrozzo.pdf',
 };
