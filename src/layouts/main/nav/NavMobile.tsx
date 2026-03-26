@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // panda css
 import { Drawer } from 'vaul';
 import { css, cx } from '@/styled-system/css';
@@ -115,18 +115,26 @@ interface NavMobileProps {
 const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
+  const [pendingAnchor, setPendingAnchor] = useState<string | null>(null);
 
-  const handleAnchorClick = (
-    event: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    if (!href.startsWith('#')) return;
-    const target = document.getElementById(href.slice(1));
-    if (!target) return;
-    event.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    history.replaceState(null, '', href);
-  };
+  useEffect(() => {
+    if (isOpen || !pendingAnchor) return;
+
+    const timeoutId = window.setTimeout(() => {
+      const target = document.getElementById(pendingAnchor.slice(1));
+
+      if (!target) {
+        setPendingAnchor(null);
+        return;
+      }
+
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', pendingAnchor);
+      setPendingAnchor(null);
+    }, 320);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [isOpen, pendingAnchor]);
 
   return (
     <Drawer.Root direction="top" open={isOpen} onOpenChange={setIsOpen}>
@@ -139,6 +147,7 @@ const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
 
         <Drawer.Content
           className={styles.content}
+          onCloseAutoFocus={(event) => event.preventDefault()}
           style={
             {
               '--initial-transform': 'calc(100% + 8px)',
@@ -188,7 +197,11 @@ const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
                       <Link
                         href={item.path}
                         onClick={(event) => {
-                          handleAnchorClick(event, item.path);
+                          if (item.path.startsWith('#')) {
+                            event.preventDefault();
+                            setPendingAnchor(item.path);
+                          }
+
                           setIsOpen(false);
                         }}
                       >
