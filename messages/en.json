@@ -177,5 +177,9 @@
   },
   "LanguageSwitcher": {
     "switchLabel": "Would you prefer to read this page in Italian?"
+  },
+  "CollapsibleText": {
+    "closeText": "Hide details",
+    "openText": "Show details"
   }
 }

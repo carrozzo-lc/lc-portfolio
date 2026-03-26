@@ -8,6 +8,8 @@ import { Collapsible } from 'radix-ui';
 import Button from './Button';
 // hooks
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+// next-intl
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -43,10 +45,11 @@ const CollapsibleText = ({
   classNameContent,
 }: CollapsibleTextProps) => {
   const [open, setOpen] = useState(false);
+  const t = useTranslations('CollapsibleText');
   const isMounted = useSyncExternalStore(
     () => () => {},
     () => true,
-    () => false,
+    () => false
   );
   const isDesktop = useMediaQuery('(min-width: 1024px)');
   const merged = cx(styles.root, classNameRoot);
@@ -77,7 +80,7 @@ const CollapsibleText = ({
                 marginTop: open ? 5 : 0,
               })}
             >
-              {open ? 'Chiudi dettagli' : 'Mostra dettagli'}
+              {open ? t('closeText') : t('openText')}
             </Button>
           </Collapsible.Trigger>
         </div>

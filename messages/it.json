@@ -177,5 +177,9 @@
   },
   "LanguageSwitcher": {
     "switchLabel": "Preferisci leggere questa pagina in inglese?"
+  },
+  "CollapsibleText": {
+    "closeText": "Chiudi dettagli",
+    "openText": "Mostra dettagli"
   }
 }
