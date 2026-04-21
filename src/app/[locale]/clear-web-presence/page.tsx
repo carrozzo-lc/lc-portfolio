@@ -5,15 +5,37 @@ import Hero from '@/components/sections/Hero';
 import ContactCTA from '@/components/sections/ContactCTA';
 // intl
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
 
 // ----------------------------------------------------------------------
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespace: 'Pages.ClearWebPresence.Meta',
+  });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+
 export default function ClearWebPresencePage() {
-  const tContact = useTranslations('ContactCTA');
+  const tContact = useTranslations('Pages.ClearWebPresence.ContactCTA');
 
   return (
     <>
-      <Hero className={css({ paddingTop: '64px' })} />
+      <Hero
+        namespace="Pages.ClearWebPresence.Hero"
+        className={css({ paddingTop: '64px' })}
+      />
 
       <ContactCTA
         title={tContact('title')}

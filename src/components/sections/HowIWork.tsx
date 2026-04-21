@@ -80,8 +80,12 @@ type HowIWorkItem = {
   description: string;
 };
 
-const HowIWorks = () => {
-  const t = useTranslations('HowIWork');
+type HowIWorksProps = {
+  namespace: string;
+};
+
+const HowIWorks = ({ namespace }: HowIWorksProps) => {
+  const t = useTranslations(namespace);
   const items = t.raw('items') as HowIWorkItem[];
 
   return (

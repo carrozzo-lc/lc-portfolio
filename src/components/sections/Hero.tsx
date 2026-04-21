@@ -113,10 +113,12 @@ const styles = {
 
 interface HeroProps {
   className?: string;
+  namespace: string;
 }
 
-const Hero = ({ className }: HeroProps) => {
-  const t = useTranslations('Hero');
+const Hero = ({ className, namespace }: HeroProps) => {
+  const t = useTranslations(namespace);
+  const eyebrow = t('eyebrow').trim();
   const rootClassName = cx('group', styles.root, className);
 
   return (
@@ -124,7 +126,7 @@ const Hero = ({ className }: HeroProps) => {
       <header className={styles.hero.root}>
         <div className={styles.hero.inner}>
           <div className={css({ mt: -1 })}>
-            <p className={styles.hero.eyebrow}>{t('eyebrow')}</p>
+            {eyebrow ? <p className={styles.hero.eyebrow}>{eyebrow}</p> : null}
             <h1 className={styles.hero.title}>
               {t.rich('title', {
                 br: () => <br />,
