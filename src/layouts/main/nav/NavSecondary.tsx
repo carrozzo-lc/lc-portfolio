@@ -8,7 +8,6 @@ import { useScrollRange } from '@/hooks/useScrollRange';
 // assets
 import logoImage from '@/images/logo2.svg';
 import Button from '@/components/ui/Button/Button';
-import navConfig from '@/config/config-navigation';
 import Link from 'next/link';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
@@ -89,7 +88,11 @@ const styles = {
   }),
 };
 
-const NavSecondary = () => {
+interface NavSecondaryProps {
+  navConfig: { titleKey: string; path: string }[];
+}
+
+const NavSecondary = ({ navConfig }: NavSecondaryProps) => {
   const t = useTranslations();
   const showSecondary = useScrollRange({
     showAfter: 80,

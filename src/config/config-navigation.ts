@@ -17,4 +17,19 @@ const navConfig = [
   },
 ];
 
-export default navConfig;
+const cvpNavConfig = [
+  {
+    titleKey: 'Nav.WorkPrinciples',
+    path: PATHS.workPrinciples,
+  },
+  {
+    titleKey: 'Nav.impactAreas',
+    path: PATHS.impactAreas,
+  },
+  {
+    titleKey: 'Nav.experience',
+    path: PATHS.experiences,
+  },
+];
+
+export { navConfig, cvpNavConfig };

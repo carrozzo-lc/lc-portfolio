@@ -22,10 +22,15 @@ const styles = {
 
 // ----------------------------------------------------------------------
 
-const MainLayout = ({ children }: { children: React.ReactNode }) => {
+interface MainLayoutProps {
+  navConfig: { titleKey: string; path: string }[];
+  children: React.ReactNode;
+}
+
+const MainLayout = ({ navConfig, children }: MainLayoutProps) => {
   return (
     <div className={styles.root}>
-      <Header />
+      <Header navConfig={navConfig} />
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
