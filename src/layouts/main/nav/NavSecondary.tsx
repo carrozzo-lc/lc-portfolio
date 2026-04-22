@@ -39,7 +39,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    maxW: '490px',
+    maxW: '554px',
     minHeight: '40px',
     margin: 'auto',
     borderRadius: 'full',
@@ -62,12 +62,12 @@ const styles = {
     flexGrow: 1,
     '& ul': {
       display: 'flex',
-      justifyContent: 'flex-end',
+      justifyContent: 'center',
       gap: '19px',
       listStyle: 'none',
       margin: 0,
       padding: 0,
-      mr: 4,
+      //mr: 4,
       pt: 0.5,
     },
     '& li': {
