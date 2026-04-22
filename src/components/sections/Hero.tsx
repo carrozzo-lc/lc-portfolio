@@ -154,6 +154,7 @@ const Hero = ({ className, namespace }: HeroProps) => {
               width={470}
               height={470}
               alt="Picture of the author"
+              style={{ height: 'auto' }}
             />
           </div>
         </div>
