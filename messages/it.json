@@ -181,11 +181,22 @@
         "description": "Portfolio di Luca Carrozzo: frontend developer orientato al prodotto. UX, architettura e qualità tecnica in React/Next.js. Progetti ed esperienze."
       },
       "Hero": {
-        "eyebrow": "Frontend Developer orientato al prodotto",
-        "title": "Dai requisiti al frontend, con <br></br> metodo, UX e attenzione al prodotto.",
-        "subtitle": "Aiuto startup e PMI a trasformare idee e requisiti in feature concrete, lavorando su struttura, UX e qualità tecnica.",
-        "primaryCta": "Come Lavoro",
-        "secondaryCta": "Scarica CV"
+        "eyebrow": "",
+        "title": "Crea una presenza web che rifletta la qualita di cio che stai costruendo",
+        "subtitle": "Esperienze web chiare, strutturate e scalabili, costruite senza complessita inutile o decisioni sbagliate.",
+        "primaryCta": "Iniziamo a parlarne",
+        "secondaryCta": "Scopri come lavoro"
+      },
+      "ProblemStatement": {
+        "title": "Quando tutto deve funzionare insieme, la chiarezza diventa piu difficile.",
+        "intro": "Non stai solo cercando di far sembrare qualcosa ben fatto. Stai cercando di capire cosa conta davvero, cosa semplificare e come trasformarlo in qualcosa di chiaro, solido e costruito per durare.",
+        "points": [
+          "Non e sempre facile capire da dove partire",
+          "Quello che sembra bello non sempre funziona bene nella pratica",
+          "Non dovresti aver bisogno di aiuto per ogni piccola modifica",
+          "Vuoi una struttura che abbia ancora senso anche piu avanti"
+        ],
+        "closing": "Ecco perche un processo chiaro fa la differenza."
       },
       "ContactCTA": {
         "title": "Hai un prodotto su cui lavorare?",

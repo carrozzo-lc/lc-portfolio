@@ -2,6 +2,9 @@ export const PATHS = {
   workPrinciples: '#how-i-work',
   impactAreas: '#impact-areas',
   experiences: '#experiences',
+  process: '#process',
+  whatIOffer: '#project-scenarios',
+  selectedWork: '#featured-work',
 };
 
 export const OTHER_PATHS = {

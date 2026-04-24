@@ -7,6 +7,7 @@ import ContactCTA from '@/components/sections/ContactCTA';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
+import ProblemStatement from '@/components/sections/ProblemStatement';
 
 // ----------------------------------------------------------------------
 
@@ -36,6 +37,8 @@ export default function ClearWebPresencePage() {
         namespace="Pages.ClearWebPresence.Hero"
         className={css({ paddingTop: '64px' })}
       />
+
+      <ProblemStatement namespace="Pages.ClearWebPresence.ProblemStatement" />
 
       <ContactCTA
         title={tContact('title')}

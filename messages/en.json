@@ -183,9 +183,20 @@
       "Hero": {
         "eyebrow": "",
         "title": "Create a web presence that reflects the quality of what you're building",
-        "subtitle": "Clear, structured and scalable web experiences, built without unnecessary complexity or wrong decisions.",
+        "subtitle": "Clear, structured, and scalable web experiences, built without unnecessary complexity or misguided decisions.",
         "primaryCta": "Start a conversation",
         "secondaryCta": "See how I work"
+      },
+      "ProblemStatement": {
+        "title": "When everything needs to work together,<br></br>clarity gets harder.",
+        "intro": "You’re not just trying to make something look good. You’re trying to understand what matters, what to simplify, and how to shape it into something clear, solid, and built to last.",
+        "points": [
+          "It’s hard to see what really matters first",
+          "What looks good doesn’t always work well in practice",
+          "You shouldn’t need help for every small change",
+          "You want a structure that still makes sense later"
+        ],
+        "closing": "That’s why a clear process makes the difference."
       },
       "ContactCTA": {
         "title": "Have a project in mind?",

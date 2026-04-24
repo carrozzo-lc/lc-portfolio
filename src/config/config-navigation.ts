@@ -20,15 +20,15 @@ const navConfig = [
 const cvpNavConfig = [
   {
     titleKey: 'Nav.clearWebPresence.howIWork',
-    path: PATHS.workPrinciples,
+    path: PATHS.process,
   },
   {
     titleKey: 'Nav.clearWebPresence.whatIOffer',
-    path: PATHS.impactAreas,
+    path: PATHS.whatIOffer,
   },
   {
     titleKey: 'Nav.clearWebPresence.work',
-    path: PATHS.experiences,
+    path: PATHS.selectedWork,
   },
 ];
 
