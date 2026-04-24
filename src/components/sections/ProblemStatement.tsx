@@ -10,7 +10,6 @@ import { useTranslations } from 'next-intl';
 const styles = {
   root: css({
     pt: { base: 12, lg: 16 },
-    //pb: { base: 12, lg: 10 },
     maxWidth: 600,
     marginX: 'auto',
   }),

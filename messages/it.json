@@ -222,6 +222,32 @@
           }
         ]
       },
+      "ProjectScenarios": {
+        "eyebrow": "Cosa offro",
+        "title": "Situazioni diverse<br></br>Un modo chiaro per andare avanti",
+        "subtitle": "La maggior parte dei progetti parte da una di queste situazioni",
+        "button": {
+          "text": "Iniziamo a parlarne",
+          "link": "mailto:me@lucacarrozzo.com"
+        },
+        "items": [
+          {
+            "label": "Partire da zero",
+            "title": "Hai bisogno di dare una struttura giusta prima di costruire",
+            "description": "Hai un’idea, un nuovo servizio o una direzione di prodotto, ma non ancora un modo chiaro per trasformarlo in qualcosa di strutturato, usabile e credibile."
+          },
+          {
+            "label": "Qualcosa esiste, ma non sta funzionando",
+            "title": "Hai gia qualcosa, ma non sta funzionando come dovrebbe",
+            "description": "La struttura non e chiara, l’esperienza non convince oppure gestirla e diventato piu complicato del necessario."
+          },
+          {
+            "label": "Ti serve qualcosa di semplice, ma fatto bene",
+            "title": "Ti serve qualcosa di semplice, ma senza tagliare gli angoli",
+            "description": "Niente eccessi, niente complessita gratuita. Solo qualcosa di chiaro, solido e allineato alla qualita di cio che stai costruendo."
+          }
+        ]
+      },
       "ContactCTA": {
         "title": "Hai un prodotto su cui lavorare?",
         "subtitle": "Se stai sviluppando o migliorando un prodotto digitale e cerchi qualcuno che possa aiutarti a trasformare requisiti e idee in frontend solidi e usabili, possiamo parlarne. Anche senza un brief perfetto.",

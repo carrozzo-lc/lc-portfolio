@@ -222,6 +222,32 @@
           }
         ]
       },
+      "ProjectScenarios": {
+        "eyebrow": "What I Offer",
+        "title": "Different situations<br></br>One clear way to move forward",
+        "subtitle": "Most projects start from one of these situations",
+        "button": {
+          "text": "Start a conversation",
+          "link": "mailto:me@lucacarrozzo.com"
+        },
+        "items": [
+          {
+            "label": "Starting from scratch",
+            "title": "You need to shape the right structure before building",
+            "description": "You have an idea, a new service or a product direction, but not yet a clear way to turn it into something structured, usable and credible."
+          },
+          {
+            "label": "Something exists, but it’s not working",
+            "title": "You already have something, but it’s not working as it should",
+            "description": "The structure is unclear, the experience feels off, or managing it has become more complicated than it should be."
+          },
+          {
+            "label": "Something simple, but done right",
+            "title": "You need something simple, done right",
+            "description": "Not overbuilt, not overdesigned. Just something clear, solid and aligned with the quality of what you’re building."
+          }
+        ]
+      },
       "ContactCTA": {
         "title": "Have a project in mind?",
         "subtitle": "If you want a clearer, more solid way forward, I’d be happy to help you shape it into something structured, usable, and built to last.",

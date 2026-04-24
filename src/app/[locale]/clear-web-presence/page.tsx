@@ -10,6 +10,7 @@ import Hero from '@/components/sections/Hero';
 import ContactCTA from '@/components/sections/ContactCTA';
 import ProblemStatement from '@/components/sections/ProblemStatement';
 import Process from '@/components/sections/Process';
+import ProjectScenarios from '@/components/sections/ProjectScenarios';
 
 // ----------------------------------------------------------------------
 
@@ -43,6 +44,8 @@ export default function ClearWebPresencePage() {
       <ProblemStatement namespace="Pages.ClearWebPresence.ProblemStatement" />
 
       <Process namespace="Pages.ClearWebPresence.Process" />
+
+      <ProjectScenarios namespace="Pages.ClearWebPresence.ProjectScenarios" />
 
       <ContactCTA
         title={tContact('title')}

@@ -19,7 +19,7 @@ const styles = {
     borderBottomWidth: '2px',
     borderBottomColor: 'primary.500',
     pr: 4,
-    mb: 8,
+    mb: 6,
   }),
   header: css({
     display: 'flex',
@@ -27,7 +27,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: { base: 'flex-start', lg: 'flex-start' },
     gap: { base: 8, lg: 12 },
-    mb: { base: 12, lg: 12 },
+    mb: { base: 7, lg: 8 },
   }),
   intro: css({
     maxWidth: { lg: '3xl' },
