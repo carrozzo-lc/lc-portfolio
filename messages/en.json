@@ -198,6 +198,30 @@
         ],
         "closing": "That’s why a clear process makes the difference."
       },
+      "Process": {
+        "eyebrow": "How I work",
+        "title": "A clear process, so you don’t have to<br></br>figure it out alone",
+        "description": "Every project is different. The process stays consistent.",
+        "flow": "Clarity -> Structure -> Execution",
+        "button": {
+          "text": "Start a conversation",
+          "link": "mailto:me@lucacarrozzo.com"
+        },
+        "items": [
+          {
+            "title": "Understand the context before making any decisions",
+            "description": "Before designing anything, I take time to understand your situation, constraints and priorities. This avoids unnecessary work and prevents decisions that look right but don’t hold up in real use."
+          },
+          {
+            "title": "Turn requirements into a clear structure",
+            "description": "I translate your needs into a clear structure: content priorities, page hierarchy and user flows. This is where things start to make sense and the project becomes easier to manage."
+          },
+          {
+            "title": "Build something that stays simple over time",
+            "description": "I develop the site using reusable elements and a clean structure, so it remains easy to update, scalable and consistent as it grows."
+          }
+        ]
+      },
       "ContactCTA": {
         "title": "Have a project in mind?",
         "subtitle": "If you want a clearer, more solid way forward, I’d be happy to help you shape it into something structured, usable, and built to last.",

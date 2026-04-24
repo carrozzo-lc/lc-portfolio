@@ -1,13 +1,15 @@
 // styles
 import { css } from '@/styled-system/css';
-// components
-import Hero from '@/components/sections/Hero';
-import ContactCTA from '@/components/sections/ContactCTA';
 // intl
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+// next
 import type { Metadata } from 'next';
+// components
+import Hero from '@/components/sections/Hero';
+import ContactCTA from '@/components/sections/ContactCTA';
 import ProblemStatement from '@/components/sections/ProblemStatement';
+import Process from '@/components/sections/Process';
 
 // ----------------------------------------------------------------------
 
@@ -39,6 +41,8 @@ export default function ClearWebPresencePage() {
       />
 
       <ProblemStatement namespace="Pages.ClearWebPresence.ProblemStatement" />
+
+      <Process namespace="Pages.ClearWebPresence.Process" />
 
       <ContactCTA
         title={tContact('title')}

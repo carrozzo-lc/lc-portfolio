@@ -5,9 +5,9 @@
     "experience": "Esperienze",
     "contact": "Contattami",
     "clearWebPresence": {
-      "howIWork": "How I work",
-      "whatIOffer": "What I offer",
-      "work": "Work"
+      "howIWork": "Come lavoro",
+      "whatIOffer": "Cosa offro",
+      "work": "Lavori"
     }
   },
   "Pages": {
@@ -197,6 +197,30 @@
           "Vuoi una struttura che abbia ancora senso anche piu avanti"
         ],
         "closing": "Ecco perche un processo chiaro fa la differenza."
+      },
+      "Process": {
+        "eyebrow": "Come lavoro",
+        "title": "Un processo chiaro, cosi non devi<br></br>capirlo da solo",
+        "description": "Ogni progetto e diverso. Il processo resta coerente.",
+        "flow": "Chiarezza -> Struttura -> Esecuzione",
+        "button": {
+          "text": "Iniziamo a parlarne",
+          "link": "mailto:me@lucacarrozzo.com"
+        },
+        "items": [
+          {
+            "title": "Capire il contesto prima di prendere decisioni",
+            "description": "Prima di progettare qualsiasi cosa, mi prendo il tempo per capire la situazione, i vincoli e le priorita. Questo evita lavoro inutile e decisioni che sembrano corrette ma non reggono nell’uso reale."
+          },
+          {
+            "title": "Trasformare i requisiti in una struttura chiara",
+            "description": "Traduco le esigenze in una struttura chiara: priorita dei contenuti, gerarchia delle pagine e flussi utente. E qui che il progetto inizia a diventare piu comprensibile e piu facile da gestire."
+          },
+          {
+            "title": "Costruire qualcosa che resti semplice nel tempo",
+            "description": "Sviluppo il sito usando elementi riutilizzabili e una struttura pulita, cosi resta facile da aggiornare, scalabile e coerente mentre cresce."
+          }
+        ]
       },
       "ContactCTA": {
         "title": "Hai un prodotto su cui lavorare?",
