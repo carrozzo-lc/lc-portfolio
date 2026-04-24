@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 const styles = {
   root: css({
     pt: { base: 16, lg: 24 },
-    pb: { base: 16, lg: 24 },
   }),
   shell: css({
     backgroundColor: 'primary.50',

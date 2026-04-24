@@ -248,6 +248,25 @@
           }
         ]
       },
+      "QualityStandards": {
+        "eyebrow": "Quality standards",
+        "title": "Good work should feel clear before it feels impressive",
+        "description": "It’s not about adding more features or making things look polished. It’s about building something that feels clear, solid and easy to work with over time.",
+        "items": [
+          {
+            "title": "Clear structure",
+            "description": "People should understand where they are, what matters and what to do next."
+          },
+          {
+            "title": "Less friction",
+            "description": "No unnecessary complexity, hidden dependencies or avoidable confusion."
+          },
+          {
+            "title": "Built to last",
+            "description": "Easy to update, consistent across pages and realistic to manage over time."
+          }
+        ]
+      },
       "ContactCTA": {
         "title": "Have a project in mind?",
         "subtitle": "If you want a clearer, more solid way forward, I’d be happy to help you shape it into something structured, usable, and built to last.",

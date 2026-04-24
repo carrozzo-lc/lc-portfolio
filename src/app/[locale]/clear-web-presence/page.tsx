@@ -11,6 +11,7 @@ import ContactCTA from '@/components/sections/ContactCTA';
 import ProblemStatement from '@/components/sections/ProblemStatement';
 import Process from '@/components/sections/Process';
 import ProjectScenarios from '@/components/sections/ProjectScenarios';
+import QualityStandards from '@/components/sections/QualityStandards';
 
 // ----------------------------------------------------------------------
 
@@ -46,6 +47,8 @@ export default function ClearWebPresencePage() {
       <Process namespace="Pages.ClearWebPresence.Process" />
 
       <ProjectScenarios namespace="Pages.ClearWebPresence.ProjectScenarios" />
+
+      <QualityStandards namespace="Pages.ClearWebPresence.QualityStandards" />
 
       <ContactCTA
         title={tContact('title')}
