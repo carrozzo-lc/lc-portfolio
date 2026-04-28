@@ -267,6 +267,32 @@
           }
         ]
       },
+      "FeaturedWork": {
+        "content": {
+          "eyebrow": "Selected Work",
+          "title": "Projects that show how this works in practice",
+          "subtitle": "A selection of projects where clarity, structure, and execution come together to solve real product and business needs",
+          "items": [
+            {
+              "id": "in-place-italy",
+              "panel": {
+                "meta": "Relocation & lifestyle service / Marketing website",
+                "title": "In Place Italy",
+                "tags": "UX Strategy · Interface Design · Frontend Development",
+                "description": "A premium marketing website for a relocation and lifestyle service in Puglia, built to create trust, reduce friction, and guide users towards a clear next step.",
+                "button": {
+                  "text": "View Case Study",
+                  "link": "#"
+                }
+              },
+              "image": {
+                "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
+                "alt": "Featured project preview"
+              }
+            }
+          ]
+        }
+      },
       "ContactCTA": {
         "title": "Have a project in mind?",
         "subtitle": "If you want a clearer, more solid way forward, I’d be happy to help you shape it into something structured, usable, and built to last.",

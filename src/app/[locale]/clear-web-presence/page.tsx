@@ -12,6 +12,7 @@ import ProblemStatement from '@/components/sections/ProblemStatement';
 import Process from '@/components/sections/Process';
 import ProjectScenarios from '@/components/sections/ProjectScenarios';
 import QualityStandards from '@/components/sections/QualityStandards';
+import FeaturedWork from '@/components/sections/FeaturedWork';
 
 // ----------------------------------------------------------------------
 
@@ -49,6 +50,8 @@ export default function ClearWebPresencePage() {
       <ProjectScenarios namespace="Pages.ClearWebPresence.ProjectScenarios" />
 
       <QualityStandards namespace="Pages.ClearWebPresence.QualityStandards" />
+
+      <FeaturedWork namespace="Pages.ClearWebPresence.FeaturedWork" />
 
       <ContactCTA
         title={tContact('title')}

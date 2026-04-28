@@ -267,6 +267,32 @@
           }
         ]
       },
+      "FeaturedWork": {
+        "content": {
+          "eyebrow": "Lavori selezionati",
+          "title": "Progetti che mostrano come questo approccio funziona nella pratica",
+          "subtitle": "Una selezione di progetti in cui chiarezza, struttura ed esecuzione lavorano insieme per risolvere bisogni reali di prodotto e di business",
+          "items": [
+            {
+              "id": "in-place-italy",
+              "panel": {
+                "meta": "Servizio relocation & lifestyle / Sito marketing",
+                "title": "In Place Italy",
+                "tags": "UX Strategy · Interface Design · Frontend Development",
+                "description": "Un sito marketing premium per un servizio di relocation e lifestyle in Puglia, progettato per creare fiducia, ridurre attrito e guidare le persone verso un passo successivo chiaro.",
+                "button": {
+                  "text": "Vedi il case study",
+                  "link": "#"
+                }
+              },
+              "image": {
+                "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
+                "alt": "Anteprima progetto in evidenza"
+              }
+            }
+          ]
+        }
+      },
       "ContactCTA": {
         "title": "Hai un prodotto su cui lavorare?",
         "subtitle": "Se stai sviluppando o migliorando un prodotto digitale e cerchi qualcuno che possa aiutarti a trasformare requisiti e idee in frontend solidi e usabili, possiamo parlarne. Anche senza un brief perfetto.",
