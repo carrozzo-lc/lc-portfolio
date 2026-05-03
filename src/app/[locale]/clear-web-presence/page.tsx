@@ -44,7 +44,6 @@ export default function ClearWebPresencePage() {
         className={css({ paddingTop: '64px' })}
         primaryCtaHref="mailto:me@lucacarrozzo.com"
         secondaryCtaHref={PATHS.process}
-        secondaryCtaTarget={PATHS.process}
       />
 
       <ProblemStatement namespace="Pages.ClearWebPresence.ProblemStatement" />

@@ -178,30 +178,30 @@
     "ClearWebPresence": {
       "Meta": {
         "title": "Presenza web chiara | Luca Carrozzo",
-        "description": "Esperienze web chiare, strutturate e scalabili per prodotti e servizi che hanno bisogno di una presenza online più solida, curate tra UX, frontend e qualità tecnica."
+        "description": "Esperienze web chiare, strutturate e scalabili per prodotti e servizi che hanno bisogno di una presenza online più solida, costruite con UX, architettura frontend e cura tecnica."
       },
       "Hero": {
         "eyebrow": "",
-        "title": "Crea una presenza web che rifletta la qualita di cio che stai costruendo",
-        "subtitle": "Esperienze web chiare, strutturate e scalabili, costruite senza complessita inutile o decisioni sbagliate.",
+        "title": "Crea una presenza web che rifletta la qualità di ciò che stai costruendo",
+        "subtitle": "Esperienze web chiare, strutturate e scalabili, costruite senza complessità inutile o decisioni sbagliate.",
         "primaryCta": "Iniziamo a parlarne",
         "secondaryCta": "Scopri come lavoro"
       },
       "ProblemStatement": {
-        "title": "Quando tutto deve funzionare insieme, la chiarezza diventa piu difficile.",
+        "title": "Quando tutto deve funzionare insieme,<br></br>la chiarezza diventa più difficile.",
         "intro": "Non stai solo cercando di far sembrare qualcosa ben fatto. Stai cercando di capire cosa conta davvero, cosa semplificare e come trasformarlo in qualcosa di chiaro, solido e costruito per durare.",
         "points": [
-          "Non e sempre facile capire da dove partire",
+          "Non è sempre facile capire cosa conta davvero per primo",
           "Quello che sembra bello non sempre funziona bene nella pratica",
           "Non dovresti aver bisogno di aiuto per ogni piccola modifica",
-          "Vuoi una struttura che abbia ancora senso anche piu avanti"
+          "Vuoi una struttura che abbia ancora senso anche più avanti"
         ],
-        "closing": "Ecco perche un processo chiaro fa la differenza."
+        "closing": "Ecco perché un processo chiaro fa la differenza."
       },
       "Process": {
         "eyebrow": "Come lavoro",
-        "title": "Un processo chiaro, cosi non devi<br></br>capirlo da solo",
-        "description": "Ogni progetto e diverso. Il processo resta coerente.",
+        "title": "Un processo chiaro, così non devi<br></br>capirlo da solo",
+        "description": "Ogni progetto è diverso. Il processo resta coerente.",
         "flow": "Chiarezza -> Struttura -> Esecuzione",
         "button": {
           "text": "Iniziamo a parlarne",
@@ -210,15 +210,15 @@
         "items": [
           {
             "title": "Capire il contesto prima di prendere decisioni",
-            "description": "Prima di progettare qualsiasi cosa, mi prendo il tempo per capire la situazione, i vincoli e le priorita. Questo evita lavoro inutile e decisioni che sembrano corrette ma non reggono nell’uso reale."
+            "description": "Prima di progettare qualsiasi cosa, mi prendo il tempo per capire la situazione, i vincoli e le priorità. Questo evita lavoro inutile e decisioni che sembrano corrette ma non reggono nell’uso reale."
           },
           {
             "title": "Trasformare i requisiti in una struttura chiara",
-            "description": "Traduco le esigenze in una struttura chiara: priorita dei contenuti, gerarchia delle pagine e flussi utente. E qui che il progetto inizia a diventare piu comprensibile e piu facile da gestire."
+            "description": "Traduco le esigenze in una struttura chiara: priorità dei contenuti, gerarchia delle pagine e flussi utente. È qui che il progetto inizia ad avere senso e diventa più facile da gestire."
           },
           {
             "title": "Costruire qualcosa che resti semplice nel tempo",
-            "description": "Sviluppo il sito usando elementi riutilizzabili e una struttura pulita, cosi resta facile da aggiornare, scalabile e coerente mentre cresce."
+            "description": "Sviluppo il sito usando elementi riutilizzabili e una struttura pulita, così resta facile da aggiornare, scalabile e coerente mentre cresce."
           }
         ]
       },
@@ -233,25 +233,25 @@
         "items": [
           {
             "label": "Partire da zero",
-            "title": "Hai bisogno di dare una struttura giusta prima di costruire",
+            "title": "Hai bisogno di definire la struttura giusta prima di costruire",
             "description": "Hai un’idea, un nuovo servizio o una direzione di prodotto, ma non ancora un modo chiaro per trasformarlo in qualcosa di strutturato, usabile e credibile."
           },
           {
             "label": "Qualcosa esiste, ma non sta funzionando",
-            "title": "Hai gia qualcosa, ma non sta funzionando come dovrebbe",
-            "description": "La struttura non e chiara, l’esperienza non convince oppure gestirla e diventato piu complicato del necessario."
+            "title": "Hai già qualcosa, ma non sta funzionando come dovrebbe",
+            "description": "La struttura non è chiara, l’esperienza non convince oppure gestirla è diventato più complicato del necessario."
           },
           {
             "label": "Ti serve qualcosa di semplice, ma fatto bene",
-            "title": "Ti serve qualcosa di semplice, ma senza tagliare gli angoli",
-            "description": "Niente eccessi, niente complessita gratuita. Solo qualcosa di chiaro, solido e allineato alla qualita di cio che stai costruendo."
+            "title": "Ti serve qualcosa di semplice, ma fatto bene",
+            "description": "Niente eccessi, niente sovraprogettazione. Solo qualcosa di chiaro, solido e allineato alla qualità di ciò che stai costruendo."
           }
         ]
       },
       "QualityStandards": {
-        "eyebrow": "Standard di qualita",
+        "eyebrow": "Standard di qualità",
         "title": "Un buon lavoro dovrebbe risultare chiaro prima ancora di sembrare impressionante",
-        "description": "Non si tratta di aggiungere piu funzionalita o far sembrare tutto piu rifinito. Si tratta di costruire qualcosa che resti chiaro, solido e facile da gestire nel tempo.",
+        "description": "Non si tratta di aggiungere più funzionalità o far sembrare tutto più rifinito. Si tratta di costruire qualcosa che risulti chiaro, solido e facile da gestire nel tempo.",
         "items": [
           {
             "title": "Struttura chiara",
@@ -259,7 +259,7 @@
           },
           {
             "title": "Meno attrito",
-            "description": "Nessuna complessita inutile, nessuna dipendenza nascosta o confusione evitabile."
+            "description": "Nessuna complessità inutile, nessuna dipendenza nascosta o confusione evitabile."
           },
           {
             "title": "Pensato per durare",
@@ -329,10 +329,10 @@
         }
       },
       "ContactCTA": {
-        "title": "Hai un prodotto su cui lavorare?",
-        "subtitle": "Se stai sviluppando o migliorando un prodotto digitale e cerchi qualcuno che possa aiutarti a trasformare requisiti e idee in frontend solidi e usabili, possiamo parlarne. Anche senza un brief perfetto.",
+        "title": "Hai un progetto in mente?",
+        "subtitle": "Se vuoi un modo più chiaro e solido per andare avanti, posso aiutarti a trasformarlo in qualcosa di strutturato, usabile e costruito per durare.",
         "button": {
-          "text": "Contattami!",
+          "text": "Iniziamo a parlarne",
           "link": "mailto:me@lucacarrozzo.com"
         }
       }
