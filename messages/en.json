@@ -288,6 +288,41 @@
               "image": {
                 "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
                 "alt": "Featured project preview"
+              },
+              "caseStudyDetails": {
+                "title": "In Place Italy",
+                "subtitle": "Designing a calm, high-trust website for a premium relocation and lifestyle service in Puglia.",
+                "image": {
+                  "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
+                  "alt": "In Place Italy website homepage preview"
+                },
+                "sections": [
+                  {
+                    "title": "Context",
+                    "body": "Premium relocation service helping international clients navigate life in Southern Italy with clarity and confidence"
+                  },
+                  {
+                    "title": "Challenge",
+                    "body": "The experience needed to feel clear, trustworthy, and easy to approach for people already dealing with complexity and uncertainty. The goal was to reduce friction, build trust quickly, and guide users toward taking the next step."
+                  },
+                  {
+                    "title": "Approach",
+                    "items": [
+                      "simplified the journey from reassurance to action",
+                      "structured content around real user decisions",
+                      "reduced cognitive load across key pages",
+                      "focused on clarity, tone, and consistency"
+                    ]
+                  },
+                  {
+                    "title": "Outcome",
+                    "body": "A clearer, more trustworthy experience that supports users from first visit to contact, while remaining easy to manage over time"
+                  }
+                ],
+                "button": {
+                  "text": "Visit the live website",
+                  "link": "https://inplaceitaly.com"
+                }
               }
             }
           ]

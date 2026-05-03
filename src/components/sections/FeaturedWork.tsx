@@ -3,6 +3,10 @@ import Container from '@/components/ui/Container';
 import { css } from '@/styled-system/css';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import DrawerBase from '@/components/ui/drawer/DrawerBase';
+import CaseStudyDrawerContent, {
+  type CaseStudyDetails,
+} from '@/components/CaseStudyDrawerContent';
 
 // ----------------------------------------------------------------------
 
@@ -97,13 +101,17 @@ const styles = {
     borderBottomRightRadius: { base: 'none' },
     px: { base: 4, md: 6 },
     py: { base: 5, md: 6 },
-    display: 'grid',
-    gridTemplateColumns: {
-      base: '1fr',
-      lg: 'minmax(0, 0.95fr) minmax(0, 1fr) auto',
+
+    '& > div': {
+      display: 'flex',
+      justifyContent: 'space-between',
+      flexDirection: { base: 'column', lg: 'row' },
+      gap: { base: 1 },
+
+      '& > *': {
+        flex: 1,
+      },
     },
-    gap: { base: 6, lg: 7 },
-    alignItems: 'start',
   }),
   panelMeta: css({
     fontSize: 'md',
@@ -127,8 +135,39 @@ const styles = {
     color: 'gray.800',
   }),
   panelCta: css({
+    mt: 7,
     width: { base: 'full', lg: 'fit-content' },
-    alignSelf: { lg: 'end' },
+  }),
+  caseStudyDrawerPanel: css({
+    roundedTop: '4xl',
+    borderTopWidth: '4px',
+    borderXWidth: '4px',
+    borderColor: 'primary.300',
+  }),
+  caseStudyDrawerHeader: css({
+    width: 'full',
+    mx: 'auto',
+    px: { base: 4, md: 8 },
+    pt: { base: 6, md: 7 },
+    pb: { base: 4, md: 6 },
+    borderBottomWidth: '1px',
+    borderColor: 'primary.100',
+  }),
+  caseStudyDrawerTitle: css({
+    color: 'gray.900',
+    fontSize: { base: '3xl', md: '4xl' },
+    lineHeight: { base: 1.12, md: '54px' },
+  }),
+  caseStudyDrawerDescription: css({
+    maxWidth: '3xl',
+    color: 'gray.800',
+    fontSize: { base: 'xl', md: '2xl' },
+    lineHeight: 'normal',
+  }),
+  caseStudyDrawerBody: css({
+    pt: { base: 8, md: 12 },
+    px: { base: 4, md: 8, lg: 0 },
+    pb: { base: 12, md: 16, lg: 24 },
   }),
 };
 
@@ -152,6 +191,7 @@ type FeaturedWorkItem = {
     src: string;
     alt: string;
   };
+  caseStudyDetails: CaseStudyDetails;
 };
 
 type FeaturedWorkCardProps = {
@@ -206,21 +246,34 @@ const FeaturedWorkCard = ({ item }: FeaturedWorkCardProps) => {
 
       <div className={styles.summaryPanel}>
         <div>
-          <p className={styles.panelMeta}>{item.panel.meta}</p>
-          <h3 className={styles.panelTitle}>{item.panel.title}</h3>
-          <p className={styles.panelTags}>{item.panel.tags}</p>
+          <div>
+            <p className={styles.panelMeta}>{item.panel.meta}</p>
+            <h3 className={styles.panelTitle}>{item.panel.title}</h3>
+            <p className={styles.panelTags}>{item.panel.tags}</p>
+          </div>
+
+          <p className={styles.panelDescription}>{item.panel.description}</p>
         </div>
 
-        <p className={styles.panelDescription}>{item.panel.description}</p>
-
-        <Button
-          size="sm"
-          className={styles.panelCta}
-          as="a"
-          href={item.panel.button.link}
+        <DrawerBase
+          direction="bottom"
+          trigger={
+            <Button size="sm" className={styles.panelCta}>
+              {item.panel.button.text}
+            </Button>
+          }
+          classNames={{
+            panel: styles.caseStudyDrawerPanel,
+            header: styles.caseStudyDrawerHeader,
+            title: styles.caseStudyDrawerTitle,
+            description: styles.caseStudyDrawerDescription,
+            body: styles.caseStudyDrawerBody,
+          }}
+          title={item.caseStudyDetails.title}
+          description={item.caseStudyDetails.subtitle}
         >
-          {item.panel.button.text}
-        </Button>
+          <CaseStudyDrawerContent content={item.caseStudyDetails} />
+        </DrawerBase>
       </div>
     </article>
   );

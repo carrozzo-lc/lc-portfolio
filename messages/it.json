@@ -288,6 +288,41 @@
               "image": {
                 "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
                 "alt": "Anteprima progetto in evidenza"
+              },
+              "caseStudyDetails": {
+                "title": "In Place Italy",
+                "subtitle": "Progettare un sito calmo e ad alta fiducia per un servizio premium di relocation e lifestyle in Puglia.",
+                "image": {
+                  "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
+                  "alt": "Anteprima della homepage del sito In Place Italy"
+                },
+                "sections": [
+                  {
+                    "title": "Contesto",
+                    "body": "Servizio premium di relocation che aiuta clienti internazionali a orientarsi nella vita nel Sud Italia con chiarezza e sicurezza"
+                  },
+                  {
+                    "title": "Sfida",
+                    "body": "L'esperienza doveva risultare chiara, affidabile e facile da approcciare per persone che stavano già affrontando complessità e incertezza. L'obiettivo era ridurre l'attrito, costruire fiducia rapidamente e guidare gli utenti verso il passo successivo."
+                  },
+                  {
+                    "title": "Approccio",
+                    "items": [
+                      "semplificare il percorso dalla rassicurazione all'azione",
+                      "strutturare i contenuti intorno alle decisioni reali degli utenti",
+                      "ridurre il carico cognitivo nelle pagine chiave",
+                      "concentrarsi su chiarezza, tono e coerenza"
+                    ]
+                  },
+                  {
+                    "title": "Risultato",
+                    "body": "Un'esperienza più chiara e affidabile che accompagna gli utenti dalla prima visita al contatto, restando semplice da gestire nel tempo"
+                  }
+                ],
+                "button": {
+                  "text": "Visita il sito online",
+                  "link": "https://inplaceitaly.com"
+                }
               }
             }
           ]

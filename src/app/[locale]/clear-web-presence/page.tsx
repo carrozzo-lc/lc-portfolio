@@ -13,6 +13,7 @@ import Process from '@/components/sections/Process';
 import ProjectScenarios from '@/components/sections/ProjectScenarios';
 import QualityStandards from '@/components/sections/QualityStandards';
 import FeaturedWork from '@/components/sections/FeaturedWork';
+import { PATHS } from '@/config/paths';
 
 // ----------------------------------------------------------------------
 
@@ -41,6 +42,9 @@ export default function ClearWebPresencePage() {
       <Hero
         namespace="Pages.ClearWebPresence.Hero"
         className={css({ paddingTop: '64px' })}
+        primaryCtaHref="mailto:me@lucacarrozzo.com"
+        secondaryCtaHref={PATHS.process}
+        secondaryCtaTarget={PATHS.process}
       />
 
       <ProblemStatement namespace="Pages.ClearWebPresence.ProblemStatement" />
