@@ -42,13 +42,17 @@ const styles = {
 
 interface NavPrimaryProps {
   navConfig: { titleKey: string; path: string }[];
+  logoLinkEnabled?: boolean;
 }
 
-const NavPrimary = ({ navConfig }: NavPrimaryProps) => {
+const NavPrimary = ({
+  navConfig,
+  logoLinkEnabled = true,
+}: NavPrimaryProps) => {
   const t = useTranslations();
   return (
     <header className={styles.primary}>
-      <Logo />
+      <Logo hasLink={logoLinkEnabled} />
 
       <NavList navData={navConfig} />
 
@@ -69,7 +73,7 @@ const NavPrimary = ({ navConfig }: NavPrimaryProps) => {
           {t('Nav.contact')}
         </Button>
 
-        <NavMobile navData={navConfig} />
+        <NavMobile navData={navConfig} logoLinkEnabled={logoLinkEnabled} />
       </div>
     </header>
   );

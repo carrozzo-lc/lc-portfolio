@@ -110,9 +110,14 @@ interface NavMobileProps {
     path: string;
   }>;
   triggerClassName?: string;
+  logoLinkEnabled?: boolean;
 }
 
-const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
+const NavMobile = ({
+  navData,
+  triggerClassName,
+  logoLinkEnabled = true,
+}: NavMobileProps) => {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
   const [pendingAnchor, setPendingAnchor] = useState<string | null>(null);
@@ -160,6 +165,7 @@ const NavMobile = ({ navData, triggerClassName }: NavMobileProps) => {
                 <Logo
                   imageSrc={logoImage}
                   css={css({ w: '10', '& img': { width: '28px' } })}
+                  hasLink={logoLinkEnabled}
                 />
 
                 <div

@@ -90,9 +90,13 @@ const styles = {
 
 interface NavSecondaryProps {
   navConfig: { titleKey: string; path: string }[];
+  logoLinkEnabled?: boolean;
 }
 
-const NavSecondary = ({ navConfig }: NavSecondaryProps) => {
+const NavSecondary = ({
+  navConfig,
+  logoLinkEnabled = true,
+}: NavSecondaryProps) => {
   const t = useTranslations();
   const showSecondary = useScrollRange({
     showAfter: 80,
@@ -117,7 +121,11 @@ const NavSecondary = ({ navConfig }: NavSecondaryProps) => {
       aria-hidden={!showSecondary}
     >
       <div className={styles.root}>
-        <Logo imageSrc={logoImage} css={styles.logo} />
+        <Logo
+          imageSrc={logoImage}
+          css={styles.logo}
+          hasLink={logoLinkEnabled}
+        />
 
         <nav className={styles.nav} aria-label="Navigazione rapida sticky">
           <ul>
@@ -159,6 +167,7 @@ const NavSecondary = ({ navConfig }: NavSecondaryProps) => {
 
           <NavMobile
             navData={navConfig}
+            logoLinkEnabled={logoLinkEnabled}
             triggerClassName={css({
               color: 'gray.950',
               pl: 2.5,

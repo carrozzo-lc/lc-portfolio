@@ -6,14 +6,15 @@ import NavSecondary from '@/layouts/main/nav/NavSecondary';
 
 interface HeaderProps {
   navConfig: { titleKey: string; path: string }[];
+  logoLinkEnabled?: boolean;
 }
 
-const Header = ({ navConfig }: HeaderProps) => {
+const Header = ({ navConfig, logoLinkEnabled = true }: HeaderProps) => {
   return (
     <>
-      <NavPrimary navConfig={navConfig} />
+      <NavPrimary navConfig={navConfig} logoLinkEnabled={logoLinkEnabled} />
 
-      <NavSecondary navConfig={navConfig} />
+      <NavSecondary navConfig={navConfig} logoLinkEnabled={logoLinkEnabled} />
     </>
   );
 };

@@ -25,12 +25,17 @@ const styles = {
 interface MainLayoutProps {
   navConfig: { titleKey: string; path: string }[];
   children: React.ReactNode;
+  logoLinkEnabled?: boolean;
 }
 
-const MainLayout = ({ navConfig, children }: MainLayoutProps) => {
+const MainLayout = ({
+  navConfig,
+  children,
+  logoLinkEnabled = true,
+}: MainLayoutProps) => {
   return (
     <div className={styles.root}>
-      <Header navConfig={navConfig} />
+      <Header navConfig={navConfig} logoLinkEnabled={logoLinkEnabled} />
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
