@@ -5,6 +5,8 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 // fonts
 import { alegreyaSans } from '@/app/fonts';
 import { routing } from '@/i18n/routing';
+import ConsentManager from '@/components/ConsentManager';
+import ThirdPartyScripts from '@/components/ThirdPartyScripts';
 // global styles
 import '../globals.css';
 
@@ -35,6 +37,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={alegreyaSans.className} suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <ConsentManager />
+          <ThirdPartyScripts />
           {children}
         </NextIntlClientProvider>
       </body>
