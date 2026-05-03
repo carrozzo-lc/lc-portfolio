@@ -4,8 +4,6 @@ import { css } from '@/styled-system/css';
 import Logo from '@/components/Logo';
 import NavList from '@/layouts/main/nav/NavList';
 import Button from '@/components/ui/Button/Button';
-// config
-import navConfig from '@/config/config-navigation';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
 
@@ -42,7 +40,11 @@ const styles = {
   }),
 };
 
-const NavPrimary = () => {
+interface NavPrimaryProps {
+  navConfig: { titleKey: string; path: string }[];
+}
+
+const NavPrimary = ({ navConfig }: NavPrimaryProps) => {
   const t = useTranslations();
   return (
     <header className={styles.primary}>

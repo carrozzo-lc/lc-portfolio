@@ -162,8 +162,12 @@ type ExperiencesItem = {
   };
 };
 
-const Experiences = () => {
-  const t = useTranslations('Experiences');
+type ExperiencesProps = {
+  namespace: string;
+};
+
+const Experiences = ({ namespace }: ExperiencesProps) => {
+  const t = useTranslations(namespace);
   const items = t.raw('items') as ExperiencesItem[];
 
   return (

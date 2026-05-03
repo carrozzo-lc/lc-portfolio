@@ -8,7 +8,6 @@ import { useScrollRange } from '@/hooks/useScrollRange';
 // assets
 import logoImage from '@/images/logo2.svg';
 import Button from '@/components/ui/Button/Button';
-import navConfig from '@/config/config-navigation';
 import Link from 'next/link';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
@@ -40,7 +39,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    maxW: '490px',
+    maxW: '554px',
     minHeight: '40px',
     margin: 'auto',
     borderRadius: 'full',
@@ -63,12 +62,12 @@ const styles = {
     flexGrow: 1,
     '& ul': {
       display: 'flex',
-      justifyContent: 'flex-end',
+      justifyContent: 'center',
       gap: '19px',
       listStyle: 'none',
       margin: 0,
       padding: 0,
-      mr: 4,
+      //mr: 4,
       pt: 0.5,
     },
     '& li': {
@@ -89,7 +88,11 @@ const styles = {
   }),
 };
 
-const NavSecondary = () => {
+interface NavSecondaryProps {
+  navConfig: { titleKey: string; path: string }[];
+}
+
+const NavSecondary = ({ navConfig }: NavSecondaryProps) => {
   const t = useTranslations();
   const showSecondary = useScrollRange({
     showAfter: 80,

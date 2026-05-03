@@ -1,174 +1,345 @@
 {
-  "Meta": {
-    "homeTitle": "Luca Carrozzo | Frontend Developer & UX Engineer",
-    "homeDescription": "Luca Carrozzo’s portfolio: product-oriented frontend developer focused on UX, architecture and technical quality in React/Next.js. Projects and experience."
-  },
   "Nav": {
     "WorkPrinciples": "How I work",
     "impactAreas": "Impact areas",
     "experience": "Experience",
-    "contact": "Let’s Talk"
+    "contact": "Let’s Talk",
+    "clearWebPresence": {
+      "howIWork": "How I work",
+      "whatIOffer": "What I offer",
+      "work": "Selected Work"
+    }
   },
-  "Hero": {
-    "eyebrow": "Product-oriented Frontend Developer",
-    "title": "From requirements to frontend, with method, UX and product focus.",
-    "subtitle": "I help startups and SMEs turn ideas and requirements into concrete features, working on structure, UX and technical quality.",
-    "primaryCta": "How I work",
-    "secondaryCta": "Download CV"
-  },
-  "HowIWork": {
-    "title": "How I work",
-    "intro": "Every project has different constraints, goals and complexity. I start by understanding the context and the real problems, turning requirements and ideas into clear, usable and sustainable solutions.",
-    "items": [
-      {
-        "title": "I understand the problem before designing",
-        "description": "Before designing or building, I clarify goals, constraints and priorities in context. This helps me make informed decisions and avoid solutions that look right but fail in real use.",
-        "icon": "search"
+  "Pages": {
+    "Home": {
+      "Meta": {
+        "title": "Luca Carrozzo | Frontend Developer & UX Engineer",
+        "description": "Luca Carrozzo’s portfolio: product-oriented frontend developer focused on UX, architecture and technical quality in React/Next.js. Projects and experience."
       },
-      {
-        "title": "I turn requirements into structure",
-        "description": "I translate requirements into a clear structure: content priority, visual hierarchy and user flows. This makes the interface easier to understand and reduces ambiguity throughout the process.",
-        "icon": "structure"
+      "Hero": {
+        "eyebrow": "Product-oriented Frontend Developer",
+        "title": "From requirements to frontend, with method, UX and product focus.",
+        "subtitle": "I help startups and SMEs turn ideas and requirements into concrete features, working on structure, UX and technical quality.",
+        "primaryCta": "How I work",
+        "secondaryCta": "Download CV"
       },
-      {
-        "title": "I implement reusable elements, not screens",
-        "description": "I build accessible, coherent interfaces by clarifying content, priorities and interaction feedback. I design reusable elements and patterns to keep consistency over time.",
-        "icon": "components"
+      "HowIWork": {
+        "title": "How I work",
+        "intro": "Every project has different constraints, goals and complexity. I start by understanding the context and the real problems, turning requirements and ideas into clear, usable and sustainable solutions.",
+        "items": [
+          {
+            "title": "I understand the problem before designing",
+            "description": "Before designing or building, I clarify goals, constraints and priorities in context. This helps me make informed decisions and avoid solutions that look right but fail in real use.",
+            "icon": "search"
+          },
+          {
+            "title": "I turn requirements into structure",
+            "description": "I translate requirements into a clear structure: content priority, visual hierarchy and user flows. This makes the interface easier to understand and reduces ambiguity throughout the process.",
+            "icon": "structure"
+          },
+          {
+            "title": "I implement reusable elements, not screens",
+            "description": "I build accessible, coherent interfaces by clarifying content, priorities and interaction feedback. I design reusable elements and patterns to keep consistency over time.",
+            "icon": "components"
+          }
+        ]
+      },
+      "ImpactAreas": {
+        "title": "Areas of impact",
+        "intro": "When I work on a product, my contribution goes beyond implementation. I work on structure, UX and technical quality to improve clarity and long-term sustainability.",
+        "items": [
+          {
+            "title": "Frontend structure",
+            "description": "I build clear, sustainable frontends designed to grow without accumulating unnecessary complexity.",
+            "points": [
+              "Code organization and separation of concerns",
+              "Scalability and maintainability over time",
+              "Reduced technical debt and clarity for the team"
+            ],
+            "role": "React · Next.js · Component architecture"
+          },
+          {
+            "title": "UX & interface",
+            "description": "I make interface decisions to keep flows understandable, usable and consistent, even when the design isn’t fully defined.",
+            "points": [
+              "Visual hierarchy and readability",
+              "Typography, spacing and functional layouts",
+              "Turning flows into clear interactions"
+            ],
+            "role": "UX engineering · Design system · Accessibility"
+          },
+          {
+            "title": "Technical quality & performance",
+            "description": "I treat quality and performance as part of the experience, not as late optimizations.",
+            "points": [
+              "Frontend performance and load times",
+              "Prevention of regressions and structural bugs",
+              "Reliable, easy-to-maintain code"
+            ],
+            "role": "Performance · Code quality · Best practices"
+          },
+          {
+            "title": "Delivery & collaboration",
+            "description": "I work closely with PMs, designers and stakeholders to turn requirements and goals into implementable solutions.",
+            "points": [
+              "Requirement analysis and technical trade-offs",
+              "Continuous collaboration and iteration",
+              "Ownership of frontend delivery"
+            ],
+            "role": "Product thinking · Team collaboration"
+          }
+        ]
+      },
+      "Experiences": {
+        "title": "Experience",
+        "items": [
+          {
+            "company": "Be Safe Rate",
+            "image": {
+              "src": "https://4cdre7ulzk.ucarecd.net/a86afcb6-fe82-477e-b966-86d9ce009e00/besaferate.jpg",
+              "alt": "Be Safe Rate preview"
+            },
+            "role": "Frontend & UX-oriented development",
+            "period": "10/2023 - 09/2025",
+            "sector": "Digital product: Travel / insurtech sector",
+            "companySummary": "Solution for hotels, tour operators and travel agencies.",
+            "summary": "User flows → wireframe → mockup, then frontend implementation and API integration.",
+            "highlights": [
+              "In this project I worked on defining user flows, designing user flows, wireframes and mockups based on requirements provided by marketing and product teams.",
+              "Once the specifications were validated, I handled the full transition to frontend development, implementing interfaces with attention to code structure, scalability and performance.",
+              "I collaborated closely with the tech lead and backend team for API integration, adapting the work to requirement changes and new features introduced during development.",
+              "Focus: UX→frontend continuity to avoid mismatches and regressions as features evolved."
+            ],
+            "tags": {
+              "tech": ["Next.js", "API Integration", "React.js", "Tailwind"],
+              "ux": ["UX Design", "Architecture", "Accessibility"]
+            }
+          },
+          {
+            "company": "Pemcards",
+            "image": {
+              "src": "https://4cdre7ulzk.ucarecd.net/a549fbcd-f6c9-4595-91cb-7d13d523cf30/pemcards.jpg",
+              "alt": "Pemcards preview"
+            },
+            "role": "Frontend & UX-oriented development",
+            "period": "10/2022 - 06/2023",
+            "sector": "Digital product: HR / digital rewards sector",
+            "companySummary": "B2B platform for creating and managing personalized digital cards, used for communication, engagement and corporate rewards.",
+            "summary": "UX refactoring of the widget → reusable components → CRM dashboard for configuration and management.",
+            "highlights": [
+              "In this project I worked on an embeddable widget built in Vanilla JavaScript, refactoring the interface and flows to improve the user experience on both desktop and mobile. The goal was to make interactions clearer and more consistent, reducing friction and complexity.",
+              "In parallel I contributed to the development of a CRM dashboard in React/Next.js, designing and implementing new features for configuring and managing widgets. I worked on view structure and reusable components, keeping UI and application logic consistent.",
+              "Among the main features, I built the create, edit and listing views for widgets, including a feature that automated widget generation from the dashboard. I collaborated with the technical team for REST API integration and for evolving features based on requirements.",
+              "Focus: UX continuity between dashboard configuration and widget usage, reducing friction and inconsistencies."
+            ],
+            "tags": {
+              "tech": ["Vanilla JS", "React.js", "Next.js", "Rest API"],
+              "ux": ["UX Design", "Reusable components"]
+            }
+          },
+          {
+            "company": "GAMS Platform",
+            "image": {
+              "src": "https://4cdre7ulzk.ucarecd.net/2f48965f-0ff4-4152-a232-0de1e263c42c/gams.jpg",
+              "alt": "GAMS Platform preview"
+            },
+            "role": "Frontend & UX-oriented development",
+            "period": "02/2021 - 07/2022",
+            "sector": "Digital product: EdTech / e-learning platform sector",
+            "companySummary": "Platform for course management and delivery, with internal tools for communication and user management.",
+            "summary": "Wireframe → mockup → React feature development → GraphQL integration → data-driven UI.",
+            "highlights": [
+              "In this project I worked on UX design for several platform features, creating wireframes and mockups to define flows, visual hierarchy and interactions before development.",
+              "Once solutions were validated, I developed the features in React, handling API integration via GraphQL (Apollo Client). I worked on data-driven interfaces with a focus on state management, flow clarity and scalable solutions.",
+              "I contributed to multiple areas of the platform, including course listings, single-course views and internal tools like a CRM and an email marketing editor. I built reusable components and optimized the interface to ensure performance and cross-device and cross-browser compatibility.",
+              "Focus: designing and developing complex interfaces for educational platforms, maintaining UX consistency and frontend scalability."
+            ],
+            "tags": {
+              "tech": ["React.js", "GraphQL", "Apollo Client", "Tailwind"],
+              "ux": ["UX Design", "Design System", "Frontend architecture"]
+            }
+          }
+        ]
+      },
+      "CareerCTA": {
+        "title": "Would you like to learn more about my professional background?",
+        "textLink": "LinkedIn profile",
+        "link": "https://www.linkedin.com/in/lucacarrozzo/"
+      },
+      "ContactCTA": {
+        "title": "Do you have a product to work on?",
+        "subtitle": "If you are building or improving a digital product and need someone to turn requirements and ideas into solid, usable frontends, we can talk. Even without a perfect brief.",
+        "button": {
+          "text": "Let's Talk!",
+          "link": "mailto:me@lucacarrozzo.com"
+        }
       }
-    ]
-  },
-  "ImpactAreas": {
-    "title": "Areas of impact",
-    "intro": "When I work on a product, my contribution goes beyond implementation. I work on structure, UX and technical quality to improve clarity and long‑term sustainability.",
-    "items": [
-      {
-        "title": "Frontend structure",
-        "description": "I build clear, sustainable frontends designed to grow without accumulating unnecessary complexity.",
-        "points": [
-          "Code organization and separation of concerns",
-          "Scalability and maintainability over time",
-          "Reduced technical debt and clarity for the team"
-        ],
-        "role": "React · Next.js · Component architecture"
+    },
+    "ClearWebPresence": {
+      "Meta": {
+        "title": "Luca Carrozzo | Frontend Developer & UX Engineer",
+        "description": "Luca Carrozzo’s portfolio: product-oriented frontend developer focused on UX, architecture and technical quality in React/Next.js. Projects and experience."
       },
-      {
-        "title": "UX & interface",
-        "description": "I make interface decisions to keep flows understandable, usable and consistent, even when the design isn’t fully defined.",
-        "points": [
-          "Visual hierarchy and readability",
-          "Typography, spacing and functional layouts",
-          "Turning flows into clear interactions"
-        ],
-        "role": "UX engineering · Design system · Accessibility"
+      "Hero": {
+        "eyebrow": "",
+        "title": "Create a web presence that reflects the quality of what you're building",
+        "subtitle": "Clear, structured, and scalable web experiences, built without unnecessary complexity or misguided decisions.",
+        "primaryCta": "Start a conversation",
+        "secondaryCta": "See how I work"
       },
-      {
-        "title": "Technical quality & performance",
-        "description": "I treat quality and performance as part of the experience, not as late optimizations.",
+      "ProblemStatement": {
+        "title": "When everything needs to work together,<br></br>clarity gets harder.",
+        "intro": "You’re not just trying to make something look good. You’re trying to understand what matters, what to simplify, and how to shape it into something clear, solid, and built to last.",
         "points": [
-          "Frontend performance and load times",
-          "Prevention of regressions and structural bugs",
-          "Reliable, easy‑to‑maintain code"
+          "It’s hard to see what really matters first",
+          "What looks good doesn’t always work well in practice",
+          "You shouldn’t need help for every small change",
+          "You want a structure that still makes sense later"
         ],
-        "role": "Performance · Code quality · Best practices"
+        "closing": "That’s why a clear process makes the difference."
       },
-      {
-        "title": "Delivery & collaboration",
-        "description": "I work closely with PMs, designers and stakeholders to turn requirements and goals into implementable solutions.",
-        "points": [
-          "Requirement analysis and technical trade‑offs",
-          "Continuous collaboration and iteration",
-          "Ownership of frontend delivery"
-        ],
-        "role": "Product thinking · Team collaboration"
-      }
-    ]
-  },
-  "Experiences": {
-    "title": "Experience",
-    "items": [
-      {
-        "company": "Be Safe Rate",
-        "image": {
-          "src": "https://4cdre7ulzk.ucarecd.net/a86afcb6-fe82-477e-b966-86d9ce009e00/besaferate.jpg",
-          "alt": "Be Safe Rate preview"
+      "Process": {
+        "eyebrow": "How I work",
+        "title": "A clear process, so you don’t have to<br></br>figure it out alone",
+        "description": "Every project is different. The process stays consistent.",
+        "flow": "Clarity -> Structure -> Execution",
+        "button": {
+          "text": "Start a conversation",
+          "link": "mailto:me@lucacarrozzo.com"
         },
-        "role": "Frontend & UX-oriented development",
-        "period": "10/2023 - 09/2025",
-        "sector": "Digital product: Travel / insurtech sector",
-        "companySummary": "Solution for hotels, tour operators and travel agencies.",
-        "summary": "User flows → wireframe → mockup, then frontend implementation and API integration.",
-        "highlights": [
-          "In this project I worked on defining user flows, designing user flows, wireframes and mockups based on requirements provided by marketing and product teams.",
-          "Once the specifications were validated, I handled the full transition to frontend development, implementing interfaces with attention to code structure, scalability and performance.",
-          "I collaborated closely with the tech lead and backend team for API integration, adapting the work to requirement changes and new features introduced during development.",
-          "Focus: UX→frontend continuity to avoid mismatches and regressions as features evolved."
-        ],
-        "tags": {
-          "tech": ["Next.js", "API Integration", "React.js", "Tailwind"],
-          "ux": ["UX Design", "Architecture", "Accessibility"]
+        "items": [
+          {
+            "title": "Understand the context before making any decisions",
+            "description": "Before designing anything, I take time to understand your situation, constraints and priorities. This avoids unnecessary work and prevents decisions that look right but don’t hold up in real use."
+          },
+          {
+            "title": "Turn requirements into a clear structure",
+            "description": "I translate your needs into a clear structure: content priorities, page hierarchy and user flows. This is where things start to make sense and the project becomes easier to manage."
+          },
+          {
+            "title": "Build something that stays simple over time",
+            "description": "I develop the site using reusable elements and a clean structure, so it remains easy to update, scalable and consistent as it grows."
+          }
+        ]
+      },
+      "ProjectScenarios": {
+        "eyebrow": "What I Offer",
+        "title": "Different situations<br></br>One clear way to move forward",
+        "subtitle": "Most projects start from one of these situations",
+        "button": {
+          "text": "Start a conversation",
+          "link": "mailto:me@lucacarrozzo.com"
+        },
+        "items": [
+          {
+            "label": "Starting from scratch",
+            "title": "You need to shape the right structure before building",
+            "description": "You have an idea, a new service or a product direction, but not yet a clear way to turn it into something structured, usable and credible."
+          },
+          {
+            "label": "Something exists, but it’s not working",
+            "title": "You already have something, but it’s not working as it should",
+            "description": "The structure is unclear, the experience feels off, or managing it has become more complicated than it should be."
+          },
+          {
+            "label": "Something simple, but done right",
+            "title": "You need something simple, done right",
+            "description": "Not overbuilt, not overdesigned. Just something clear, solid and aligned with the quality of what you’re building."
+          }
+        ]
+      },
+      "QualityStandards": {
+        "eyebrow": "Quality standards",
+        "title": "Good work should feel clear before it feels impressive",
+        "description": "It’s not about adding more features or making things look polished. It’s about building something that feels clear, solid and easy to work with over time.",
+        "items": [
+          {
+            "title": "Clear structure",
+            "description": "People should understand where they are, what matters and what to do next."
+          },
+          {
+            "title": "Less friction",
+            "description": "No unnecessary complexity, hidden dependencies or avoidable confusion."
+          },
+          {
+            "title": "Built to last",
+            "description": "Easy to update, consistent across pages and realistic to manage over time."
+          }
+        ]
+      },
+      "FeaturedWork": {
+        "content": {
+          "eyebrow": "Selected Work",
+          "title": "Projects that show how this works in practice",
+          "subtitle": "A selection of projects where clarity, structure, and execution come together to solve real product and business needs",
+          "items": [
+            {
+              "id": "in-place-italy",
+              "panel": {
+                "meta": "Relocation & lifestyle service / Marketing website",
+                "title": "In Place Italy",
+                "tags": "UX Strategy · Interface Design · Frontend Development",
+                "description": "A premium marketing website for a relocation and lifestyle service in Puglia, built to create trust, reduce friction, and guide users towards a clear next step.",
+                "button": {
+                  "text": "View Case Study",
+                  "link": "#"
+                }
+              },
+              "image": {
+                "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
+                "alt": "Featured project preview"
+              },
+              "caseStudyDetails": {
+                "title": "In Place Italy",
+                "subtitle": "Designing a calm, high-trust website for a premium relocation and lifestyle service in Puglia.",
+                "image": {
+                  "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
+                  "alt": "In Place Italy website homepage preview"
+                },
+                "sections": [
+                  {
+                    "title": "Context",
+                    "body": "Premium relocation service helping international clients navigate life in Southern Italy with clarity and confidence"
+                  },
+                  {
+                    "title": "Challenge",
+                    "body": "The experience needed to feel clear, trustworthy, and easy to approach for people already dealing with complexity and uncertainty. The goal was to reduce friction, build trust quickly, and guide users toward taking the next step."
+                  },
+                  {
+                    "title": "Approach",
+                    "items": [
+                      "simplified the journey from reassurance to action",
+                      "structured content around real user decisions",
+                      "reduced cognitive load across key pages",
+                      "focused on clarity, tone, and consistency"
+                    ]
+                  },
+                  {
+                    "title": "Outcome",
+                    "body": "A clearer, more trustworthy experience that supports users from first visit to contact, while remaining easy to manage over time"
+                  }
+                ],
+                "button": {
+                  "text": "Visit the live website",
+                  "link": "https://inplaceitaly.com"
+                }
+              }
+            }
+          ]
         }
       },
-      {
-        "company": "Pemcards",
-        "image": {
-          "src": "https://4cdre7ulzk.ucarecd.net/a549fbcd-f6c9-4595-91cb-7d13d523cf30/pemcards.jpg",
-          "alt": "Pemcards preview"
-        },
-        "role": "Frontend & UX-oriented development",
-        "period": "10/2022 - 06/2023",
-        "sector": "Digital product: HR / digital rewards sector",
-        "companySummary": "B2B platform for creating and managing personalized digital cards, used for communication, engagement and corporate rewards.",
-        "summary": "UX refactoring of the widget → reusable components → CRM dashboard for configuration and management.",
-        "highlights": [
-          "In this project I worked on an embeddable widget built in Vanilla JavaScript, refactoring the interface and flows to improve the user experience on both desktop and mobile. The goal was to make interactions clearer and more consistent, reducing friction and complexity.",
-          "In parallel I contributed to the development of a CRM dashboard in React/Next.js, designing and implementing new features for configuring and managing widgets. I worked on view structure and reusable components, keeping UI and application logic consistent.",
-          "Among the main features, I built the create, edit and listing views for widgets, including a feature that automated widget generation from the dashboard. I collaborated with the technical team for REST API integration and for evolving features based on requirements.",
-          "Focus: UX continuity between dashboard configuration and widget usage, reducing friction and inconsistencies."
-        ],
-        "tags": {
-          "tech": ["Vanilla JS", "React.js", "Next.js", "Rest API"],
-          "ux": ["UX Design", "Reusable components"]
-        }
-      },
-      {
-        "company": "GAMS Platform",
-        "image": {
-          "src": "https://4cdre7ulzk.ucarecd.net/2f48965f-0ff4-4152-a232-0de1e263c42c/gams.jpg",
-          "alt": "GAMS Platform preview"
-        },
-        "role": "Frontend & UX-oriented development",
-        "period": "02/2021 - 07/2022",
-        "sector": "Digital product: EdTech / e-learning platform sector",
-        "companySummary": "Platform for course management and delivery, with internal tools for communication and user management.",
-        "summary": "Wireframe → mockup → React feature development → GraphQL integration → data‑driven UI.",
-        "highlights": [
-          "In this project I worked on UX design for several platform features, creating wireframes and mockups to define flows, visual hierarchy and interactions before development.",
-          "Once solutions were validated, I developed the features in React, handling API integration via GraphQL (Apollo Client). I worked on data‑driven interfaces with a focus on state management, flow clarity and scalable solutions.",
-          "I contributed to multiple areas of the platform, including course listings, single‑course views and internal tools like a CRM and an email marketing editor. I built reusable components and optimized the interface to ensure performance and cross‑device and cross‑browser compatibility.",
-          "Focus: designing and developing complex interfaces for educational platforms, maintaining UX consistency and frontend scalability."
-        ],
-        "tags": {
-          "tech": ["React.js", "GraphQL", "Apollo Client", "Tailwind"],
-          "ux": ["UX Design", "Design System", "Frontend architecture"]
+      "ContactCTA": {
+        "title": "Have a project in mind?",
+        "subtitle": "If you want a clearer, more solid way forward, I’d be happy to help you shape it into something structured, usable, and built to last.",
+        "button": {
+          "text": "Start a conversation",
+          "link": "mailto:me@lucacarrozzo.com"
         }
       }
-    ]
-  },
-  "CareerCTA": {
-    "title": "Would you like to learn more about my professional background?",
-    "textLink": "LinkedIn profile",
-    "link": "https://www.linkedin.com/in/lucacarrozzo/"
-  },
-  "ContactCTA": {
-    "title": "Do you have a product to work on?",
-    "subtitle": "If you are building or improving a digital product and need someone to turn requirements and ideas into solid, usable frontends, we can talk. Even without a perfect brief.",
-    "button": {
-      "text": "Let's Talk!",
-      "link": "mailto:me@lucacarrozzo.com"
     }
   },
   "Footer": {
-    "copyright": "Copyright \u00A9 {currentYear} | Luca Carrozzo",
+    "copyright": "Copyright © {currentYear} | Luca Carrozzo",
     "social": {
       "xTwitter": "https://x.com/carrozzo_lc",
       "linkedin": "https://www.linkedin.com/in/lucacarrozzo/",

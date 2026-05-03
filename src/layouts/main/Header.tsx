@@ -4,12 +4,16 @@ import NavSecondary from '@/layouts/main/nav/NavSecondary';
 
 // ----------------------------------------------------------------------
 
-const Header = () => {
+interface HeaderProps {
+  navConfig: { titleKey: string; path: string }[];
+}
+
+const Header = ({ navConfig }: HeaderProps) => {
   return (
     <>
-      <NavPrimary />
+      <NavPrimary navConfig={navConfig} />
 
-      <NavSecondary />
+      <NavSecondary navConfig={navConfig} />
     </>
   );
 };

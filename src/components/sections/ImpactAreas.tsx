@@ -129,8 +129,12 @@ type ImpactAreasItem = {
   role: string;
 };
 
-const ImpactAreas = () => {
-  const t = useTranslations('ImpactAreas');
+type ImpactAreasProps = {
+  namespace: string;
+};
+
+const ImpactAreas = ({ namespace }: ImpactAreasProps) => {
+  const t = useTranslations(namespace);
   const items = t.raw('items') as ImpactAreasItem[];
 
   return (

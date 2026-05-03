@@ -113,10 +113,23 @@ const styles = {
 
 interface HeroProps {
   className?: string;
+  namespace: string;
+  primaryCtaHref?: string;
+  primaryCtaTarget?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target'];
+  secondaryCtaHref?: string;
+  secondaryCtaTarget?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target'];
 }
 
-const Hero = ({ className }: HeroProps) => {
-  const t = useTranslations('Hero');
+const Hero = ({
+  className,
+  namespace,
+  primaryCtaHref = PATHS.workPrinciples,
+  primaryCtaTarget,
+  secondaryCtaHref = OTHER_PATHS.cv,
+  secondaryCtaTarget = '_blank',
+}: HeroProps) => {
+  const t = useTranslations(namespace);
+  const eyebrow = t('eyebrow').trim();
   const rootClassName = cx('group', styles.root, className);
 
   return (
@@ -124,7 +137,7 @@ const Hero = ({ className }: HeroProps) => {
       <header className={styles.hero.root}>
         <div className={styles.hero.inner}>
           <div className={css({ mt: -1 })}>
-            <p className={styles.hero.eyebrow}>{t('eyebrow')}</p>
+            {eyebrow ? <p className={styles.hero.eyebrow}>{eyebrow}</p> : null}
             <h1 className={styles.hero.title}>
               {t.rich('title', {
                 br: () => <br />,
@@ -132,13 +145,13 @@ const Hero = ({ className }: HeroProps) => {
             </h1>
             <p className={styles.hero.description}>{t('subtitle')}</p>
             <div className={styles.hero.actions}>
-              <Button as="a" href={PATHS.workPrinciples}>
+              <Button as="a" href={primaryCtaHref} target={primaryCtaTarget}>
                 {t('primaryCta')}
               </Button>
               <Button
                 as="a"
-                href={OTHER_PATHS.cv}
-                target="_blank"
+                href={secondaryCtaHref}
+                target={secondaryCtaTarget}
                 visual="outline"
               >
                 {t('secondaryCta')}
@@ -152,6 +165,7 @@ const Hero = ({ className }: HeroProps) => {
               width={470}
               height={470}
               alt="Picture of the author"
+              style={{ height: 'auto' }}
             />
           </div>
         </div>
