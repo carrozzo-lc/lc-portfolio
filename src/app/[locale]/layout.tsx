@@ -7,10 +7,17 @@ import { alegreyaSans } from '@/app/fonts';
 import { routing } from '@/i18n/routing';
 import ConsentManager from '@/components/ConsentManager';
 import ThirdPartyScripts from '@/components/ThirdPartyScripts';
+import type { Metadata } from 'next';
 // global styles
 import '../globals.css';
 
 // ----------------------------------------------------------------------
+
+export const metadata: Metadata = {
+  verification: {
+    google: 'MDCzJvRU5Mi5mbUmRWAwX3WXq5goSbpHHqum8GxPWYc',
+  },
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
