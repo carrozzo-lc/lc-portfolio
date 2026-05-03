@@ -130,9 +130,10 @@ const styles = {
     color: 'gray.800',
   }),
   panelDescription: css({
-    fontSize: 'lg',
+    fontSize: { base: 'md', lg: 'lg' },
     lineHeight: 1.6,
     color: 'gray.800',
+    mt: { base: 4, lg: 0 },
   }),
   panelCta: css({
     mt: 7,
@@ -162,12 +163,12 @@ const styles = {
     maxWidth: '3xl',
     color: 'gray.800',
     fontSize: { base: 'xl', md: '2xl' },
-    lineHeight: 'normal',
+    lineHeight: { base: 1.3, md: 1.4 },
   }),
   caseStudyDrawerBody: css({
     pt: { base: 8, md: 12 },
     px: { base: 4, md: 8, lg: 0 },
-    pb: { base: 12, md: 16, lg: 24 },
+    pb: { base: 16, lg: 24 },
   }),
 };
 

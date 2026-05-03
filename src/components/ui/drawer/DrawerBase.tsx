@@ -149,13 +149,19 @@ export const styles = {
     mt: 2,
     color: 'gray.600',
     fontSize: 'sm',
+  }),
+
+  descriptionLineHeight: css({
     lineHeight: 'relaxed',
   }),
 
   body: css({
+    overflowY: 'auto',
+  }),
+
+  bodyPadding: css({
     px: 5,
     pb: 5,
-    overflowY: 'auto',
   }),
 
   footer: css({
@@ -236,7 +242,11 @@ const DrawerBase = ({
 
                 {description ? (
                   <Drawer.Description
-                    className={cx(styles.description, classNames?.description)}
+                    className={cx(
+                      styles.description,
+                      !classNames?.description && styles.descriptionLineHeight,
+                      classNames?.description
+                    )}
                   >
                     {description}
                   </Drawer.Description>
@@ -256,7 +266,15 @@ const DrawerBase = ({
               ) : null}
             </header>
 
-            <div className={cx(styles.body, classNames?.body)}>{children}</div>
+            <div
+              className={cx(
+                styles.body,
+                !classNames?.body && styles.bodyPadding,
+                classNames?.body
+              )}
+            >
+              {children}
+            </div>
 
             {footer ? (
               <footer className={cx(styles.footer, classNames?.footer)}>
