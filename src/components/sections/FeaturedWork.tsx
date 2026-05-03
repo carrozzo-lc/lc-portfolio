@@ -13,7 +13,7 @@ import CaseStudyDrawerContent, {
 const styles = {
   root: css({
     pt: { base: 16, lg: 24 },
-    pb: { base: 16, lg: 24 },
+    pb: { base: 0, lg: 0 },
   }),
   shell: css({
     backgroundColor: 'primary.950',
