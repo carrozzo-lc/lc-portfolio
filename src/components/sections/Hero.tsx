@@ -126,11 +126,15 @@ const Hero = ({
   primaryCtaHref = PATHS.workPrinciples,
   primaryCtaTarget,
   secondaryCtaHref = OTHER_PATHS.cv,
-  secondaryCtaTarget = '_blank',
+  secondaryCtaTarget,
 }: HeroProps) => {
   const t = useTranslations(namespace);
   const eyebrow = t('eyebrow').trim();
   const rootClassName = cx('group', styles.root, className);
+  const resolvedSecondaryCtaTarget =
+    secondaryCtaTarget ?? (secondaryCtaHref === OTHER_PATHS.cv ? '_blank' : undefined);
+  const secondaryCtaRel =
+    resolvedSecondaryCtaTarget === '_blank' ? 'noopener noreferrer' : undefined;
 
   return (
     <section className={rootClassName}>
@@ -151,7 +155,8 @@ const Hero = ({
               <Button
                 as="a"
                 href={secondaryCtaHref}
-                target={secondaryCtaTarget}
+                target={resolvedSecondaryCtaTarget}
+                rel={secondaryCtaRel}
                 visual="outline"
               >
                 {t('secondaryCta')}
