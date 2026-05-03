@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import {
   CONSENT_PROVIDERS,
   IUBENDA_PURPOSES,
@@ -10,14 +11,16 @@ import {
 const GoogleAnalytics = ({ measurementId }: { measurementId: string }) => {
   return (
     <>
-      <script
+      <Script
+        id="google-analytics-src"
         async
         type="text/plain"
         className="_iub_cs_activate"
         data-iub-purposes={IUBENDA_PURPOSES.measurement}
         data-suppressedsrc={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
       />
-      <script
+      <Script
+        id="google-analytics-init"
         type="text/plain"
         className="_iub_cs_activate"
         data-iub-purposes={IUBENDA_PURPOSES.measurement}
@@ -36,7 +39,8 @@ const GoogleAnalytics = ({ measurementId }: { measurementId: string }) => {
 
 const MicrosoftClarity = ({ projectId }: { projectId: string }) => {
   return (
-    <script
+    <Script
+      id="microsoft-clarity-init"
       type="text/plain"
       className="_iub_cs_activate"
       data-iub-purposes={IUBENDA_PURPOSES.measurement}
