@@ -1,10 +1,75 @@
-import { CONSENT_PROVIDERS, consentProvider } from '@/lib/consent';
+import {
+  CONSENT_PROVIDERS,
+  IUBENDA_PURPOSES,
+  consentProvider,
+  thirdPartyScriptIds,
+} from '@/lib/consent';
 
 // ----------------------------------------------------------------------
 
+const GoogleAnalytics = ({ measurementId }: { measurementId: string }) => {
+  return (
+    <>
+      <script
+        async
+        type="text/plain"
+        className="_iub_cs_activate"
+        data-iub-purposes={IUBENDA_PURPOSES.measurement}
+        data-suppressedsrc={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+      />
+      <script
+        type="text/plain"
+        className="_iub_cs_activate"
+        data-iub-purposes={IUBENDA_PURPOSES.measurement}
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${measurementId}');
+          `,
+        }}
+      />
+    </>
+  );
+};
+
+const MicrosoftClarity = ({ projectId }: { projectId: string }) => {
+  return (
+    <script
+      type="text/plain"
+      className="_iub_cs_activate"
+      data-iub-purposes={IUBENDA_PURPOSES.measurement}
+      dangerouslySetInnerHTML={{
+        __html: `
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "${projectId}");
+        `,
+      }}
+    />
+  );
+};
+
+const IubendaManagedScripts = () => {
+  const { googleAnalytics, clarity } = thirdPartyScriptIds;
+
+  return (
+    <>
+      {googleAnalytics ? (
+        <GoogleAnalytics measurementId={googleAnalytics} />
+      ) : null}
+
+      {clarity ? <MicrosoftClarity projectId={clarity} /> : null}
+    </>
+  );
+};
+
 const ThirdPartyScripts = () => {
   if (consentProvider === CONSENT_PROVIDERS.iubenda) {
-    return null;
+    return <IubendaManagedScripts />;
   }
 
   return null;

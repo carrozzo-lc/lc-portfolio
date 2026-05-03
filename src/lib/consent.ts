@@ -11,6 +11,10 @@ export const CONSENT_CATEGORIES = {
   analytics: 'analytics',
 } as const;
 
+export const IUBENDA_PURPOSES = {
+  measurement: '4',
+} as const;
+
 export type ConsentCategory =
   (typeof CONSENT_CATEGORIES)[keyof typeof CONSENT_CATEGORIES];
 

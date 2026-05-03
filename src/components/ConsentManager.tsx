@@ -22,27 +22,38 @@ const IubendaConsent = () => {
           __html: `
             var _iub = _iub || [];
             _iub.csConfiguration = {
+              askConsentAtCookiePolicyUpdate: true,
+              floatingPreferencesButtonDisplay: 'bottom-left',
+              perPurposeConsent: true,
               siteId: ${iubendaConfig.siteId},
+              whitelabel: false,
               cookiePolicyId: ${iubendaConfig.cookiePolicyId},
-              lang: 'auto',
-              enableTcf: false
+              banner: {
+                acceptButtonDisplay: true,
+                closeButtonDisplay: false,
+                customizeButtonDisplay: true,
+                explicitWithdrawal: true,
+                listPurposes: true,
+                position: 'float-bottom-left',
+                rejectButtonDisplay: true
+              }
+            };
+            _iub.csLangConfiguration = {
+              'en-GB': {
+                cookiePolicyId: ${iubendaConfig.cookiePolicyId}
+              }
             };
           `,
         }}
       />
       <Script
-        id="iubenda-cs"
-        src="https://cs.iubenda.com/autoblocking/0.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        id="iubenda-cs-stub"
-        src="//cdn.iubenda.com/cs/tcf/stub-v2.js"
+        id="iubenda-cs-autoblocking"
+        src={`https://cs.iubenda.com/autoblocking/${iubendaConfig.siteId}.js`}
         strategy="afterInteractive"
       />
       <Script
         id="iubenda-cs-main"
-        src="//cdn.iubenda.com/cs/iubenda_cs.js"
+        src="https://cdn.iubenda.com/cs/iubenda_cs.js"
         strategy="afterInteractive"
         async
       />
