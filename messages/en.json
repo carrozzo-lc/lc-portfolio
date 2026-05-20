@@ -7,7 +7,7 @@
     "clearWebPresence": {
       "howIWork": "How I work",
       "whatIOffer": "What I offer",
-      "work": "Selected Work"
+      "work": "Select Work"
     }
   },
   "Pages": {
@@ -224,8 +224,8 @@
       },
       "ProjectScenarios": {
         "eyebrow": "What I Offer",
-        "title": "Different situations<br></br>One clear way to move forward",
-        "subtitle": "Most projects start from one of these situations",
+        "title": "Different scenarios<br></br>One clear way to move forward",
+        "subtitle": "Most projects start from one of these scenarios",
         "button": {
           "text": "Start a conversation",
           "link": "mailto:me@lucacarrozzo.com"
@@ -269,7 +269,7 @@
       },
       "FeaturedWork": {
         "content": {
-          "eyebrow": "Selected Work",
+          "eyebrow": "Select Work",
           "title": "Projects that show how this works in practice",
           "subtitle": "A selection of projects where clarity, structure, and execution come together to solve real product and business needs",
           "items": [
