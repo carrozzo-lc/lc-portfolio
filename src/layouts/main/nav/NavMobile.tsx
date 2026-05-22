@@ -12,7 +12,9 @@ import Link from 'next/link';
 // components
 import Logo from '@/components/Logo';
 import Button from '@/components/ui/Button/Button';
+import CtaButton from '@/components/analytics/CtaButton';
 import { useTranslations } from 'next-intl';
+import type { LandingName } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -111,12 +113,14 @@ interface NavMobileProps {
   }>;
   triggerClassName?: string;
   logoLinkEnabled?: boolean;
+  landing: LandingName;
 }
 
 const NavMobile = ({
   navData,
   triggerClassName,
   logoLinkEnabled = true,
+  landing,
 }: NavMobileProps) => {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
@@ -175,16 +179,20 @@ const NavMobile = ({
                     alignItems: 'flex-start',
                   })}
                 >
-                  <Button
+                  <CtaButton
                     visual="solid"
                     size="sm"
                     radius="full"
-                    as="a"
                     href="mailto:me@lucacarrozzo.com"
                     hover="off"
+                    tracking={{
+                      landing,
+                      ctaId: 'mobile_header_contact',
+                      ctaType: 'contact',
+                    }}
                   >
                     {t('Nav.contact')}
-                  </Button>
+                  </CtaButton>
 
                   <Button
                     visual="transparent"

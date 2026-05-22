@@ -41,6 +41,7 @@ yarn-error.log*
 /AGENTS.md
 /agents/
 /backup/
+/local-notes/
 
 # typescript
 *.tsbuildinfo

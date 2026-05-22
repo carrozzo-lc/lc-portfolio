@@ -3,9 +3,10 @@ import { css } from '@/styled-system/css';
 // components
 import Logo from '@/components/Logo';
 import NavList from '@/layouts/main/nav/NavList';
-import Button from '@/components/ui/Button/Button';
+import CtaButton from '@/components/analytics/CtaButton';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
+import type { LandingName } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -43,11 +44,13 @@ const styles = {
 interface NavPrimaryProps {
   navConfig: { titleKey: string; path: string }[];
   logoLinkEnabled?: boolean;
+  landing: LandingName;
 }
 
 const NavPrimary = ({
   navConfig,
   logoLinkEnabled = true,
+  landing,
 }: NavPrimaryProps) => {
   const t = useTranslations();
   return (
@@ -63,17 +66,25 @@ const NavPrimary = ({
           alignItems: 'center',
         })}
       >
-        <Button
+        <CtaButton
           visual="solid"
           size="sm"
           radius="full"
-          as="a"
           href="mailto:me@lucacarrozzo.com"
+          tracking={{
+            landing,
+            ctaId: 'header_contact',
+            ctaType: 'contact',
+          }}
         >
           {t('Nav.contact')}
-        </Button>
+        </CtaButton>
 
-        <NavMobile navData={navConfig} logoLinkEnabled={logoLinkEnabled} />
+        <NavMobile
+          navData={navConfig}
+          logoLinkEnabled={logoLinkEnabled}
+          landing={landing}
+        />
       </div>
     </header>
   );

@@ -1,7 +1,8 @@
-import Button from '@/components/ui/Button';
 import Container from '@/components/ui/Container';
+import CtaButton from '@/components/analytics/CtaButton';
 import { css } from '@/styled-system/css';
 import { useTranslations } from 'next-intl';
+import type { LandingCtaTracking } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -97,6 +98,7 @@ const styles = {
 
 interface ProcessProps {
   namespace: string;
+  ctaTracking?: LandingCtaTracking;
 }
 
 type ProcessItem = {
@@ -104,7 +106,7 @@ type ProcessItem = {
   description: string;
 };
 
-const Process = ({ namespace }: ProcessProps) => {
+const Process = ({ namespace, ctaTracking }: ProcessProps) => {
   const t = useTranslations(namespace);
   const items = t.raw('items') as ProcessItem[];
 
@@ -124,15 +126,15 @@ const Process = ({ namespace }: ProcessProps) => {
           <p className={styles.flow}>{t('flow')}</p>
         </div>
         <div className={styles.ctaWrapper}>
-          <Button
-            as="a"
+          <CtaButton
             href={t('button.link')}
             className={styles.cta}
             target="_blank"
             rel="noopener noreferrer"
+            tracking={ctaTracking}
           >
             {t('button.text')}
-          </Button>
+          </CtaButton>
         </div>
       </div>
 

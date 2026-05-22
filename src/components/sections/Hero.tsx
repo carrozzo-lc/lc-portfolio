@@ -2,7 +2,7 @@
 import { css, cx } from '@/styled-system/css';
 import { token } from '@/styled-system/tokens';
 // components
-import Button from '@/components/ui/Button/Button';
+import CtaButton from '@/components/analytics/CtaButton';
 // next
 import Image from 'next/image';
 // assets
@@ -11,6 +11,7 @@ import lucaImage from '@/images/luca-image.png';
 import { useTranslations } from 'next-intl';
 // config
 import { OTHER_PATHS, PATHS } from '@/config/paths';
+import type { LandingCtaTracking } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -116,8 +117,10 @@ interface HeroProps {
   namespace: string;
   primaryCtaHref?: string;
   primaryCtaTarget?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target'];
+  primaryCtaTracking?: LandingCtaTracking;
   secondaryCtaHref?: string;
   secondaryCtaTarget?: React.AnchorHTMLAttributes<HTMLAnchorElement>['target'];
+  secondaryCtaTracking?: LandingCtaTracking;
 }
 
 const Hero = ({
@@ -125,8 +128,10 @@ const Hero = ({
   namespace,
   primaryCtaHref = PATHS.workPrinciples,
   primaryCtaTarget,
+  primaryCtaTracking,
   secondaryCtaHref = OTHER_PATHS.cv,
   secondaryCtaTarget,
+  secondaryCtaTracking,
 }: HeroProps) => {
   const t = useTranslations(namespace);
   const eyebrow = t('eyebrow').trim();
@@ -149,18 +154,22 @@ const Hero = ({
             </h1>
             <p className={styles.hero.description}>{t('subtitle')}</p>
             <div className={styles.hero.actions}>
-              <Button as="a" href={primaryCtaHref} target={primaryCtaTarget}>
+              <CtaButton
+                href={primaryCtaHref}
+                target={primaryCtaTarget}
+                tracking={primaryCtaTracking}
+              >
                 {t('primaryCta')}
-              </Button>
-              <Button
-                as="a"
+              </CtaButton>
+              <CtaButton
                 href={secondaryCtaHref}
                 target={resolvedSecondaryCtaTarget}
                 rel={secondaryCtaRel}
+                tracking={secondaryCtaTracking}
                 visual="outline"
               >
                 {t('secondaryCta')}
-              </Button>
+              </CtaButton>
             </div>
           </div>
 

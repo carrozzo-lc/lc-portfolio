@@ -1,7 +1,8 @@
-import Button from '@/components/ui/Button';
 import { css } from '@/styled-system/css';
 import { LinkedInLogoIcon } from '@radix-ui/react-icons';
 import Container from '@/components/ui/Container';
+import CtaButton from '@/components/analytics/CtaButton';
+import type { LandingCtaTracking } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -9,9 +10,10 @@ type CareerCTAProps = {
   title?: string;
   link?: string;
   textLink?: string;
+  tracking?: LandingCtaTracking;
 };
 
-const CareerCTA = ({ title, link, textLink }: CareerCTAProps) => {
+const CareerCTA = ({ title, link, textLink, tracking }: CareerCTAProps) => {
   return (
     <Container>
       <div
@@ -23,20 +25,20 @@ const CareerCTA = ({ title, link, textLink }: CareerCTAProps) => {
         })}
       >
         {title && <p className={css({ mb: 4 })}>{title}</p>}
-        {link && (
-          <Button
+        {link ? (
+          <CtaButton
             startIcon={<LinkedInLogoIcon style={{ width: 18, height: 18 }} />}
-            as="a"
             visual="outlineBlack"
             size="sm"
             radius="full"
             href={link}
             target="_blank"
             rel="noopener noreferrer"
+            tracking={tracking}
           >
             {textLink}
-          </Button>
-        )}
+          </CtaButton>
+        ) : null}
       </div>
     </Container>
   );

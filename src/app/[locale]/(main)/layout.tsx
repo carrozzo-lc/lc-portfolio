@@ -5,7 +5,11 @@ import { navConfig } from '@/config/config-navigation';
 
 const MainPageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <MainLayout navConfig={navConfig} logoLinkEnabled={false}>
+    <MainLayout
+      navConfig={navConfig}
+      logoLinkEnabled={false}
+      landing="home"
+    >
       {children}
     </MainLayout>
   );

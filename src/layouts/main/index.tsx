@@ -3,6 +3,7 @@ import { css } from '@/styled-system/css';
 // components
 import Header from '@/layouts/main/Header';
 import Footer from '@/layouts/main/Footer';
+import type { LandingName } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -26,16 +27,22 @@ interface MainLayoutProps {
   navConfig: { titleKey: string; path: string }[];
   children: React.ReactNode;
   logoLinkEnabled?: boolean;
+  landing: LandingName;
 }
 
 const MainLayout = ({
   navConfig,
   children,
   logoLinkEnabled = true,
+  landing,
 }: MainLayoutProps) => {
   return (
     <div className={styles.root}>
-      <Header navConfig={navConfig} logoLinkEnabled={logoLinkEnabled} />
+      <Header
+        navConfig={navConfig}
+        logoLinkEnabled={logoLinkEnabled}
+        landing={landing}
+      />
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>

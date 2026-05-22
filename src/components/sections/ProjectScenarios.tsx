@@ -1,7 +1,8 @@
-import Button from '@/components/ui/Button';
 import Container from '@/components/ui/Container';
+import CtaButton from '@/components/analytics/CtaButton';
 import { css } from '@/styled-system/css';
 import { useTranslations } from 'next-intl';
+import type { LandingCtaTracking } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -94,6 +95,7 @@ const styles = {
 
 interface ProjectScenariosProps {
   namespace: string;
+  ctaTracking?: LandingCtaTracking;
 }
 
 type ScenarioItem = {
@@ -102,7 +104,10 @@ type ScenarioItem = {
   description: string;
 };
 
-const ProjectScenarios = ({ namespace }: ProjectScenariosProps) => {
+const ProjectScenarios = ({
+  namespace,
+  ctaTracking,
+}: ProjectScenariosProps) => {
   const t = useTranslations(namespace);
   const items = t.raw('items') as ScenarioItem[];
 
@@ -132,14 +137,14 @@ const ProjectScenarios = ({ namespace }: ProjectScenariosProps) => {
         </div>
 
         <div className={styles.ctaWrap}>
-          <Button
-            as="a"
+          <CtaButton
             href={t('button.link')}
             target="_blank"
             rel="noopener noreferrer"
+            tracking={ctaTracking}
           >
             {t('button.text')}
-          </Button>
+          </CtaButton>
         </div>
       </div>
     </Container>

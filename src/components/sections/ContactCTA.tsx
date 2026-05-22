@@ -1,6 +1,7 @@
 import Container from '@/components/ui/Container';
 import { css } from '@/styled-system/css';
-import Button from '@/components/ui/Button';
+import CtaButton from '@/components/analytics/CtaButton';
+import type { LandingCtaTracking } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -49,24 +50,27 @@ type ContactCTAProps = {
     text: string;
     link: string;
   };
+  tracking?: LandingCtaTracking;
 };
 
-const ContactCTA = ({ title, subtitle, button }: ContactCTAProps) => {
+const ContactCTA = ({ title, subtitle, button, tracking }: ContactCTAProps) => {
   return (
     <Container as="section" id="how-i-work" innerClassName={styles.root}>
       <div className={styles.box}>
         <h3>{title}</h3>
         <p>{subtitle}</p>
-        <Button
-          visual="solid"
-          size="lg"
-          as="a"
-          href={button?.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {button?.text}
-        </Button>
+        {button ? (
+          <CtaButton
+            visual="solid"
+            size="lg"
+            href={button.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            tracking={tracking}
+          >
+            {button.text}
+          </CtaButton>
+        ) : null}
       </div>
     </Container>
   );

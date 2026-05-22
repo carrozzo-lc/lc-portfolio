@@ -7,10 +7,11 @@ import Logo from '@/components/Logo';
 import { useScrollRange } from '@/hooks/useScrollRange';
 // assets
 import logoImage from '@/images/logo2.svg';
-import Button from '@/components/ui/Button/Button';
+import CtaButton from '@/components/analytics/CtaButton';
 import Link from 'next/link';
 import NavMobile from './NavMobile';
 import { useTranslations } from 'next-intl';
+import type { LandingName } from '@/lib/analytics';
 
 // ----------------------------------------------------------------------
 
@@ -91,11 +92,13 @@ const styles = {
 interface NavSecondaryProps {
   navConfig: { titleKey: string; path: string }[];
   logoLinkEnabled?: boolean;
+  landing: LandingName;
 }
 
 const NavSecondary = ({
   navConfig,
   logoLinkEnabled = true,
+  landing,
 }: NavSecondaryProps) => {
   const t = useTranslations();
   const showSecondary = useScrollRange({
@@ -153,21 +156,26 @@ const NavSecondary = ({
             },
           })}
         >
-          <Button
+          <CtaButton
             visual="solid"
             size="sm"
             radius="full"
-            as="a"
             href="mailto:me@lucacarrozzo.com"
             hover="off"
             className={styles.action}
+            tracking={{
+              landing,
+              ctaId: 'sticky_header_contact',
+              ctaType: 'contact',
+            }}
           >
             {t('Nav.contact')}
-          </Button>
+          </CtaButton>
 
           <NavMobile
             navData={navConfig}
             logoLinkEnabled={logoLinkEnabled}
+            landing={landing}
             triggerClassName={css({
               color: 'gray.950',
               pl: 2.5,

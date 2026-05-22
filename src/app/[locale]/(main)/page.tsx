@@ -37,6 +37,16 @@ export default function Home() {
       <Hero
         namespace="Pages.Home.Hero"
         className={css({ paddingTop: '64px' })}
+        primaryCtaTracking={{
+          landing: 'home',
+          ctaId: 'hero_how_i_work',
+          ctaType: 'anchor',
+        }}
+        secondaryCtaTracking={{
+          landing: 'home',
+          ctaId: 'hero_download_cv',
+          ctaType: 'external',
+        }}
       />
       <HowIWork namespace="Pages.Home.HowIWork" />
       <ImpactAreas namespace="Pages.Home.ImpactAreas" />
@@ -45,6 +55,11 @@ export default function Home() {
         title={tCareer('title')}
         textLink={tCareer('textLink')}
         link={tCareer('link')}
+        tracking={{
+          landing: 'home',
+          ctaId: 'career_linkedin',
+          ctaType: 'external',
+        }}
       />
       <ContactCTA
         title={tContact('title')}
@@ -52,6 +67,11 @@ export default function Home() {
         button={{
           text: tContact('button.text'),
           link: tContact('button.link'),
+        }}
+        tracking={{
+          landing: 'home',
+          ctaId: 'final_contact',
+          ctaType: 'contact',
         }}
       />
     </>

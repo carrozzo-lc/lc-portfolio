@@ -44,13 +44,37 @@ export default function ClearWebPresencePage() {
         className={css({ paddingTop: '64px' })}
         primaryCtaHref="mailto:me@lucacarrozzo.com"
         secondaryCtaHref={PATHS.process}
+        primaryCtaTracking={{
+          landing: 'clear_web_presence',
+          ctaId: 'hero_contact',
+          ctaType: 'contact',
+        }}
+        secondaryCtaTracking={{
+          landing: 'clear_web_presence',
+          ctaId: 'hero_process',
+          ctaType: 'anchor',
+        }}
       />
 
       <ProblemStatement namespace="Pages.ClearWebPresence.ProblemStatement" />
 
-      <Process namespace="Pages.ClearWebPresence.Process" />
+      <Process
+        namespace="Pages.ClearWebPresence.Process"
+        ctaTracking={{
+          landing: 'clear_web_presence',
+          ctaId: 'process_contact',
+          ctaType: 'contact',
+        }}
+      />
 
-      <ProjectScenarios namespace="Pages.ClearWebPresence.ProjectScenarios" />
+      <ProjectScenarios
+        namespace="Pages.ClearWebPresence.ProjectScenarios"
+        ctaTracking={{
+          landing: 'clear_web_presence',
+          ctaId: 'scenarios_contact',
+          ctaType: 'contact',
+        }}
+      />
 
       <QualityStandards namespace="Pages.ClearWebPresence.QualityStandards" />
 
@@ -62,6 +86,11 @@ export default function ClearWebPresencePage() {
         button={{
           text: tContact('button.text'),
           link: tContact('button.link'),
+        }}
+        tracking={{
+          landing: 'clear_web_presence',
+          ctaId: 'final_contact',
+          ctaType: 'contact',
         }}
       />
     </>
