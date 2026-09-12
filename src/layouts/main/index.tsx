@@ -4,6 +4,7 @@ import { css } from '@/styled-system/css';
 import Header from '@/layouts/main/Header';
 import Footer from '@/layouts/main/Footer';
 import type { LandingName } from '@/lib/analytics';
+import { CONTACT_PATHS } from '@/config/paths';
 
 // ----------------------------------------------------------------------
 
@@ -28,6 +29,7 @@ interface MainLayoutProps {
   children: React.ReactNode;
   logoLinkEnabled?: boolean;
   landing: LandingName;
+  contactHref?: string;
 }
 
 const MainLayout = ({
@@ -35,6 +37,7 @@ const MainLayout = ({
   children,
   logoLinkEnabled = true,
   landing,
+  contactHref = CONTACT_PATHS.email,
 }: MainLayoutProps) => {
   return (
     <div className={styles.root}>
@@ -42,6 +45,7 @@ const MainLayout = ({
         navConfig={navConfig}
         logoLinkEnabled={logoLinkEnabled}
         landing={landing}
+        contactHref={contactHref}
       />
       <main className={styles.main}>{children}</main>
       <Footer />

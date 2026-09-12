@@ -45,12 +45,14 @@ interface NavPrimaryProps {
   navConfig: { titleKey: string; path: string }[];
   logoLinkEnabled?: boolean;
   landing: LandingName;
+  contactHref: string;
 }
 
 const NavPrimary = ({
   navConfig,
   logoLinkEnabled = true,
   landing,
+  contactHref,
 }: NavPrimaryProps) => {
   const t = useTranslations();
   return (
@@ -70,7 +72,7 @@ const NavPrimary = ({
           visual="solid"
           size="sm"
           radius="full"
-          href="mailto:me@lucacarrozzo.com"
+          href={contactHref}
           tracking={{
             landing,
             ctaId: 'header_contact',
@@ -84,6 +86,7 @@ const NavPrimary = ({
           navData={navConfig}
           logoLinkEnabled={logoLinkEnabled}
           landing={landing}
+          contactHref={contactHref}
         />
       </div>
     </header>

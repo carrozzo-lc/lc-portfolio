@@ -93,12 +93,14 @@ interface NavSecondaryProps {
   navConfig: { titleKey: string; path: string }[];
   logoLinkEnabled?: boolean;
   landing: LandingName;
+  contactHref: string;
 }
 
 const NavSecondary = ({
   navConfig,
   logoLinkEnabled = true,
   landing,
+  contactHref,
 }: NavSecondaryProps) => {
   const t = useTranslations();
   const showSecondary = useScrollRange({
@@ -160,7 +162,7 @@ const NavSecondary = ({
             visual="solid"
             size="sm"
             radius="full"
-            href="mailto:me@lucacarrozzo.com"
+            href={contactHref}
             hover="off"
             className={styles.action}
             tracking={{
@@ -176,6 +178,7 @@ const NavSecondary = ({
             navData={navConfig}
             logoLinkEnabled={logoLinkEnabled}
             landing={landing}
+            contactHref={contactHref}
             triggerClassName={css({
               color: 'gray.950',
               pl: 2.5,

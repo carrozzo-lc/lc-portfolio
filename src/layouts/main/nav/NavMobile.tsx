@@ -114,6 +114,7 @@ interface NavMobileProps {
   triggerClassName?: string;
   logoLinkEnabled?: boolean;
   landing: LandingName;
+  contactHref: string;
 }
 
 const NavMobile = ({
@@ -121,6 +122,7 @@ const NavMobile = ({
   triggerClassName,
   logoLinkEnabled = true,
   landing,
+  contactHref,
 }: NavMobileProps) => {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
@@ -183,7 +185,7 @@ const NavMobile = ({
                     visual="solid"
                     size="sm"
                     radius="full"
-                    href="mailto:me@lucacarrozzo.com"
+                    href={contactHref}
                     hover="off"
                     tracking={{
                       landing,

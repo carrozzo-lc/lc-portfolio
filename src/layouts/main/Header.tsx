@@ -9,12 +9,14 @@ interface HeaderProps {
   navConfig: { titleKey: string; path: string }[];
   logoLinkEnabled?: boolean;
   landing: LandingName;
+  contactHref: string;
 }
 
 const Header = ({
   navConfig,
   logoLinkEnabled = true,
   landing,
+  contactHref,
 }: HeaderProps) => {
   return (
     <>
@@ -22,12 +24,14 @@ const Header = ({
         navConfig={navConfig}
         logoLinkEnabled={logoLinkEnabled}
         landing={landing}
+        contactHref={contactHref}
       />
 
       <NavSecondary
         navConfig={navConfig}
         logoLinkEnabled={logoLinkEnabled}
         landing={landing}
+        contactHref={contactHref}
       />
     </>
   );

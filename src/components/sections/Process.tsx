@@ -98,6 +98,7 @@ const styles = {
 
 interface ProcessProps {
   namespace: string;
+  contactHref: string;
   ctaTracking?: LandingCtaTracking;
 }
 
@@ -106,7 +107,7 @@ type ProcessItem = {
   description: string;
 };
 
-const Process = ({ namespace, ctaTracking }: ProcessProps) => {
+const Process = ({ namespace, contactHref, ctaTracking }: ProcessProps) => {
   const t = useTranslations(namespace);
   const items = t.raw('items') as ProcessItem[];
 
@@ -127,7 +128,7 @@ const Process = ({ namespace, ctaTracking }: ProcessProps) => {
         </div>
         <div className={styles.ctaWrapper}>
           <CtaButton
-            href={t('button.link')}
+            href={contactHref}
             className={styles.cta}
             target="_blank"
             rel="noopener noreferrer"

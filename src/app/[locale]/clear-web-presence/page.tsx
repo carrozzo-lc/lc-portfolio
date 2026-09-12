@@ -13,7 +13,7 @@ import Process from '@/components/sections/Process';
 import ProjectScenarios from '@/components/sections/ProjectScenarios';
 import QualityStandards from '@/components/sections/QualityStandards';
 import FeaturedWork from '@/components/sections/FeaturedWork';
-import { PATHS } from '@/config/paths';
+import { getWhatsAppContactHref, PATHS } from '@/config/paths';
 
 // ----------------------------------------------------------------------
 
@@ -36,13 +36,14 @@ export async function generateMetadata({
 
 export default function ClearWebPresencePage() {
   const tContact = useTranslations('Pages.ClearWebPresence.ContactCTA');
+  const contactHref = getWhatsAppContactHref(tContact('whatsAppMessage'));
 
   return (
     <>
       <Hero
         namespace="Pages.ClearWebPresence.Hero"
         className={css({ paddingTop: '64px' })}
-        primaryCtaHref="mailto:me@lucacarrozzo.com"
+        primaryCtaHref={contactHref}
         secondaryCtaHref={PATHS.process}
         primaryCtaTracking={{
           landing: 'clear_web_presence',
@@ -60,6 +61,7 @@ export default function ClearWebPresencePage() {
 
       <Process
         namespace="Pages.ClearWebPresence.Process"
+        contactHref={contactHref}
         ctaTracking={{
           landing: 'clear_web_presence',
           ctaId: 'process_contact',
@@ -69,6 +71,7 @@ export default function ClearWebPresencePage() {
 
       <ProjectScenarios
         namespace="Pages.ClearWebPresence.ProjectScenarios"
+        contactHref={contactHref}
         ctaTracking={{
           landing: 'clear_web_presence',
           ctaId: 'scenarios_contact',
@@ -85,7 +88,7 @@ export default function ClearWebPresencePage() {
         subtitle={tContact('subtitle')}
         button={{
           text: tContact('button.text'),
-          link: tContact('button.link'),
+          link: contactHref,
         }}
         tracking={{
           landing: 'clear_web_presence',

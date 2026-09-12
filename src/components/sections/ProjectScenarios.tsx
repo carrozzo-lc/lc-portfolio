@@ -95,6 +95,7 @@ const styles = {
 
 interface ProjectScenariosProps {
   namespace: string;
+  contactHref: string;
   ctaTracking?: LandingCtaTracking;
 }
 
@@ -106,6 +107,7 @@ type ScenarioItem = {
 
 const ProjectScenarios = ({
   namespace,
+  contactHref,
   ctaTracking,
 }: ProjectScenariosProps) => {
   const t = useTranslations(namespace);
@@ -138,7 +140,7 @@ const ProjectScenarios = ({
 
         <div className={styles.ctaWrap}>
           <CtaButton
-            href={t('button.link')}
+            href={contactHref}
             target="_blank"
             rel="noopener noreferrer"
             tracking={ctaTracking}

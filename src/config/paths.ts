@@ -10,3 +10,10 @@ export const PATHS = {
 export const OTHER_PATHS = {
   cv: 'https://4cdre7ulzk.ucarecd.net/48b334b5-6d73-4529-b818-4088d5608c14/cv_luca_carrozzo.pdf',
 };
+
+export const CONTACT_PATHS = {
+  email: 'mailto:me@lucacarrozzo.com',
+};
+
+export const getWhatsAppContactHref = (message: string) =>
+  `https://wa.me/393207455658?text=${encodeURIComponent(message)}`;

@@ -204,8 +204,7 @@
         "description": "Ogni progetto è diverso. Il processo resta coerente.",
         "flow": "Chiarezza -> Struttura -> Esecuzione",
         "button": {
-          "text": "Iniziamo a parlarne",
-          "link": "mailto:me@lucacarrozzo.com"
+          "text": "Iniziamo a parlarne"
         },
         "items": [
           {
@@ -227,8 +226,7 @@
         "title": "Situazioni diverse<br></br>Un modo chiaro per andare avanti",
         "subtitle": "La maggior parte dei progetti parte da una di queste situazioni",
         "button": {
-          "text": "Iniziamo a parlarne",
-          "link": "mailto:me@lucacarrozzo.com"
+          "text": "Iniziamo a parlarne"
         },
         "items": [
           {
@@ -332,9 +330,9 @@
         "title": "Hai un progetto in mente?",
         "subtitle": "Se vuoi un modo più chiaro e solido per andare avanti, posso aiutarti a trasformarlo in qualcosa di strutturato, usabile e costruito per durare.",
         "button": {
-          "text": "Iniziamo a parlarne",
-          "link": "mailto:me@lucacarrozzo.com"
-        }
+          "text": "Iniziamo a parlarne"
+        },
+        "whatsAppMessage": "Ciao Luca, ho visto il tuo portfolio e vorrei parlarti di un progetto."
       }
     }
   },

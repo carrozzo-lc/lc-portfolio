@@ -204,8 +204,7 @@
         "description": "Every project is different. The process stays consistent.",
         "flow": "Clarity -> Structure -> Execution",
         "button": {
-          "text": "Start a conversation",
-          "link": "mailto:me@lucacarrozzo.com"
+          "text": "Start a conversation"
         },
         "items": [
           {
@@ -227,8 +226,7 @@
         "title": "Different scenarios<br></br>One clear way to move forward",
         "subtitle": "Most projects start from one of these scenarios",
         "button": {
-          "text": "Start a conversation",
-          "link": "mailto:me@lucacarrozzo.com"
+          "text": "Start a conversation"
         },
         "items": [
           {
@@ -332,9 +330,9 @@
         "title": "Have a project in mind?",
         "subtitle": "If you want a clearer, more solid way forward, I’d be happy to help you shape it into something structured, usable, and built to last.",
         "button": {
-          "text": "Start a conversation",
-          "link": "mailto:me@lucacarrozzo.com"
-        }
+          "text": "Start a conversation"
+        },
+        "whatsAppMessage": "Hi Luca, I saw your portfolio and would like to discuss a project."
       }
     }
   },
