@@ -177,119 +177,119 @@
     },
     "ClearWebPresence": {
       "Meta": {
-        "title": "Presenza web chiara | Luca Carrozzo",
-        "description": "Esperienze web chiare, strutturate e scalabili per prodotti e servizi che hanno bisogno di una presenza online più solida, costruite con UX, architettura frontend e cura tecnica."
+        "title": "Progettazione UX e sviluppo web | Luca Carrozzo",
+        "description": "Trasformo esigenze e obiettivi in siti, e-commerce e applicazioni web chiari, solidi e pronti a evolvere, dall’analisi iniziale alla messa online."
       },
       "Hero": {
         "eyebrow": "",
-        "title": "Crea una presenza web che rifletta la qualità di ciò che stai costruendo",
-        "subtitle": "Esperienze web chiare, strutturate e scalabili, costruite senza complessità inutile o decisioni sbagliate.",
-        "primaryCta": "Iniziamo a parlarne",
+        "title": "Dall’idea a un prodotto digitale chiaro, solido e pronto a crescere",
+        "subtitle": "Unisco progettazione e sviluppo per trasformare esigenze complesse in soluzioni digitali concrete, seguendo ogni fase dall’inizio alla messa online.",
+        "primaryCta": "Parlami del tuo progetto",
         "secondaryCta": "Scopri come lavoro"
       },
       "ProblemStatement": {
-        "title": "Quando tutto deve funzionare insieme,<br></br>la chiarezza diventa più difficile.",
-        "intro": "Non stai solo cercando di far sembrare qualcosa ben fatto. Stai cercando di capire cosa conta davvero, cosa semplificare e come trasformarlo in qualcosa di chiaro, solido e costruito per durare.",
+        "title": "Quando strategia, esperienza e tecnologia devono funzionare insieme,<br></br>fare chiarezza non è semplice.",
+        "intro": "Non basta scegliere uno strumento o iniziare a sviluppare. Bisogna capire cosa serve davvero, stabilire le priorità e trasformarle in una soluzione utile per le persone e sostenibile per la tua attività.",
         "points": [
-          "Non è sempre facile capire cosa conta davvero per primo",
-          "Quello che sembra bello non sempre funziona bene nella pratica",
-          "Non dovresti aver bisogno di aiuto per ogni piccola modifica",
-          "Vuoi una struttura che abbia ancora senso anche più avanti"
+          "Non è sempre chiaro da dove cominciare",
+          "La soluzione più complessa non è sempre quella giusta",
+          "Design e sviluppo devono rispondere agli stessi obiettivi",
+          "Le decisioni di oggi devono sostenere l’evoluzione del progetto"
         ],
-        "closing": "Ecco perché un processo chiaro fa la differenza."
+        "closing": "È qui che un processo chiaro fa la differenza."
       },
       "Process": {
         "eyebrow": "Come lavoro",
-        "title": "Un processo chiaro, così non devi<br></br>capirlo da solo",
-        "description": "Ogni progetto è diverso. Il processo resta coerente.",
-        "flow": "Chiarezza -> Struttura -> Esecuzione",
+        "title": "Un processo chiaro,<br></br>dall’idea alla realizzazione",
+        "description": "Ogni progetto è diverso, ma il metodo resta lo stesso.",
+        "flow": "Chiarezza → Struttura → Esecuzione",
         "button": {
-          "text": "Iniziamo a parlarne"
+          "text": "Parlami del tuo progetto"
         },
         "items": [
           {
-            "title": "Capire il contesto prima di prendere decisioni",
-            "description": "Prima di progettare qualsiasi cosa, mi prendo il tempo per capire la situazione, i vincoli e le priorità. Questo evita lavoro inutile e decisioni che sembrano corrette ma non reggono nell’uso reale."
+            "title": "Capire prima di decidere",
+            "description": "Prima di proporre una soluzione, analizzo il contesto, gli obiettivi, i vincoli e le priorità. Questo mi permette di evitare lavoro inutile e di prendere decisioni fondate sulle esigenze reali del progetto."
           },
           {
-            "title": "Trasformare i requisiti in una struttura chiara",
-            "description": "Traduco le esigenze in una struttura chiara: priorità dei contenuti, gerarchia delle pagine e flussi utente. È qui che il progetto inizia ad avere senso e diventa più facile da gestire."
+            "title": "Dare struttura alle esigenze",
+            "description": "Trasformo idee e requisiti in una struttura concreta, definendo contenuti, percorsi utente, funzionalità e priorità tecniche. A questo punto la direzione è chiara e il progetto diventa più semplice da realizzare e gestire."
           },
           {
-            "title": "Costruire qualcosa che resti semplice nel tempo",
-            "description": "Sviluppo il sito usando elementi riutilizzabili e una struttura pulita, così resta facile da aggiornare, scalabile e coerente mentre cresce."
+            "title": "Realizzare la soluzione e farla evolvere",
+            "description": "Progetto e sviluppo la soluzione più adatta: un sito, un e-commerce o un’applicazione web. Lavoro con componenti riutilizzabili e una struttura pulita, così il risultato resta solido, semplice da gestire e pronto a evolvere."
           }
         ]
       },
       "ProjectScenarios": {
         "eyebrow": "Cosa offro",
-        "title": "Situazioni diverse<br></br>Un modo chiaro per andare avanti",
-        "subtitle": "La maggior parte dei progetti parte da una di queste situazioni",
+        "title": "Tre situazioni<br></br>in cui posso aiutarti",
+        "subtitle": "Posso aiutarti se devi partire da zero, migliorare ciò che esiste o mantenere continuità tra UX e sviluppo.",
         "button": {
-          "text": "Iniziamo a parlarne"
+          "text": "Parlami del tuo progetto"
         },
         "items": [
           {
             "label": "Partire da zero",
-            "title": "Hai bisogno di definire la struttura giusta prima di costruire",
-            "description": "Hai un’idea, un nuovo servizio o una direzione di prodotto, ma non ancora un modo chiaro per trasformarlo in qualcosa di strutturato, usabile e credibile."
+            "title": "Dare una direzione concreta a un’idea",
+            "description": "Hai un nuovo servizio, un prodotto o un’esigenza digitale, ma non è ancora chiaro cosa costruire e come. Ti aiuto a chiarire le priorità, scegliere la soluzione giusta e portarla fino alla realizzazione."
           },
           {
-            "label": "Qualcosa esiste, ma non sta funzionando",
-            "title": "Hai già qualcosa, ma non sta funzionando come dovrebbe",
-            "description": "La struttura non è chiara, l’esperienza non convince oppure gestirla è diventato più complicato del necessario."
+            "label": "Migliorare ciò che esiste",
+            "title": "Rendere più chiaro e solido un progetto già avviato",
+            "description": "Hai già un sito, un e-commerce o un’applicazione, ma l’esperienza, la struttura o il codice non funzionano come dovrebbero. Analizzo i problemi, individuo le priorità e intervengo dove serve, senza ricostruire tutto se non è necessario."
           },
           {
-            "label": "Ti serve qualcosa di semplice, ma fatto bene",
-            "title": "Ti serve qualcosa di semplice, ma fatto bene",
-            "description": "Niente eccessi, niente sovraprogettazione. Solo qualcosa di chiaro, solido e allineato alla qualità di ciò che stai costruendo."
+            "label": "Un percorso completo",
+            "title": "Mantenere continuità tra UX design e sviluppo",
+            "description": "Progettazione e sviluppo devono procedere nella stessa direzione, tenendo insieme esperienza utente, fattibilità tecnica e obiettivi del progetto. Seguo il progetto da zero fino alla messa online, mantenendo una visione coerente lungo tutto il percorso."
           }
         ]
       },
       "QualityStandards": {
         "eyebrow": "Standard di qualità",
-        "title": "Un buon lavoro dovrebbe risultare chiaro prima ancora di sembrare impressionante",
-        "description": "Non si tratta di aggiungere più funzionalità o far sembrare tutto più rifinito. Si tratta di costruire qualcosa che risulti chiaro, solido e facile da gestire nel tempo.",
+        "title": "Un buon progetto non deve solo fare una buona impressione: deve funzionare bene",
+        "description": "L’obiettivo non è aggiungere funzionalità o rendere tutto più elaborato, ma costruire una soluzione comprensibile, affidabile e proporzionata alle esigenze reali del progetto.",
         "items": [
           {
             "title": "Struttura chiara",
-            "description": "Le persone dovrebbero capire dove si trovano, cosa conta davvero e quale passo fare dopo."
+            "description": "Le persone devono orientarsi facilmente, capire cosa conta e sapere quale azione compiere."
           },
           {
             "title": "Meno attrito",
-            "description": "Nessuna complessità inutile, nessuna dipendenza nascosta o confusione evitabile."
+            "description": "Niente passaggi inutili, complessità nascoste o scelte che rendono la soluzione più difficile da usare e gestire."
           },
           {
             "title": "Pensato per durare",
-            "description": "Facile da aggiornare, coerente tra le pagine e realistico da gestire nel tempo."
+            "description": "Una struttura pulita e coerente, semplice da mantenere e capace di accompagnare l’evoluzione del progetto."
           }
         ]
       },
       "FeaturedWork": {
         "content": {
-          "eyebrow": "Lavori selezionati",
-          "title": "Progetti che mostrano come questo approccio funziona nella pratica",
-          "subtitle": "Una selezione di progetti in cui chiarezza, struttura ed esecuzione lavorano insieme per risolvere bisogni reali di prodotto e di business",
+          "eyebrow": "Progetti selezionati",
+          "title": "Progetti che mostrano il metodo in azione",
+          "subtitle": "Una selezione di progetti in cui strategia, UX e sviluppo si uniscono per rispondere a esigenze concrete di prodotto e di business.",
           "items": [
             {
               "id": "in-place-italy",
               "panel": {
-                "meta": "Servizio relocation & lifestyle / Sito marketing",
+                "meta": "Relocation e lifestyle · Sito web",
                 "title": "In Place Italy",
-                "tags": "UX Strategy · Interface Design · Frontend Development",
-                "description": "Un sito marketing premium per un servizio di relocation e lifestyle in Puglia, progettato per creare fiducia, ridurre attrito e guidare le persone verso un passo successivo chiaro.",
+                "tags": "Strategia UX · Design dell’interfaccia · Sviluppo frontend",
+                "description": "Un sito web per un servizio di relocation e lifestyle in Puglia, progettato per trasmettere fiducia, semplificare la navigazione e accompagnare le persone verso il contatto.",
                 "button": {
-                  "text": "Vedi il case study",
+                  "text": "Scopri il progetto",
                   "link": "#"
                 }
               },
               "image": {
                 "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
-                "alt": "Anteprima progetto in evidenza"
+                "alt": "Anteprima del progetto in evidenza"
               },
               "caseStudyDetails": {
                 "title": "In Place Italy",
-                "subtitle": "Progettare un sito calmo e ad alta fiducia per un servizio premium di relocation e lifestyle in Puglia.",
+                "subtitle": "Progettare un sito capace di trasmettere fiducia per un servizio premium di relocation e lifestyle in Puglia.",
                 "image": {
                   "src": "https://4cdre7ulzk.ucarecd.net/f8f0a992-ef5a-422f-b209-8f16cc932a9e/-/preview/1000x557/",
                   "alt": "Anteprima della homepage del sito In Place Italy"
@@ -297,16 +297,16 @@
                 "sections": [
                   {
                     "title": "Contesto",
-                    "body": "Servizio premium di relocation che aiuta clienti internazionali a orientarsi nella vita nel Sud Italia con chiarezza e sicurezza"
+                    "body": "Un servizio premium di relocation che aiuta clienti internazionali ad affrontare con maggiore sicurezza il trasferimento e la vita nel Sud Italia."
                   },
                   {
                     "title": "Sfida",
-                    "body": "L'esperienza doveva risultare chiara, affidabile e facile da approcciare per persone che stavano già affrontando complessità e incertezza. L'obiettivo era ridurre l'attrito, costruire fiducia rapidamente e guidare gli utenti verso il passo successivo."
+                    "body": "Il sito doveva essere chiaro e rassicurante per persone già alle prese con la complessità e l’incertezza di un trasferimento. L’obiettivo era ridurre l’attrito, trasmettere fiducia fin dalla prima visita e accompagnare gli utenti verso il passo successivo."
                   },
                   {
                     "title": "Approccio",
                     "items": [
-                      "semplificare il percorso dalla rassicurazione all'azione",
+                      "semplificare il percorso dalla rassicurazione all’azione",
                       "strutturare i contenuti intorno alle decisioni reali degli utenti",
                       "ridurre il carico cognitivo nelle pagine chiave",
                       "concentrarsi su chiarezza, tono e coerenza"
@@ -314,11 +314,11 @@
                   },
                   {
                     "title": "Risultato",
-                    "body": "Un'esperienza più chiara e affidabile che accompagna gli utenti dalla prima visita al contatto, restando semplice da gestire nel tempo"
+                    "body": "Un’esperienza chiara e affidabile, che accompagna gli utenti dalla prima visita al contatto e resta semplice da gestire nel tempo."
                   }
                 ],
                 "button": {
-                  "text": "Visita il sito online",
+                  "text": "Visita il sito",
                   "link": "https://inplaceitaly.com"
                 }
               }
@@ -328,11 +328,11 @@
       },
       "ContactCTA": {
         "title": "Hai un progetto in mente?",
-        "subtitle": "Se vuoi un modo più chiaro e solido per andare avanti, posso aiutarti a trasformarlo in qualcosa di strutturato, usabile e costruito per durare.",
+        "subtitle": "Se vuoi dare forma a un nuovo progetto digitale o migliorare una soluzione esistente, posso aiutarti a chiarire la direzione e portare il lavoro fino alla realizzazione. Da Lecce, lavoro con professionisti e imprese in tutta Italia.",
         "button": {
-          "text": "Iniziamo a parlarne"
+          "text": "Parlami del tuo progetto"
         },
-        "whatsAppMessage": "Ciao Luca, ho visto il tuo portfolio e vorrei parlarti di un progetto."
+        "whatsAppMessage": "Ciao Luca, ho visto il tuo sito e vorrei parlarti di un progetto."
       }
     }
   },
@@ -340,6 +340,7 @@
     "copyright": "Copyright © {currentYear} | Luca Carrozzo",
     "social": {
       "xTwitter": "https://x.com/carrozzo_lc",
+      "instagram": "https://www.instagram.com/itslucacarrozzo/",
       "linkedin": "https://www.linkedin.com/in/lucacarrozzo/",
       "github": "https://github.com/carrozzo-lc"
     }

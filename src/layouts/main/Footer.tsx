@@ -6,7 +6,11 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 // intl
 import { useTranslations } from 'next-intl';
 // components
-import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
+import {
+  LinkedInLogoIcon,
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+} from '@radix-ui/react-icons';
 
 // ----------------------------------------------------------------------
 
@@ -85,6 +89,7 @@ const Footer = () => {
   const social = t.raw('social') as {
     linkedin?: string;
     github?: string;
+    instagram?: string;
     xTwitter?: string;
   };
 
@@ -94,6 +99,12 @@ const Footer = () => {
       label: 'xTwitter',
       href: social.xTwitter,
       Icon: XIcon,
+    },
+    {
+      key: 'instagram',
+      label: 'Instagram',
+      href: social.instagram,
+      Icon: InstagramLogoIcon,
     },
     {
       key: 'linkedin',
